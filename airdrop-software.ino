@@ -4,8 +4,8 @@
 String logFileName = "log.txt";
 const int CHIP_SELECT = 10;
 
-
 File logFile;
+
 
 void setup() {
   // Open serial communications and wait for port to open:
@@ -14,7 +14,7 @@ void setup() {
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
-  initSd();
+  initSd(CHIP_SELECT);
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
   logFile = SD.open(logFileName, FILE_WRITE);
@@ -33,9 +33,9 @@ void setup() {
 }
 
 
-void initSd(){
+void initSd(chip_select){
   Serial.print("Initializing SD card...");
-  pinMode(CHIP_SELECT, OUTPUT);
+  pinMode(chip_select, OUTPUT);
   delay(100);
   if (!SD.begin(CHIP_SELECT)) {
     Serial.println("initialization failed!");
