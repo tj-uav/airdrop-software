@@ -15,7 +15,7 @@ const long APPROACH_PARTIAL = 1;  // used during final approach phase (when traj
 const long APPROACH_INTEGRAL = .1;
 const long APPROACH_DERIVATIVE = .25;
 
-const bool INVERT = false;  // use this to invert right/left based on the servo tensioning
+const bool INVERT_PID = false;  // use this to invert right/left servo tensioning
 
 
 // Configuration Constants:
@@ -37,6 +37,7 @@ File logFile;
 int last_gps_query_time;
 long integral;  // PID integral adder variable
 long previous;  // PID previous partial
+long previousT;  //  time of previous measurement
 
 
 
@@ -48,7 +49,7 @@ void setup() {
   
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
-  }
+  }//while
   tensionerServo.attach(SERVO_SIGNAL_PIN);
   initSD(CHIP_SELECT);
   // open the file. note that only one file can be open at a time,
@@ -58,10 +59,10 @@ void setup() {
   if (!logFile){
     // if the file didn't open, print an error:
     Serial.println("error opening test.txt");
-  }
+  }//if
   initGPS();
 
-}
+}//setup()
 
 
 
@@ -74,9 +75,9 @@ void initSD(int chip_select){
   if (!SD.begin(CHIP_SELECT)) {
     Serial.println("initialization failed!");
     while (1);
-  }
+  }//if
   Serial.println("initialization done.");
-}
+}//initSD()
 
 void initGPS(){
   Serial.print("Initializing GPS...");
@@ -88,14 +89,14 @@ void initGPS(){
   {
     Serial.println(F("\nu-blox GNSS not detected at default I2C address. Please check wiring. Freezing."));
     while (1);
-  }
+  }//if
 
   myGNSS.setI2COutput(COM_TYPE_UBX); //Set the I2C port to output UBX only (turn off NMEA noise)
   myGNSS.saveConfigSelective(VAL_CFG_SUBSEC_IOPORT); //Save (only) the communications port settings to flash and BBR
 
   last_gps_query_time = millis(); 
   Serial.println("finished GPS init.");
-}
+}//initGPS()
 
 
 
@@ -104,7 +105,7 @@ void initGPS(){
 void logStr(String data){
   logFile.print(data);
   logFile.flush();
-}
+}//logStr()
 
 
 // Populates empty input array with: [lat, long, alt, satellites]
@@ -122,11 +123,11 @@ void getCoordinates(long* toPopulate){
     toPopulate[1] = myGNSS.getLongitude();
     toPopulate[2] = myGNSS.getAltitude();
     toPopulate[3] = myGNSS.getSIV();
-  }
+  }//if
   else{
     toPopulate[3] = -1;
-  }
-}
+  }//else
+}//getCoordinates()
 
 
 
@@ -149,9 +150,37 @@ double trackingAngleError(long* target, long* current, long* previous){
   if( tx*vy - ty*vx < 0){
     // if target_vector cross-product velocity < 0, the desired trajectory is to the left of the current trajectory, so negate alpha:
     alpha *= -1;  
-  }
+  }//if 
   return alpha;
-}
+}//trackingAngleError()
+
+
+// USED DURING THE INITIAL LINEAR TRAJECTORY PHASE
+// returns servo value based on
+//    alpha (radians): current trajectory's error angle (as returned by trackingAngleError)
+//    currentT (milliseconds): time of current measurement, used for delta since last measurement (units are irrelevant because of constants, but just use milliseconds for consistency)
+// updates previousT, previous, and integral global helper variables
+double linearPID(double alpha, double currentT){
+  // remember, partial = target - current, and target is 0 (which is where the angle between v and trajectory is 0)
+  // therefore: partial = -alpha
+  double partial = -alpha;
+  double deltaT = currentT - previousT;
+
+  if(alpha * previous < 0){  // if the signs of the current and previous angle differ
+    // we must reset the integral summation
+    integral = 0;  // we'll just set it to zero since we don't actually know when it last crossed
+  }//if
+  else{
+    integral += partial*deltaT;
+  }//else 
+  double pid = partial * LINEAR_PARTIAL  +  (partial-previous)/deltaT * LINEAR_DERIVATIVE  +  integral * LINEAR_INTEGRAL;
+  if(INVERT_PID){
+    pid *= -1;
+  }//if 
+  previous = partial;
+  previousT = millis();
+  return pid;
+}//linearPID
 
 
 
@@ -164,5 +193,5 @@ void loop() {
     String gps_str = "Lat: "+String(coords[0])+"(microdeg) Long: "+String(coords[1])+"(microdeg) Alt: "+String(coords[2])+"(mm) Satellites: "+String(coords[3])+"\n";
     logStr(gps_str);
     Serial.print("Logging:"+gps_str);
-  }
-}
+  }//if
+}//loop
