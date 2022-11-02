@@ -1,6 +1,5 @@
 #include <SPI.h>
 #include <SD.h>
-#include <MicroNMEA.h> //http://librarymanager/All#MicroNMEA
 #include <Wire.h> //Needed for I2C to GNSS
 
 #include <SparkFun_u-blox_GNSS_Arduino_Library.h> //http://librarymanager/All#SparkFun_u-blox_GNSS
@@ -11,10 +10,11 @@ const int CHIP_SELECT = 10;
 
 
 SFE_UBLOX_GNSS myGNSS;
-char nmeaBuffer[100];
-MicroNMEA nmea(nmeaBuffer, sizeof(nmeaBuffer));
-
 File logFile;
+
+
+int LAST_GPS_QUERY_TIME;
+int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
 
 
 void setup() {
@@ -24,7 +24,7 @@ void setup() {
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
-  initSd(CHIP_SELECT);
+  initSD(CHIP_SELECT);
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
   logFile = SD.open(logFileName, FILE_WRITE);
@@ -39,25 +39,12 @@ void setup() {
     // if the file didn't open, print an error:
     Serial.println("error opening test.txt");
   }
-  Wire.begin();
-
-  if (myGNSS.begin() == false)
-  {
-    Serial.println(F("u-blox GNSS not detected at default I2C address. Please check wiring. Freezing."));
-    while (1);
-  }
-
-  myGNSS.setI2COutput(COM_TYPE_UBX | COM_TYPE_NMEA); //Set the I2C port to output both NMEA and UBX messages
-  myGNSS.saveConfigSelective(VAL_CFG_SUBSEC_IOPORT); //Save (only) the communications port settings to flash and BBR
-
-  myGNSS.setProcessNMEAMask(SFE_UBLOX_FILTER_NMEA_ALL); // Make sure the library is passing all NMEA messages to processNMEA
-
-  myGNSS.setProcessNMEAMask(SFE_UBLOX_FILTER_NMEA_GGA); // Or, we can be kind to MicroNMEA and _only_ pass the GGA messages to it
+  initGPS();
 
 }
 
 
-void initSd(int chip_select){
+void initSD(int chip_select){
   Serial.print("Initializing SD card...");
   pinMode(chip_select, OUTPUT);
   delay(100);
@@ -68,6 +55,25 @@ void initSd(int chip_select){
   Serial.println("initialization done.");
 }
 
+void initGPS(){
+  Serial.println("Initializing GPS...");
+  Wire.begin();
+
+  //myGNSS.enableDebugging(); // Uncomment this line to enable helpful debug messages on Serial
+
+  if (myGNSS.begin() == false) //Connect to the u-blox module using Wire port
+  {
+    Serial.println(F("u-blox GNSS not detected at default I2C address. Please check wiring. Freezing."));
+    while (1);
+  }
+
+  myGNSS.setI2COutput(COM_TYPE_UBX); //Set the I2C port to output UBX only (turn off NMEA noise)
+  myGNSS.saveConfigSelective(VAL_CFG_SUBSEC_IOPORT); //Save (only) the communications port settings to flash and BBR
+
+  LAST_GPS_QUERY_TIME = millis(); 
+  Serial.println("Finished GPS init.");
+}
+
 
 void logStr(String data){
   logFile.print(data);
@@ -75,39 +81,34 @@ void logStr(String data){
 }
 
 
-void loop() {
-  // put your main code here, to run repeatedly:
-  myGNSS.checkUblox(); //See if new data is available. Process bytes as they come in.
-
-  if(nmea.isValid() == true)
+// Populates empty input array with: [lat, long, alt, satellites]
+// NOTE: satellites is also used as a status indicator
+// 0 means no satellites but i2c comms completed
+// -1 means GPS_QUERY_DELAY milliseconds have not passed since the last query, so didn't even check
+// and likely inaccurate unless satellites >= 3
+void getCoordinates(long* toPopulate){
+  //Query module only every second. Doing it more often will just cause I2C traffic.
+  //The module only responds when a new position is available
+  if (millis() - LAST_GPS_QUERY_TIME > GPS_QUERY_DELAY)
   {
-    long latitude_mdeg = nmea.getLatitude();
-    long longitude_mdeg = nmea.getLongitude();
-
-    Serial.print("Latitude (deg): ");
-    Serial.println(latitude_mdeg / 1000000., 6);
-    Serial.print("Longitude (deg): ");
-    Serial.println(longitude_mdeg / 1000000., 6);
-
-    nmea.clear(); // Clear the MicroNMEA storage to make sure we are getting fresh data
+    LAST_GPS_QUERY_TIME = millis(); //Update the timer
+    toPopulate[0] = myGNSS.getLatitude();
+    toPopulate[1] = myGNSS.getLongitude();
+    toPopulate[2] = myGNSS.getAltitude();
+    toPopulate[3] = myGNSS.getSIV();
   }
-  else
-  {
-    Serial.println("Waiting for fresh data");
+  else{
+    toPopulate[3] = -1;
   }
-
-  delay(250); //Don't pound too hard on the I2C bus
-
 }
 
-
-//This function gets called from the SparkFun u-blox Arduino Library
-//As each NMEA character comes in you can specify what to do with it
-//Useful for passing to other libraries like tinyGPS, MicroNMEA, or even
-//a buffer, radio, etc.
-void SFE_UBLOX_GNSS::processNMEA(char incoming)
-{
-  //Take the incoming char from the u-blox I2C port and pass it on to the MicroNMEA lib
-  //for sentence cracking
-  nmea.process(incoming);
+void loop() {
+  long coords[4];
+  getCoordinates(&coords[0]);
+  if(coords[3] >=3){
+    Serial.print("Lat: "); Serial.print(coords[0]); 
+    Serial.print("mdeg Long: "); Serial.print(coords[1]);
+    Serial.print("mdeg Alt: "); Serial.print(coords[2]);
+    Serial.print("(mm) Satellites: "); Serial.println(coords[3]);
+  }
 }
