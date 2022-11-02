@@ -6,19 +6,41 @@
 #include <SparkFun_u-blox_GNSS_Arduino_Library.h> //http://librarymanager/All#SparkFun_u-blox_GNSS
 
 
+// PID Constants:
+const long LINEAR_PARTIAL = 1;  // used during honing phase (when trajectory towards target is ideally linear)
+const long LINEAR_INTEGRAL = .1;
+const long LINEAR_DERIVATIVE = .25;
+
+const long APPROACH_PARTIAL = 1;  // used during final approach phase (when trajectory is ideally a circle around target)
+const long APPROACH_INTEGRAL = .1;
+const long APPROACH_DERIVATIVE = .25;
+
+const bool INVERT = false;  // use this to invert right/left based on the servo tensioning
+
+
+// Configuration Constants:
 String logFileName = "log1.txt";
 const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
+int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
+
+long target_coordinates[3] = {0, 0, 0};  // TODO MAKE THIS EASY TO SET
 
 
+// Device Global Objects:
 SFE_UBLOX_GNSS myGNSS;
 Servo tensionerServo;
 File logFile;
 
 
-int LAST_GPS_QUERY_TIME;
-int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
+// helper global vars
+int last_gps_query_time;
+long integral;  // PID integral adder variable
+long previous;  // PID previous partial
 
+
+
+// setup
 
 void setup() {
   // Open serial communications and wait for port to open:
@@ -41,6 +63,9 @@ void setup() {
 
 }
 
+
+
+// init methods
 
 void initSD(int chip_select){
   Serial.print("Initializing SD card reader...");
@@ -68,10 +93,13 @@ void initGPS(){
   myGNSS.setI2COutput(COM_TYPE_UBX); //Set the I2C port to output UBX only (turn off NMEA noise)
   myGNSS.saveConfigSelective(VAL_CFG_SUBSEC_IOPORT); //Save (only) the communications port settings to flash and BBR
 
-  LAST_GPS_QUERY_TIME = millis(); 
+  last_gps_query_time = millis(); 
   Serial.println("finished GPS init.");
 }
 
+
+
+// device interfacing helpers
 
 void logStr(String data){
   logFile.print(data);
@@ -87,9 +115,9 @@ void logStr(String data){
 void getCoordinates(long* toPopulate){
   //Query module only every second. Doing it more often will just cause I2C traffic.
   //The module only responds when a new position is available
-  if (millis() - LAST_GPS_QUERY_TIME > GPS_QUERY_DELAY)
+  if (millis() - last_gps_query_time > GPS_QUERY_DELAY)
   {
-    LAST_GPS_QUERY_TIME = millis(); //Update the timer
+    last_gps_query_time = millis(); //Update the timer
     toPopulate[0] = myGNSS.getLatitude();
     toPopulate[1] = myGNSS.getLongitude();
     toPopulate[2] = myGNSS.getAltitude();
@@ -99,6 +127,35 @@ void getCoordinates(long* toPopulate){
     toPopulate[3] = -1;
   }
 }
+
+
+
+// Calculation helpers
+
+// given 3 arrays of [lat, long]
+// returns error angle
+//  magnitude: radian angle between the current velocity and the straight line path to the target coordinates
+//  sign: positive if the target trajectory path is to the right of the current velocity (i.e. target_vector x velocity > 0), else negative
+// therefore, return value is within (-pi,pi]
+double trackingAngleError(long* target, long* current, long* previous){
+  long vx = current[1] - previous[1];  // velocity x (east,west) component
+  // vx is actually this times r/dt, but whatever, magnitudes cancel later anyway
+  long vy = current[0] - previous[0];  // velocity y (north,south) component
+  long tx = target[1] - current[1];  // straight line to target (desired trajectory) x component
+  long ty = target[0] - current[0];  // desired trajectory y component
+  double alpha = abs(acos(
+    (tx*vx + ty*vy) / sqrt( (sq(tx) + sq(ty)) * (sq(vx) + sq(vy)) )
+  )); // absolute value( arccos( dot product of {desired, current} trajectory unit vectors ) )
+  if( tx*vy - ty*vx < 0){
+    // if target_vector cross-product velocity < 0, the desired trajectory is to the left of the current trajectory, so negate alpha:
+    alpha *= -1;  
+  }
+  return alpha;
+}
+
+
+
+// loop
 
 void loop() {
   long coords[4];
