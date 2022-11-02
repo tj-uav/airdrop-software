@@ -1,15 +1,18 @@
 #include <SPI.h>
 #include <SD.h>
 #include <Wire.h> //Needed for I2C to GNSS
+#include<Servo.h>
 
 #include <SparkFun_u-blox_GNSS_Arduino_Library.h> //http://librarymanager/All#SparkFun_u-blox_GNSS
 
 
-String logFileName = "log.txt";
+String logFileName = "log1.txt";
 const int CHIP_SELECT = 10;
+const int SERVO_SIGNAL_PIN = 3;
 
 
 SFE_UBLOX_GNSS myGNSS;
+Servo tensionerServo;
 File logFile;
 
 
@@ -24,18 +27,13 @@ void setup() {
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
+  tensionerServo.attach(SERVO_SIGNAL_PIN);
   initSD(CHIP_SELECT);
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
   logFile = SD.open(logFileName, FILE_WRITE);
   // if the file opened okay, write to it:
-  if (logFile) {
-    Serial.print("Writing to test.txt...");
-    logStr("Test---------");
-    logFile.close();
-    Serial.println("done.");
-  } 
-  else {
+  if (!logFile){
     // if the file didn't open, print an error:
     Serial.println("error opening test.txt");
   }
@@ -45,7 +43,7 @@ void setup() {
 
 
 void initSD(int chip_select){
-  Serial.print("Initializing SD card...");
+  Serial.print("Initializing SD card reader...");
   pinMode(chip_select, OUTPUT);
   delay(100);
   if (!SD.begin(CHIP_SELECT)) {
@@ -56,14 +54,14 @@ void initSD(int chip_select){
 }
 
 void initGPS(){
-  Serial.println("Initializing GPS...");
+  Serial.print("Initializing GPS...");
   Wire.begin();
 
   //myGNSS.enableDebugging(); // Uncomment this line to enable helpful debug messages on Serial
 
   if (myGNSS.begin() == false) //Connect to the u-blox module using Wire port
   {
-    Serial.println(F("u-blox GNSS not detected at default I2C address. Please check wiring. Freezing."));
+    Serial.println(F("\nu-blox GNSS not detected at default I2C address. Please check wiring. Freezing."));
     while (1);
   }
 
@@ -71,7 +69,7 @@ void initGPS(){
   myGNSS.saveConfigSelective(VAL_CFG_SUBSEC_IOPORT); //Save (only) the communications port settings to flash and BBR
 
   LAST_GPS_QUERY_TIME = millis(); 
-  Serial.println("Finished GPS init.");
+  Serial.println("finished GPS init.");
 }
 
 
@@ -106,9 +104,8 @@ void loop() {
   long coords[4];
   getCoordinates(&coords[0]);
   if(coords[3] >=3){
-    Serial.print("Lat: "); Serial.print(coords[0]); 
-    Serial.print("mdeg Long: "); Serial.print(coords[1]);
-    Serial.print("mdeg Alt: "); Serial.print(coords[2]);
-    Serial.print("(mm) Satellites: "); Serial.println(coords[3]);
+    String gps_str = "Lat: "+String(coords[0])+"(microdeg) Long: "+String(coords[1])+"(microdeg) Alt: "+String(coords[2])+"(mm) Satellites: "+String(coords[3])+"\n";
+    logStr(gps_str);
+    Serial.print("Logging:"+gps_str);
   }
 }
