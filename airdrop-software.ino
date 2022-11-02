@@ -36,7 +36,7 @@ File logFile;
 // helper global vars
 int last_gps_query_time;
 long integral;  // PID integral adder variable
-long previous;  // PID previous partial
+long previousPartial;  // PID previous partial
 long previousT;  //  time of previous measurement
 
 
@@ -163,22 +163,25 @@ double trackingAngleError(long* target, long* current, long* previous){
 double linearPID(double alpha, double currentT){
   // remember, partial = target - current, and target is 0 (which is where the angle between v and trajectory is 0)
   // therefore: partial = -alpha
-  double partial = -alpha;
+  double currentPartial = -alpha;
   double deltaT = currentT - previousT;
 
-  if(alpha * previous < 0){  // if the signs of the current and previous angle differ
+  if(currentPartial * previousPartial < 0){  // if the signs of the current and previous angle differ
     // we must reset the integral summation
     integral = 0;  // we'll just set it to zero since we don't actually know when it last crossed
   }//if
   else{
-    integral += partial*deltaT;
+    integral += currentPartial*deltaT;
   }//else 
-  double pid = partial * LINEAR_PARTIAL  +  (partial-previous)/deltaT * LINEAR_DERIVATIVE  +  integral * LINEAR_INTEGRAL;
+  double pid = 
+    currentPartial * LINEAR_PARTIAL  
+    +  (currentPartial-previousPartial)/deltaT * LINEAR_DERIVATIVE  
+    +  integral * LINEAR_INTEGRAL;  //double pid
   if(INVERT_PID){
     pid *= -1;
   }//if 
-  previous = partial;
-  previousT = millis();
+  previousPartial = currentPartial;
+  previousT = currentT;
   return pid;
 }//linearPID
 
