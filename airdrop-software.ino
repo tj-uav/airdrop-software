@@ -26,7 +26,7 @@ const int SERVO_SIGNAL_PIN = 3;
 const int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
 const int COORDINATES_LENGTH = 5;
 
-long targetCoordinates[3] = {38817517, -77168285, 0};  // TODO MAKE THIS EASY TO SET
+long targetCoordinates[3] = {388175170, -771682850, 0};  // TODO MAKE THIS EASY TO SET
 
 
 // Device Global Objects:
@@ -147,9 +147,11 @@ double trackingAngleError(long* target, long* current, long* previous){
   long tx = target[1] - current[1];  // straight line to target (desired trajectory) x component
   long ty = target[0] - current[0];  // desired trajectory y component
   String vectorStr = "vx: "+String(vx)+" vy: "+String(vy)+" tx: "+String(tx)+" ty: "+String(ty);
+  Serial.print("Magnitude product"+String((sq(tx) + sq(ty)) * (sq(vx) + sq(vy)) ));
   double alpha = abs(acos(
-    (tx*vx + ty*vy) / sqrt( (sq(tx) + sq(ty)) * (sq(vx) + sq(vy)) )
+    (tx*vx + ty*vy) / (sqrt(sq(tx) + sq(ty)) * sqrt(sq(vx) + sq(vy)))
   )); // absolute value( arccos( dot product of {desired, current} trajectory unit vectors ) )
+  
   if( tx*vy - ty*vx < 0){
     // if target_vector cross-product velocity < 0, the desired trajectory is to the left of the current trajectory, so negate alpha:
     alpha *= -1;  
