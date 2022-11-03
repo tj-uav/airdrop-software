@@ -22,9 +22,11 @@ const bool INVERT_PID = false;  // use this to invert right/left servo tensionin
 String logFileName = "log1.txt";
 const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
-int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
 
-long target_coordinates[3] = {0, 0, 0};  // TODO MAKE THIS EASY TO SET
+const int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
+const int COORDINATES_LENGTH = 5;
+
+long targetCoordinates[3] = {38817517, -77168285, 0};  // TODO MAKE THIS EASY TO SET
 
 
 // Device Global Objects:
@@ -38,7 +40,7 @@ int last_gps_query_time;
 long integral;  // PID integral adder variable
 long previousPartial;  // PID previous partial
 long previousT;  //  time of previous measurement
-
+long previousCoordinates[COORDINATES_LENGTH];
 
 
 // setup
@@ -61,7 +63,7 @@ void setup() {
     Serial.println("error opening test.txt");
   }//if
   initGPS();
-
+  previousCoordinates[0] = previousCoordinates[1] = previousCoordinates[2] = previousCoordinates[3] = previousCoordinates[4] = 0;
 }//setup()
 
 
@@ -108,17 +110,17 @@ void logStr(String data){
 }//logStr()
 
 
-// Populates empty input array with: [lat, long, alt, satellites]
+// Populates empty input array with: [lat, long, alt, satellites, measurement_time]
 // NOTE: satellites is also used as a status indicator
-// 0 means no satellites but i2c comms completed
-// -1 means GPS_QUERY_DELAY milliseconds have not passed since the last query, so didn't even check
-// and likely inaccurate unless satellites >= 3
+//   0 means no satellites but i2c comms completed
+//   -1 means GPS_QUERY_DELAY milliseconds have not passed since the last query, so didn't even check
+//   and likely inaccurate unless satellites >= 3
 void getCoordinates(long* toPopulate){
   //Query module only every second. Doing it more often will just cause I2C traffic.
   //The module only responds when a new position is available
   if (millis() - last_gps_query_time > GPS_QUERY_DELAY)
   {
-    last_gps_query_time = millis(); //Update the timer
+    toPopulate[4] = last_gps_query_time = millis(); //Update the time
     toPopulate[0] = myGNSS.getLatitude();
     toPopulate[1] = myGNSS.getLongitude();
     toPopulate[2] = myGNSS.getAltitude();
@@ -144,6 +146,7 @@ double trackingAngleError(long* target, long* current, long* previous){
   long vy = current[0] - previous[0];  // velocity y (north,south) component
   long tx = target[1] - current[1];  // straight line to target (desired trajectory) x component
   long ty = target[0] - current[0];  // desired trajectory y component
+  String vectorStr = "vx: "+String(vx)+" vy: "+String(vy)+" tx: "+String(tx)+" ty: "+String(ty);
   double alpha = abs(acos(
     (tx*vx + ty*vy) / sqrt( (sq(tx) + sq(ty)) * (sq(vx) + sq(vy)) )
   )); // absolute value( arccos( dot product of {desired, current} trajectory unit vectors ) )
@@ -151,6 +154,7 @@ double trackingAngleError(long* target, long* current, long* previous){
     // if target_vector cross-product velocity < 0, the desired trajectory is to the left of the current trajectory, so negate alpha:
     alpha *= -1;  
   }//if 
+  Serial.println(vectorStr+" alpha: "+String(alpha));
   return alpha;
 }//trackingAngleError()
 
@@ -183,18 +187,32 @@ double linearPID(double alpha, double currentT){
   previousPartial = currentPartial;
   previousT = currentT;
   return pid;
-}//linearPID
+}//linearPID()
 
+
+void linearIteration(long* current_coords){
+
+}//linearIteration()
+
+
+void copyTo(long* values, long* target, int length){
+  for(int i = 0; i < length; i++){
+    target[i] = values[i];
+  }//for
+}//copyTo
 
 
 // loop
 
 void loop() {
-  long coords[4];
+  long coords[COORDINATES_LENGTH];
   getCoordinates(&coords[0]);
   if(coords[3] >=3){
     String gps_str = "Lat: "+String(coords[0])+"(microdeg) Long: "+String(coords[1])+"(microdeg) Alt: "+String(coords[2])+"(mm) Satellites: "+String(coords[3])+"\n";
     logStr(gps_str);
     Serial.print("Logging:"+gps_str);
+    trackingAngleError(targetCoordinates, coords, previousCoordinates);
+    copyTo(coords, previousCoordinates, COORDINATES_LENGTH);
   }//if
+  delay(1000);
 }//loop
