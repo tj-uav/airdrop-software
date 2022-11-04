@@ -18,6 +18,12 @@ const long APPROACH_DERIVATIVE = .25;
 const bool INVERT_PID = false;  // use this to invert right/left servo tensioning
 
 
+// MISC CONSTANTS
+const long GPS_LAT_CORRECTION =   
+// this is added to the GPS's output to get the actual
+// used to correct for the massive ~10 meter bias in the GPS's position
+
+
 // Configuration Constants:
 String logFileName = "log1.txt";
 const int CHIP_SELECT = 10;
@@ -26,7 +32,7 @@ const int SERVO_SIGNAL_PIN = 3;
 const int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
 const int COORDINATES_LENGTH = 5;
 
-long targetCoordinates[3] = {388175170, -771682850, 0};  // TODO MAKE THIS EASY TO SET
+long targetCoordinates[3] = {388173876, -771681275, 0};  // TODO MAKE THIS EASY TO SET
 
 
 // Device Global Objects:
@@ -135,7 +141,7 @@ void getCoordinates(long* toPopulate){
 
 // Calculation helpers
 
-// given 3 arrays of [lat, long]
+// given 3 arrays of [lat, long]  angles MUST BE given in same degree power (i.e. degrees*10^7, is what u-blox returns)
 // returns error angle
 //  magnitude: radian angle between the current velocity and the straight line path to the target coordinates
 //  sign: positive if the target trajectory path is to the right of the current velocity (i.e. target_vector x velocity > 0), else negative
@@ -210,7 +216,7 @@ void loop() {
   long coords[COORDINATES_LENGTH];
   getCoordinates(&coords[0]);
   if(coords[3] >=3){
-    String gps_str = "Lat: "+String(coords[0])+"(microdeg) Long: "+String(coords[1])+"(microdeg) Alt: "+String(coords[2])+"(mm) Satellites: "+String(coords[3])+"\n";
+    String gps_str = "Lat: "+String(coords[0])+"(10^7deg) Long: "+String(coords[1])+"(10^7deg) Alt: "+String(coords[2])+"(mm) Satellites: "+String(coords[3])+"\n";
     logStr(gps_str);
     Serial.print("Logging:"+gps_str);
     trackingAngleError(targetCoordinates, coords, previousCoordinates);
