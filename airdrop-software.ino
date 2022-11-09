@@ -23,7 +23,7 @@ const int SERVO_BOUNDS[2] = {600, 2400};
 
 
 // Configuration Constants:
-String logFileName = "log1.txt";
+String logFileName = "log2.txt";
 const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
 
