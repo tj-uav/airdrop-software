@@ -7,21 +7,19 @@
 
 
 // PID Constants:
-const long LINEAR_PARTIAL = 1;  // used during honing phase (when trajectory towards target is ideally linear)
-const long LINEAR_INTEGRAL = .1;
-const long LINEAR_DERIVATIVE = .25;
+const double LINEAR_PARTIAL = 1/3.14159;  // used during honing phase (when trajectory towards target is ideally linear)
+const double LINEAR_INTEGRAL = 0;
+const double LINEAR_DERIVATIVE = 0;
 
-const long APPROACH_PARTIAL = 1;  // used during final approach phase (when trajectory is ideally a circle around target)
-const long APPROACH_INTEGRAL = .1;
-const long APPROACH_DERIVATIVE = .25;
+const double APPROACH_PARTIAL = 1;  // used during final approach phase (when trajectory is ideally a circle around target)
+const double APPROACH_INTEGRAL = .1;
+const double APPROACH_DERIVATIVE = .25;
 
 const bool INVERT_PID = false;  // use this to invert right/left servo tensioning
 
 
 // MISC CONSTANTS
-const long GPS_LAT_CORRECTION =   
-// this is added to the GPS's output to get the actual
-// used to correct for the massive ~10 meter bias in the GPS's position
+const int SERVO_BOUNDS[2] = {600, 2400};
 
 
 // Configuration Constants:
@@ -59,6 +57,8 @@ void setup() {
     ; // wait for serial port to connect. Needed for native USB port only
   }//while
   tensionerServo.attach(SERVO_SIGNAL_PIN);
+  tensionerServo.write(0);
+  Serial.println("Actuated servo?");
   initSD(CHIP_SELECT);
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
@@ -69,7 +69,7 @@ void setup() {
     Serial.println("error opening test.txt");
   }//if
   initGPS();
-  previousCoordinates[0] = previousCoordinates[1] = previousCoordinates[2] = previousCoordinates[3] = previousCoordinates[4] = 0;
+  getCoordinates(previousCoordinates);
 }//setup()
 
 
@@ -168,7 +168,7 @@ double trackingAngleError(long* target, long* current, long* previous){
 
 
 // USED DURING THE INITIAL LINEAR TRAJECTORY PHASE
-// returns servo value based on
+// returns servo value (double) within [-1,1] based on
 //    alpha (radians): current trajectory's error angle (as returned by trackingAngleError)
 //    currentT (milliseconds): time of current measurement, used for delta since last measurement (units are irrelevant because of constants, but just use milliseconds for consistency)
 // updates previousT, previous, and integral global helper variables
@@ -194,8 +194,21 @@ double linearPID(double alpha, double currentT){
   }//if 
   previousPartial = currentPartial;
   previousT = currentT;
+  if(pid>1){
+    pid = 1.0;
+  }//if
+  else if(pid<-1){
+    pid = -1.0;
+  }//elif
   return pid;
 }//linearPID()
+
+
+// input should be within [-1,1]
+void servoActuate(double position){
+  int microseconds = (SERVO_BOUNDS[1]-SERVO_BOUNDS[0])*(position+1)/2 + SERVO_BOUNDS[0];
+  tensionerServo.writeMicroseconds(microseconds);
+}//servoActuate
 
 
 void linearIteration(long* current_coords){
@@ -219,7 +232,10 @@ void loop() {
     String gps_str = "Lat: "+String(coords[0])+"(10^7deg) Long: "+String(coords[1])+"(10^7deg) Alt: "+String(coords[2])+"(mm) Satellites: "+String(coords[3])+"\n";
     logStr(gps_str);
     Serial.print("Logging:"+gps_str);
-    trackingAngleError(targetCoordinates, coords, previousCoordinates);
+    double alpha = trackingAngleError(targetCoordinates, coords, previousCoordinates);
+    double rawPIDVal = linearPID(alpha, coords[4]);
+    Serial.println("Error angle:"+String(alpha)+" rawPID:"+String(rawPIDVal));
+    servoActuate(rawPIDVal);
     copyTo(coords, previousCoordinates, COORDINATES_LENGTH);
   }//if
   delay(1000);
