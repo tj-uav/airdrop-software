@@ -23,7 +23,7 @@ const int SERVO_BOUNDS[2] = {600, 2400};
 
 
 // Configuration Constants:
-String logFileName = "log2.txt";
+String logFilePrefix = "log";
 const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
 
@@ -59,15 +59,9 @@ void setup() {
   tensionerServo.attach(SERVO_SIGNAL_PIN);
   tensionerServo.write(0);
   Serial.println("Actuated servo?");
-  initSD(CHIP_SELECT);
+  logFile = initLog(CHIP_SELECT, logFilePrefix, ".txt");
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
-  logFile = SD.open(logFileName, FILE_WRITE);
-  // if the file opened okay, write to it:
-  if (!logFile){
-    // if the file didn't open, print an error:
-    Serial.println("error opening test.txt");
-  }//if
   initGPS();
   getCoordinates(previousCoordinates);
 }//setup()
@@ -76,15 +70,65 @@ void setup() {
 
 // init methods
 
-void initSD(int chip_select){
+// passed file path should not include the .txt, set that as fileLabel
+// may be in a deep directory (will create if necessary)
+File initLog(int chipSelect, String filePath, String fileLabel){
+  filePath.toUpperCase();  // for some reason SD breakout defaults to all caps
+  fileLabel.toUpperCase();
   Serial.print("Initializing SD card reader...");
-  pinMode(chip_select, OUTPUT);
+  pinMode(chipSelect, OUTPUT);
   delay(100);
   if (!SD.begin(CHIP_SELECT)) {
-    Serial.println("initialization failed!");
+    Serial.println("initialization failed! (BLOCKING THREAD)");
     while (1);
   }//if
   Serial.println("initialization done.");
+  int fileIndex = filePath.lastIndexOf("/")+1;
+  Serial.print("Creating log file...");
+  String dirPath = "/";
+  if(fileIndex != -1){
+    dirPath += filePath.substring(0,fileIndex-1);  // -1 to exclude the slash
+    if(!SD.exists(dirPath)){
+      SD.mkdir(dirPath);
+    }//if
+    Serial.print("created directory...");
+  }//if
+  File currentDir = SD.open(dirPath);
+  int latestVer = 0;
+  bool isValid;
+  do{
+    File currentFile = currentDir.openNextFile();
+    isValid = currentFile == true;
+    if(isValid){
+      String fileName = currentFile.name();
+      if(fileName.indexOf(filePath) == 0){  // in other words, the file we're looking at starts with filePath
+        int numberEndIndex = fileName.indexOf(fileLabel);
+        String versionStr = fileName.substring(filePath.length(), numberEndIndex);
+        // now we have to make sure it's purely numeric so we know this is in fact the same file just with a version number
+        bool isNum = true;
+        for(int index = 0; index<versionStr.length() && isNum; index+=1){
+          isNum = isDigit(versionStr.charAt(index));  // essentially breaks if this ever becomes false
+        }//for
+        if(isNum){
+          int currentVer = versionStr.toInt();  // returns 0 if it's not a valid int
+          // would only be invalid in cases like log1.txt vs. logFile0.txt (since it would try to convert File0 to int)
+          // however, because it's 0, we don't have to worry about this interfering with valid files
+          if(currentVer > latestVer){
+            latestVer = currentVer;
+          }//if
+        }//if
+      }//if
+      currentFile.close();
+    }//if
+  } while(isValid);  // while it's a valid file
+  String newFile = filePath+String(latestVer)+fileLabel;
+  File fileObj = SD.open(newFile, FILE_WRITE);
+  if(!fileObj){
+    Serial.println("file object initialization failed! (BLOCKING THREAD)");
+    while (1);
+  }//if
+  Serial.println("created file "+newFile);
+  return fileObj;
 }//initSD()
 
 void initGPS(){
