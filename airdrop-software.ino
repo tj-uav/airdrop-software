@@ -20,10 +20,11 @@ const bool INVERT_PID = false;  // use this to invert right/left servo tensionin
 
 // MISC CONSTANTS
 const int SERVO_BOUNDS[2] = {600, 2400};
+const int MIN_SATELLITES = 4;  // must have at least this many satellites for coordinates to be valid
 
 
 // Configuration Constants:
-String logFilePrefix = "log";
+String logFilePrefix = "test/log";
 const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
 
@@ -86,48 +87,57 @@ File initLog(int chipSelect, String filePath, String fileLabel){
   int fileIndex = filePath.lastIndexOf("/")+1;
   Serial.print("Creating log file...");
   String dirPath = "/";
-  if(fileIndex != -1){
-    dirPath += filePath.substring(0,fileIndex-1);  // -1 to exclude the slash
+  String rawFilePrefix = filePath;
+  bool newDir = false;
+  if(fileIndex != 0){
+    dirPath += filePath.substring(0,fileIndex);
+    rawFilePrefix = filePath.substring(fileIndex, filePath.length());
     if(!SD.exists(dirPath)){
       SD.mkdir(dirPath);
+      newDir = true;
+      Serial.print("created directory...");
     }//if
-    Serial.print("created directory...");
   }//if
+  Serial.print("directory: "+dirPath+"...");
   File currentDir = SD.open(dirPath);
-  int latestVer = 0;
+  int latestVer = -1;
   bool isValid;
-  do{
-    File currentFile = currentDir.openNextFile();
-    isValid = currentFile == true;
-    if(isValid){
-      String fileName = currentFile.name();
-      if(fileName.indexOf(filePath) == 0){  // in other words, the file we're looking at starts with filePath
-        int numberEndIndex = fileName.indexOf(fileLabel);
-        String versionStr = fileName.substring(filePath.length(), numberEndIndex);
-        // now we have to make sure it's purely numeric so we know this is in fact the same file just with a version number
-        bool isNum = true;
-        for(int index = 0; index<versionStr.length() && isNum; index+=1){
-          isNum = isDigit(versionStr.charAt(index));  // essentially breaks if this ever becomes false
-        }//for
-        if(isNum){
-          int currentVer = versionStr.toInt();  // returns 0 if it's not a valid int
-          // would only be invalid in cases like log1.txt vs. logFile0.txt (since it would try to convert File0 to int)
-          // however, because it's 0, we don't have to worry about this interfering with valid files
-          if(currentVer > latestVer){
-            latestVer = currentVer;
+  if(!newDir){  // if it's not a new dir, we have to check for existing log files to start numbering
+    do{
+      File currentFile = currentDir.openNextFile();
+      isValid = currentFile == true;
+      if(isValid){
+        String fileName = currentFile.name();
+        if(fileName.indexOf(rawFilePrefix) == 0){  // in other words, the file we're looking at starts with filePath
+          int numberEndIndex = fileName.indexOf(fileLabel);
+          String versionStr = fileName.substring(rawFilePrefix.length(), numberEndIndex);
+          // now we have to make sure it's purely numeric so we know this is in fact the same file just with a version number
+          bool isNum = true;
+          for(int index = 0; index<versionStr.length() && isNum; index+=1){
+            isNum = isDigit(versionStr.charAt(index));  // essentially breaks if this ever becomes false
+          }//for
+          if(isNum){
+            int currentVer = versionStr.toInt();  // returns 0 if it's not a valid int
+            // would only be invalid in cases like log1.txt vs. logFile0.txt (since it would try to convert File0 to int)
+            // however, because it's 0, we don't have to worry about this interfering with valid files
+            if(currentVer > latestVer){
+              latestVer = currentVer;
+            }//if
           }//if
         }//if
+        currentFile.close();
       }//if
-      currentFile.close();
-    }//if
-  } while(isValid);  // while it's a valid file
+    } while(isValid);  // while it's a valid file
+  }//if
+  Serial.print("found version: "+String(latestVer)+"...");
+  latestVer += 1;  // we want to make it the next version
   String newFile = filePath+String(latestVer)+fileLabel;
   File fileObj = SD.open(newFile, FILE_WRITE);
   if(!fileObj){
     Serial.println("file object initialization failed! (BLOCKING THREAD)");
     while (1);
   }//if
-  Serial.println("created file "+newFile);
+  Serial.println("created file "+newFile+".");
   return fileObj;
 }//initSD()
 
@@ -156,6 +166,7 @@ void initGPS(){
 
 void logStr(String data){
   logFile.print(data);
+  Serial.print(data);
   logFile.flush();
 }//logStr()
 
@@ -175,6 +186,19 @@ void getCoordinates(long* toPopulate){
     toPopulate[1] = myGNSS.getLongitude();
     toPopulate[2] = myGNSS.getAltitude();
     toPopulate[3] = myGNSS.getSIV();
+    
+    if(toPopulate[3] >= MIN_SATELLITES){
+      String gps_str = "";
+      logStr(gps_str);
+      if (myGNSS.getDateValid()){
+        gps_str += "Date:"+String(myGNSS.getYear())+"-"+String(myGNSS.getMonth())+"-"+String(myGNSS.getDay());
+      }//if
+      if (myGNSS.getTimeValid()){
+        gps_str += ", Time:"+String(myGNSS.getHour())+":"+String(myGNSS.getMinute())+":"+String(myGNSS.getSecond());
+      }//if
+      gps_str += ", Lat:"+String(toPopulate[0])+", Long:"+String(toPopulate[1])+", Alt:"+String(toPopulate[2])+", Satellites:"+String(toPopulate[3])+"\n";
+      logStr(gps_str);
+    }//if
   }//if
   else{
     toPopulate[3] = -1;
@@ -272,10 +296,7 @@ void copyTo(long* values, long* target, int length){
 void loop() {
   long coords[COORDINATES_LENGTH];
   getCoordinates(&coords[0]);
-  if(coords[3] >=3){
-    String gps_str = "Lat: "+String(coords[0])+"(10^7deg) Long: "+String(coords[1])+"(10^7deg) Alt: "+String(coords[2])+"(mm) Satellites: "+String(coords[3])+"\n";
-    logStr(gps_str);
-    Serial.print("Logging:"+gps_str);
+  if(coords[3] >= MIN_SATELLITES){
     double alpha = trackingAngleError(targetCoordinates, coords, previousCoordinates);
     double rawPIDVal = linearPID(alpha, coords[4]);
     Serial.println("Error angle:"+String(alpha)+" rawPID:"+String(rawPIDVal));
