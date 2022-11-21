@@ -29,22 +29,27 @@ const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
 
 const int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
+const int IMU_QUERY_DELAY = 50;
 const int COORDINATES_LENGTH = 5;
+const int ORIENTATION_LENGTH = 3;
 
 long targetCoordinates[3] = {388173876, -771681275, 0};  // TODO MAKE THIS EASY TO SET
 
 
 // Device Global Objects:
 SFE_UBLOX_GNSS myGNSS;
+Adafruit_BNO055 bno;
 Servo tensionerServo;
 File logFile;
 
 
 // helper global vars
 int last_gps_query_time;
+int last_imu_query_time;
 long integral;  // PID integral adder variable
 long previousPartial;  // PID previous partial
 long previousT;  //  time of previous measurement
+long 
 long previousCoordinates[COORDINATES_LENGTH];
 
 
@@ -161,6 +166,21 @@ void initGPS(){
 }//initGPS()
 
 
+void initIMU(){
+  bno = Adafruit_BNO055(55);
+  Serial.print("Initializing IMU...");
+  if(!bno.begin())
+  {
+    /* There was a problem detecting the BNO055 ... check your connections */
+    Serial.println("failed! (BLOCKING THREAD)");
+    while(1);
+  }
+  delay(1000);
+  bno.setExtCrystalUse(true);
+  Serial.println("finished IMU init.");
+}//initIMU
+
+
 
 // device interfacing helpers
 
@@ -179,8 +199,7 @@ void logStr(String data){
 void getCoordinates(long* toPopulate){
   //Query module only every second. Doing it more often will just cause I2C traffic.
   //The module only responds when a new position is available
-  if (millis() - last_gps_query_time > GPS_QUERY_DELAY)
-  {
+  if (millis() - last_gps_query_time > GPS_QUERY_DELAY){
     toPopulate[4] = last_gps_query_time = millis(); //Update the time
     toPopulate[0] = myGNSS.getLatitude();
     toPopulate[1] = myGNSS.getLongitude();
@@ -207,6 +226,34 @@ void getCoordinates(long* toPopulate){
 
 
 
+void getOrientation(double* toPopulate){
+  if(millis() - last_imu_query_time > IMU_QUERY_DELAY){
+    sensors_event_t event; 
+    bno.getEvent(&event);
+    toPopulate[0] = event.orientation.x;
+    toPopulate[1] = event.orientation.y;
+    toPopulate[2] = event.orientation.z;
+    last_imu_query_time = millis();
+  }//if
+}//getOrientation
+
+
+// returns radian angle between two vectors
+//  sign: positive if the a vector is to the right of the b vector (i.e. a x b > 0), else negative
+// therefore, return value is within (-pi,pi]
+double vectorAngle(double ax, double ay, double bx, double by){
+  double alpha = abs(acos(
+    (bx*ax + by*ay) / (sqrt(sq(bx) + sq(by)) * sqrt(sq(ax) + sq(ay)))
+  )); // absolute value( arccos( dot product of {desired, current} trajectory unit vectors ) )
+  
+  if( ax*by - ay*bx < 0){
+    // if target_vector cross-product velocity < 0, the desired trajectory is to the left of the current trajectory, so negate alpha:
+    alpha *= -1;  
+  }//if 
+  return alpha;
+}//vectorAngle
+
+
 // Calculation helpers
 
 // given 3 arrays of [lat, long]  angles MUST BE given in same degree power (i.e. degrees*10^7, is what u-blox returns)
@@ -222,14 +269,7 @@ double trackingAngleError(long* target, long* current, long* previous){
   long ty = target[0] - current[0];  // desired trajectory y component
   String vectorStr = "vx: "+String(vx)+" vy: "+String(vy)+" tx: "+String(tx)+" ty: "+String(ty);
   Serial.print("Magnitude product"+String((sq(tx) + sq(ty)) * (sq(vx) + sq(vy)) ));
-  double alpha = abs(acos(
-    (tx*vx + ty*vy) / (sqrt(sq(tx) + sq(ty)) * sqrt(sq(vx) + sq(vy)))
-  )); // absolute value( arccos( dot product of {desired, current} trajectory unit vectors ) )
-  
-  if( tx*vy - ty*vx < 0){
-    // if target_vector cross-product velocity < 0, the desired trajectory is to the left of the current trajectory, so negate alpha:
-    alpha *= -1;  
-  }//if 
+  double alpha = vectorAngle(tx, ty, vx, vy);
   Serial.println(vectorStr+" alpha: "+String(alpha));
   return alpha;
 }//trackingAngleError()
