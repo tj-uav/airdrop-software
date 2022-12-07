@@ -33,7 +33,7 @@ uint16_t BNO055_SAMPLERATE_DELAY_MS = 1000;
 // Check I2C device address and correct line below (by default address is 0x29 or 0x28)
 //                                   id, address
 Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28, &Wire);
-double initialHeading[2];
+double initialHeading[2] = {1,0};
 
 void setup(void)
 {
@@ -94,6 +94,33 @@ void getMagVector(double* toPopulate){
 }//getGravVector
 
 
+// populates array of length 2 with a 2d heading vector based on two, length 3, arrays of doubles: gravitaitonal field and magnetic field
+void buildHeadingVector(double* toPopulate, double* gravitational, double* magnetic){
+    double gx = gravitational[0];
+    double gy = gravitational[1];
+    double gz = gravitational[2];
+    double nx = magnetic[0];
+    double ny = magnetic[1];
+    double nz = magnetic[2];
+
+    double px = gy*nz - gz*ny;
+    double py = gz*nx - gx*nz;
+    double pz = gx*ny - gy*nx;
+
+    double npx = py*gz - pz*gy;
+    double npy = pz*gx - px*gz;
+    double npz = px*gy - py*gx;
+
+    double p = sqrt(px*px + py*py + pz*pz);
+    double np = sqrt(npx*npx + npy*npy + npz*npz);
+
+    // Serial.println("z vector -- G:"+String(gz/ sqrt(sq(gx)+ sq(gy) + sq(gz)))+", Np:"+String(npz/np)+", P:"+String(pz/p));
+
+    toPopulate[0] = -pz/p;
+    toPopulate[1] = npz/np;
+}//buildHeadingVector
+
+
 // Returns a normalized supposed heading vector (it will actually be 90 degrees off of true heading, but this still allows us to compute delta angle while preserving efficiency)
 // LENGTH 2
 void getHeadingVector(double* toPopulate){
@@ -105,35 +132,6 @@ void getHeadingVector(double* toPopulate){
   // Serial.println("Magnetic -- x:"+String(magnetic[0])+", y:"+String(magnetic[1])+", z:"+String(magnetic[2]));
   buildHeadingVector(toPopulate, gravity, magnetic);
 }//getHeadingVector
-
-
-// populates array of length 2 with a 2d heading vector based on two, length 3, arrays of doubles: gravitaitonal field and magnetic field
-void buildHeadingVector(double* toPopulate, double* gravitational, double* magnetic){
-  double gx = gravitational[0];
-  double gy = gravitational[1];
-  double gz = gravitational[2];
-  double nx = magnetic[0];
-  double ny = magnetic[1];
-  double nz = magnetic[2];
-
-  double px = gy*nz - gz*ny;
-  double py = gz*nx - gx*nz;
-  double pz = gx*ny - gy*nx;
-
-  double npx = py*gz - pz*gy;
-  double npy = pz*gx - px*gz;
-  double npz = px*gy - py*gx;
-
-  
-
-  double p = sqrt(px*px + py*py + pz*pz);
-  double np = sqrt(npx*npx + npy*npy + npz*npz);
-
-  // Serial.println("z vector -- G:"+String(gz/ sqrt(sq(gx)+ sq(gy) + sq(gz)))+", Np:"+String(npz/np)+", P:"+String(pz/p));
-
-  toPopulate[0] = -pz/p;
-  toPopulate[1] = npz/np;
-}//buildHeadingVector
 
 
 void loop(void)
