@@ -2,6 +2,8 @@
 #include <SD.h>
 #include <Wire.h> //Needed for I2C to GNSS
 #include<Servo.h>
+#include <Wire.h>
+#include <Adafruit_BNO055.h>
 
 #include <SparkFun_u-blox_GNSS_Arduino_Library.h> //http://librarymanager/All#SparkFun_u-blox_GNSS
 
@@ -31,7 +33,7 @@ const int SERVO_SIGNAL_PIN = 3;
 const int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
 const int IMU_QUERY_DELAY = 50;
 const int COORDINATES_LENGTH = 5;
-const int ORIENTATION_LENGTH = 3;
+const int HEADING_LENGTH = 2;
 
 long targetCoordinates[3] = {388173876, -771681275, 0};  // TODO MAKE THIS EASY TO SET
 
@@ -49,8 +51,8 @@ int last_imu_query_time;
 long integral;  // PID integral adder variable
 long previousPartial;  // PID previous partial
 long previousT;  //  time of previous measurement
-long 
 long previousCoordinates[COORDINATES_LENGTH];
+double initialHeading[2] = {1,0};
 
 
 // setup
@@ -68,13 +70,16 @@ void setup() {
   logFile = initLog(CHIP_SELECT, logFilePrefix, ".txt");
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
-  initGPS();
-  getCoordinates(previousCoordinates);
+
+  // initGPS();
+  // getCoordinates(previousCoordinates);
+
+  initIMU();
 }//setup()
 
 
 
-// init methods
+///////////////////////////////// init methods //////////////////////////////////////////
 
 // passed file path should not include the .txt, set that as fileLabel
 // may be in a deep directory (will create if necessary)
@@ -146,6 +151,7 @@ File initLog(int chipSelect, String filePath, String fileLabel){
   return fileObj;
 }//initSD()
 
+
 void initGPS(){
   Serial.print("Initializing GPS...");
   Wire.begin();
@@ -167,7 +173,7 @@ void initGPS(){
 
 
 void initIMU(){
-  bno = Adafruit_BNO055(55);
+  bno = Adafruit_BNO055(55, 0x28, &Wire);
   Serial.print("Initializing IMU...");
   if(!bno.begin())
   {
@@ -182,13 +188,19 @@ void initIMU(){
 
 
 
-// device interfacing helpers
-
+///////////////////////////////// device interfacing ////////////////////////////////////////////////
 void logStr(String data){
   logFile.print(data);
   Serial.print(data);
   logFile.flush();
 }//logStr()
+
+
+// input should be within [-1,1]
+void servoActuate(double position){
+  int microseconds = (SERVO_BOUNDS[1]-SERVO_BOUNDS[0])*(position+1)/2 + SERVO_BOUNDS[0];
+  tensionerServo.writeMicroseconds(microseconds);
+}//servoActuate
 
 
 // Populates empty input array with: [lat, long, alt, satellites, measurement_time]
@@ -225,18 +237,42 @@ void getCoordinates(long* toPopulate){
 }//getCoordinates()
 
 
+// LENGTH 3
+void getGravVector(double* toPopulate){
+    imu::Vector<3> gravVector = bno.getVector(Adafruit_BNO055::VECTOR_GRAVITY);
 
-void getOrientation(double* toPopulate){
-  if(millis() - last_imu_query_time > IMU_QUERY_DELAY){
-    sensors_event_t event; 
-    bno.getEvent(&event);
-    toPopulate[0] = event.orientation.x;
-    toPopulate[1] = event.orientation.y;
-    toPopulate[2] = event.orientation.z;
-    last_imu_query_time = millis();
-  }//if
-}//getOrientation
+    toPopulate[0] = gravVector.x();
+    toPopulate[1] = gravVector.y();
+    toPopulate[2] = gravVector.z();
+}//getGravVector
 
+
+// LENGTH 3
+void getMagVector(double* toPopulate){
+    imu::Vector<3> magVector = bno.getVector(Adafruit_BNO055::VECTOR_MAGNETOMETER);
+
+    toPopulate[0] = magVector.x();
+    toPopulate[1] = magVector.y();
+    toPopulate[2] = magVector.z();
+}//getGravVector
+
+
+// Returns a normalized supposed heading vector (it will actually be 90 degrees off of true heading, but this still allows us to compute delta angle while preserving efficiency)
+// LENGTH 2
+void getHeadingVector(double* toPopulate){
+    double gravity[3];
+    double magnetic[3];
+    getGravVector(&gravity[0]);
+    getMagVector(&magnetic[0]);
+    // Serial.println("Gravity -- x:"+String(gravity[0])+", y:"+String(gravity[1])+", z:"+String(gravity[2]));
+    // Serial.println("Magnetic -- x:"+String(magnetic[0])+", y:"+String(magnetic[1])+", z:"+String(magnetic[2]));
+    buildHeadingVector(toPopulate, gravity, magnetic);
+}//getHeadingVector
+
+
+
+/////////////////////////////// Functional helpers //////////////////////////////////////////
+// Should all be purely functional!! no device interfacing or global vars
 
 // returns radian angle between two vectors
 //  sign: positive if the a vector is to the right of the b vector (i.e. a x b > 0), else negative
@@ -254,7 +290,33 @@ double vectorAngle(double ax, double ay, double bx, double by){
 }//vectorAngle
 
 
-// Calculation helpers
+
+// populates array of length 2 with a 2d heading vector based on two, length 3, arrays of doubles: gravitaitonal field and magnetic field
+void buildHeadingVector(double* toPopulate, double* gravitational, double* magnetic){
+    double gx = gravitational[0];
+    double gy = gravitational[1];
+    double gz = gravitational[2];
+    double nx = magnetic[0];
+    double ny = magnetic[1];
+    double nz = magnetic[2];
+
+    double px = gy*nz - gz*ny;
+    double py = gz*nx - gx*nz;
+    double pz = gx*ny - gy*nx;
+
+    double npx = py*gz - pz*gy;
+    double npy = pz*gx - px*gz;
+    double npz = px*gy - py*gx;
+
+    double p = sqrt(px*px + py*py + pz*pz);
+    double np = sqrt(npx*npx + npy*npy + npz*npz);
+
+    Serial.println("z vector -- G:"+String(gz/ sqrt(sq(gx)+ sq(gy) + sq(gz)))+", Np:"+String(npz/np)+", P:"+String(pz/p));
+
+    toPopulate[0] = -pz/p;
+    toPopulate[1] = npz/np;
+}//buildHeadingVector
+
 
 // given 3 arrays of [lat, long]  angles MUST BE given in same degree power (i.e. degrees*10^7, is what u-blox returns)
 // returns error angle
@@ -267,13 +329,22 @@ double trackingAngleError(long* target, long* current, long* previous){
   long vy = current[0] - previous[0];  // velocity y (north,south) component
   long tx = target[1] - current[1];  // straight line to target (desired trajectory) x component
   long ty = target[0] - current[0];  // desired trajectory y component
-  String vectorStr = "vx: "+String(vx)+" vy: "+String(vy)+" tx: "+String(tx)+" ty: "+String(ty);
-  Serial.print("Magnitude product"+String((sq(tx) + sq(ty)) * (sq(vx) + sq(vy)) ));
+//  String vectorStr = "vx: "+String(vx)+" vy: "+String(vy)+" tx: "+String(tx)+" ty: "+String(ty);
+//  Serial.print("Magnitude product"+String((sq(tx) + sq(ty)) * (sq(vx) + sq(vy)) ));
   double alpha = vectorAngle(tx, ty, vx, vy);
-  Serial.println(vectorStr+" alpha: "+String(alpha));
+//  Serial.println(vectorStr+" alpha: "+String(alpha));
   return alpha;
 }//trackingAngleError()
 
+
+void copyTo(long* values, long* target, int length){
+  for(int i = 0; i < length; i++){
+    target[i] = values[i];
+  }//for
+}//copyTo
+
+
+/////////////////////////////////////// PID ////////////////////////////////////////////////////////////////
 
 // USED DURING THE INITIAL LINEAR TRAJECTORY PHASE
 // returns servo value (double) within [-1,1] based on
@@ -312,36 +383,19 @@ double linearPID(double alpha, double currentT){
 }//linearPID()
 
 
-// input should be within [-1,1]
-void servoActuate(double position){
-  int microseconds = (SERVO_BOUNDS[1]-SERVO_BOUNDS[0])*(position+1)/2 + SERVO_BOUNDS[0];
-  tensionerServo.writeMicroseconds(microseconds);
-}//servoActuate
-
-
-void linearIteration(long* current_coords){
+void linearIteration(){
 
 }//linearIteration()
-
-
-void copyTo(long* values, long* target, int length){
-  for(int i = 0; i < length; i++){
-    target[i] = values[i];
-  }//for
-}//copyTo
 
 
 // loop
 
 void loop() {
-  long coords[COORDINATES_LENGTH];
-  getCoordinates(&coords[0]);
-  if(coords[3] >= MIN_SATELLITES){
-    double alpha = trackingAngleError(targetCoordinates, coords, previousCoordinates);
-    double rawPIDVal = linearPID(alpha, coords[4]);
-    Serial.println("Error angle:"+String(alpha)+" rawPID:"+String(rawPIDVal));
+    double heading[HEADING_LENGTH];
+    getHeadingVector(&heading[0]);
+    double alpha = vectorAngle(heading[0], heading[1], initialHeading[0], initialHeading[1]);
+    double rawPIDVal = linearPID(alpha, millis());
+    Serial.println("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal));
     servoActuate(rawPIDVal);
-    copyTo(coords, previousCoordinates, COORDINATES_LENGTH);
-  }//if
-  delay(1000);
+    delay(IMU_QUERY_DELAY);      
 }//loop
