@@ -31,7 +31,7 @@ const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
 
 const int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
-const int IMU_QUERY_DELAY = 500;
+const int IMU_QUERY_DELAY = 50;
 const int COORDINATES_LENGTH = 5;
 const int HEADING_LENGTH = 2;
 
@@ -264,8 +264,8 @@ void getHeadingVector(double* toPopulate){
     double magnetic[3];
     getGravVector(&gravity[0]);
     getMagVector(&magnetic[0]);
-    Serial.println("Gravity -- x:"+String(gravity[0])+", y:"+String(gravity[1])+", z:"+String(gravity[2]));
-    Serial.println("Magnetic -- x:"+String(magnetic[0])+", y:"+String(magnetic[1])+", z:"+String(magnetic[2]));
+    // Serial.println("Gravity -- x:"+String(gravity[0])+", y:"+String(gravity[1])+", z:"+String(gravity[2]));
+    // Serial.println("Magnetic -- x:"+String(magnetic[0])+", y:"+String(magnetic[1])+", z:"+String(magnetic[2]));
     buildHeadingVector(toPopulate, gravity, magnetic);
 }//getHeadingVector
 
@@ -397,5 +397,5 @@ void loop() {
     double rawPIDVal = linearPID(alpha, millis());
     Serial.println("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal));
     servoActuate(rawPIDVal);
-    delay(500);
+    delay(IMU_QUERY_DELAY);      
 }//loop
