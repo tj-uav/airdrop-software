@@ -52,7 +52,8 @@ long integral;  // PID integral adder variable
 long previousPartial;  // PID previous partial
 long previousT;  //  time of previous measurement
 long previousCoordinates[COORDINATES_LENGTH];
-double initialHeading[2] = {1,0};
+double initialHeading[2];
+double desiredAngleDelta = 0;
 
 
 // setup
@@ -61,20 +62,22 @@ void setup() {
   // Open serial communications and wait for port to open:
   Serial.begin(9600);
   
-  while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB port only
-  }//while
-  tensionerServo.attach(SERVO_SIGNAL_PIN);
-  tensionerServo.write(0);
-  Serial.println("Actuated servo?");
+  // while (!Serial) {
+  //   ; // wait for serial port to connect. Needed for native USB port only
+  // }//while
+
   logFile = initLog(CHIP_SELECT, logFilePrefix, ".txt");
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
+  tensionerServo.attach(SERVO_SIGNAL_PIN);
+  logStr("Attached servo.\n")
 
-  // initGPS();
-  // getCoordinates(previousCoordinates);
+  initGPS();
+  getCoordinates(&previousCoordinates[0]);
 
   initIMU();
+  getHeadingVector(&initialHeading[0]);
+  logStr("--------------- INITIALIZATION FINISHED ------------------");
 }//setup()
 
 
@@ -153,14 +156,14 @@ File initLog(int chipSelect, String filePath, String fileLabel){
 
 
 void initGPS(){
-  Serial.print("Initializing GPS...");
+  logStr("Initializing GPS...");
   Wire.begin();
 
   //myGNSS.enableDebugging(); // Uncomment this line to enable helpful debug messages on Serial
 
   if (myGNSS.begin() == false) //Connect to the u-blox module using Wire port
   {
-    Serial.println(F("\nu-blox GNSS not detected at default I2C address. Please check wiring. Freezing."));
+    logStr(F("\nu-blox GNSS not detected at default I2C address. Please check wiring. Freezing."));
     while (1);
   }//if
 
@@ -168,22 +171,22 @@ void initGPS(){
   myGNSS.saveConfigSelective(VAL_CFG_SUBSEC_IOPORT); //Save (only) the communications port settings to flash and BBR
 
   last_gps_query_time = millis(); 
-  Serial.println("finished GPS init.");
+  logStr("finished GPS init.\n");
 }//initGPS()
 
 
 void initIMU(){
   bno = Adafruit_BNO055(55, 0x28, &Wire);
-  Serial.print("Initializing IMU...");
+  logStr("Initializing IMU...");
   if(!bno.begin())
   {
     /* There was a problem detecting the BNO055 ... check your connections */
-    Serial.println("failed! (BLOCKING THREAD)");
+    logStr("failed! (BLOCKING THREAD)\n");
     while(1);
   }
   delay(1000);
   bno.setExtCrystalUse(true);
-  Serial.println("finished IMU init.");
+  logStr("finished IMU init.\n");
 }//initIMU
 
 
@@ -270,6 +273,14 @@ void getHeadingVector(double* toPopulate){
 }//getHeadingVector
 
 
+// gets the new GPS coordinates, updates global vars, and returns the desired heading change
+double desiredHeadingDelta(targetCoords){
+  long currentCoordinates[COORDINATES_LENGTH];
+  getCoordinates(&currentCoordinates[0]);
+  double value = trackingAngleError(&targetCoords[0], &currentCoordinates[0], &previousCoordinates[0]);
+  copyTo(&currentCoordinates[0], &previousCoordinates[0], COORDINATES_LENGTH)
+  return value;
+}//desiredHeadingDelta
 
 /////////////////////////////// Functional helpers //////////////////////////////////////////
 // Should all be purely functional!! no device interfacing or global vars
@@ -391,11 +402,22 @@ void linearIteration(){
 // loop
 
 void loop() {
+  double time1 = millis();
+  if(time1 - last_gps_query_time > GPS_QUERY_DELAY){
+    last_gps_query_time = time1;
+    desiredAngleDelta = desiredHeadingDelta(&targetCoordinates[0]);
+  }//if
+  double time2 = millis();  // refresh our time just in case that took long
+  if(time2 - last_imu_query_time > IMU_QUERY_DELAY){
+    last_imu_query_time = time2;
     double heading[HEADING_LENGTH];
     getHeadingVector(&heading[0]);
-    double alpha = vectorAngle(heading[0], heading[1], initialHeading[0], initialHeading[1]);
-    double rawPIDVal = linearPID(alpha, millis());
+    double alpha = vectorAngle(heading[0], heading[1], initialHeading[0], initialHeading[1]);  
+    // this is the change in compass heading between the last time it used GPS and now
+    double offset = desiredAngleDelta - alpha;  // angle offset from where we want to be
+    double rawPIDVal = linearPID(offset, time2);
     Serial.println("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal));
     servoActuate(rawPIDVal);
-    delay(IMU_QUERY_DELAY);      
+    delay(IMU_QUERY_DELAY);
+  }//if
 }//loop
