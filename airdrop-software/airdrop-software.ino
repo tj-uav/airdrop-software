@@ -267,8 +267,8 @@ void getHeadingVector(double* toPopulate){
     double magnetic[3];
     getGravVector(&gravity[0]);
     getMagVector(&magnetic[0]);
-    // Serial.println("Gravity -- x:"+String(gravity[0])+", y:"+String(gravity[1])+", z:"+String(gravity[2]));
-    // Serial.println("Magnetic -- x:"+String(magnetic[0])+", y:"+String(magnetic[1])+", z:"+String(magnetic[2]));
+    // logStr("Gravity -- x:"+String(gravity[0])+", y:"+String(gravity[1])+", z:"+String(gravity[2])+"\n");
+    // logStr("Magnetic -- x:"+String(magnetic[0])+", y:"+String(magnetic[1])+", z:"+String(magnetic[2])+"\n");
     buildHeadingVector(toPopulate, gravity, magnetic);
 }//getHeadingVector
 
@@ -322,7 +322,7 @@ void buildHeadingVector(double* toPopulate, double* gravitational, double* magne
     double p = sqrt(px*px + py*py + pz*pz);
     double np = sqrt(npx*npx + npy*npy + npz*npz);
 
-    Serial.println("z vector -- G:"+String(gz/ sqrt(sq(gx)+ sq(gy) + sq(gz)))+", Np:"+String(npz/np)+", P:"+String(pz/p));
+    logStr("z vector -- G:"+String(gz/ sqrt(sq(gx)+ sq(gy) + sq(gz)))+", Np:"+String(npz/np)+", P:"+String(pz/p)+"\n");
 
     toPopulate[0] = -pz/p;
     toPopulate[1] = npz/np;
@@ -340,10 +340,7 @@ double trackingAngleError(long* target, long* current, long* previous){
   long vy = current[0] - previous[0];  // velocity y (north,south) component
   long tx = target[1] - current[1];  // straight line to target (desired trajectory) x component
   long ty = target[0] - current[0];  // desired trajectory y component
-//  String vectorStr = "vx: "+String(vx)+" vy: "+String(vy)+" tx: "+String(tx)+" ty: "+String(ty);
-//  Serial.print("Magnitude product"+String((sq(tx) + sq(ty)) * (sq(vx) + sq(vy)) ));
   double alpha = vectorAngle(tx, ty, vx, vy);
-//  Serial.println(vectorStr+" alpha: "+String(alpha));
   return alpha;
 }//trackingAngleError()
 
@@ -416,7 +413,7 @@ void loop() {
     // this is the change in compass heading between the last time it used GPS and now
     double offset = desiredAngleDelta - alpha;  // angle offset from where we want to be
     double rawPIDVal = linearPID(offset, time2);
-    Serial.println("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal));
+    logStr("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal)+"\n");
     servoActuate(rawPIDVal);
     delay(IMU_QUERY_DELAY);
   }//if
