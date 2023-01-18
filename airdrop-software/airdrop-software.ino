@@ -26,12 +26,13 @@ const int MIN_SATELLITES = 4;  // must have at least this many satellites for co
 
 
 // Configuration Constants:
-String logFilePrefix = "test/log";
+String logFilePrefix = "robotest/log";  // TODO: change to flight file for flight
 const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
+const int STATUS_LED_PIN = 4;
 
 const int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
-const int IMU_QUERY_DELAY = 50;
+const int IMU_QUERY_DELAY = 500;  // TODO: make this 50
 const int COORDINATES_LENGTH = 5;
 const int HEADING_LENGTH = 2;
 
@@ -52,7 +53,7 @@ long integral;  // PID integral adder variable
 long previousPartial;  // PID previous partial
 long previousT;  //  time of previous measurement
 long previousCoordinates[COORDINATES_LENGTH];
-double initialHeading[2];
+double initialHeading[HEADING_LENGTH];
 double desiredAngleDelta = 0;
 
 
@@ -61,23 +62,31 @@ double desiredAngleDelta = 0;
 void setup() {
   // Open serial communications and wait for port to open:
   Serial.begin(9600);
+  logStr("--------------- INITIALIZATION STARTED -------------------");
+  pinMode(STATUS_LED_PIN, OUTPUT);
+  digitalWrite(STATUS_LED_PIN, LOW);
   
-  // while (!Serial) {
+  // while (!Serial) {  // TODO: comment this part out before flight, don't want to wait for serial comms when not connected to computer
   //   ; // wait for serial port to connect. Needed for native USB port only
   // }//while
+  Serial.println("Started arduino");
 
-  logFile = initLog(CHIP_SELECT, logFilePrefix, ".txt");
+  logFile = initLog(CHIP_SELECT, logFilePrefix, ".txt"); // TODO: uncomment
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
   tensionerServo.attach(SERVO_SIGNAL_PIN);
-  logStr("Attached servo.\n")
+  logStr("Attached servo.\n");
 
   initGPS();
   getCoordinates(&previousCoordinates[0]);
 
   initIMU();
+  delay(1000);
   getHeadingVector(&initialHeading[0]);
+  Serial.println("Heading x:" + String(initialHeading[0]) + ", y:" + String(initialHeading[1]));
+
   logStr("--------------- INITIALIZATION FINISHED ------------------");
+  digitalWrite(STATUS_LED_PIN, HIGH);
 }//setup()
 
 
@@ -193,9 +202,9 @@ void initIMU(){
 
 ///////////////////////////////// device interfacing ////////////////////////////////////////////////
 void logStr(String data){
-  logFile.print(data);
+  logFile.print(data);  
   Serial.print(data);
-  logFile.flush();
+  logFile.flush(); 
 }//logStr()
 
 
@@ -267,18 +276,21 @@ void getHeadingVector(double* toPopulate){
     double magnetic[3];
     getGravVector(&gravity[0]);
     getMagVector(&magnetic[0]);
-    // logStr("Gravity -- x:"+String(gravity[0])+", y:"+String(gravity[1])+", z:"+String(gravity[2])+"\n");
-    // logStr("Magnetic -- x:"+String(magnetic[0])+", y:"+String(magnetic[1])+", z:"+String(magnetic[2])+"\n");
+    logStr("Gravity -- x:"+String(gravity[0])+", y:"+String(gravity[1])+", z:"+String(gravity[2])+"\n");
+    logStr("Magnetic -- x:"+String(magnetic[0])+", y:"+String(magnetic[1])+", z:"+String(magnetic[2])+"\n");
     buildHeadingVector(toPopulate, gravity, magnetic);
 }//getHeadingVector
 
 
 // gets the new GPS coordinates, updates global vars, and returns the desired heading change
-double desiredHeadingDelta(targetCoords){
+double desiredHeadingDelta(long* targetCoords){
   long currentCoordinates[COORDINATES_LENGTH];
   getCoordinates(&currentCoordinates[0]);
   double value = trackingAngleError(&targetCoords[0], &currentCoordinates[0], &previousCoordinates[0]);
-  copyTo(&currentCoordinates[0], &previousCoordinates[0], COORDINATES_LENGTH)
+  copyTo(&currentCoordinates[0], &previousCoordinates[0], COORDINATES_LENGTH);
+  double heading[HEADING_LENGTH];
+  getHeadingVector(&heading[0]);
+  copyTo(&heading[0], &initialHeading[0], HEADING_LENGTH);
   return value;
 }//desiredHeadingDelta
 
@@ -289,6 +301,7 @@ double desiredHeadingDelta(targetCoords){
 //  sign: positive if the a vector is to the right of the b vector (i.e. a x b > 0), else negative
 // therefore, return value is within (-pi,pi]
 double vectorAngle(double ax, double ay, double bx, double by){
+  Serial.println("ax:"+String(ax)+" ay:"+String(ay)+" bx:"+String(bx)+" by:"+String(by));
   double alpha = abs(acos(
     (bx*ax + by*ay) / (sqrt(sq(bx) + sq(by)) * sqrt(sq(ax) + sq(ay)))
   )); // absolute value( arccos( dot product of {desired, current} trajectory unit vectors ) )
@@ -351,6 +364,12 @@ void copyTo(long* values, long* target, int length){
   }//for
 }//copyTo
 
+void copyTo(double* values, double* target, int length){
+  for(int i = 0; i < length; i++){
+    target[i] = values[i];
+  }//for
+}//copyTo
+
 
 /////////////////////////////////////// PID ////////////////////////////////////////////////////////////////
 
@@ -402,7 +421,7 @@ void loop() {
   double time1 = millis();
   if(time1 - last_gps_query_time > GPS_QUERY_DELAY){
     last_gps_query_time = time1;
-    desiredAngleDelta = desiredHeadingDelta(&targetCoordinates[0]);
+    // desiredAngleDelta = desiredHeadingDelta(&targetCoordinates[0]);  // TODO: uncomment
   }//if
   double time2 = millis();  // refresh our time just in case that took long
   if(time2 - last_imu_query_time > IMU_QUERY_DELAY){
