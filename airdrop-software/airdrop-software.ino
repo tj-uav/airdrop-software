@@ -23,20 +23,22 @@ const bool INVERT_PID = false;  // use this to invert right/left servo tensionin
 // MISC CONSTANTS
 const int SERVO_BOUNDS[2] = {600, 2400};
 const int MIN_SATELLITES = 4;  // must have at least this many satellites for coordinates to be valid
+const int IMU_LOG_ITERATIONS = 5;
+const int GPS_LOG_ITERATIONS = 1;
 
 
 // Configuration Constants:
-String logFilePrefix = "robotest/log";  // TODO: change to flight file for flight
+String logFilePrefix = "flight/log";  // TODO: change to flight file for flight
 const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
 const int STATUS_LED_PIN = 4;
 
 const int GPS_QUERY_DELAY = 250;  // to prevent overloading I2C
-const int IMU_QUERY_DELAY = 500;  // TODO: make this 50
+const int IMU_QUERY_DELAY = 50;  // TODO: make this 50
 const int COORDINATES_LENGTH = 5;
 const int HEADING_LENGTH = 2;
 
-long targetCoordinates[3] = {388173876, -771681275, 0};  // TODO MAKE THIS EASY TO SET
+long targetCoordinates[3] = {385288790, -777377410, 0};  // TODO: set coordinates
 
 
 // Device Global Objects:
@@ -47,8 +49,10 @@ File logFile;
 
 
 // helper global vars
-int last_gps_query_time;
-int last_imu_query_time;
+int last_gps_query_time = 0;
+int gps_log_counter = 0;
+int last_imu_query_time = 0;
+int imu_log_counter = 0;
 long integral;  // PID integral adder variable
 long previousPartial;  // PID previous partial
 long previousT;  //  time of previous measurement
@@ -62,6 +66,7 @@ double desiredAngleDelta = 0;
 void setup() {
   // Open serial communications and wait for port to open:
   Serial.begin(9600);
+  delay(1000);
   logStr("--------------- INITIALIZATION STARTED -------------------");
   pinMode(STATUS_LED_PIN, OUTPUT);
   digitalWrite(STATUS_LED_PIN, LOW);
@@ -223,29 +228,26 @@ void servoActuate(double position){
 void getCoordinates(long* toPopulate){
   //Query module only every second. Doing it more often will just cause I2C traffic.
   //The module only responds when a new position is available
-  if (millis() - last_gps_query_time > GPS_QUERY_DELAY){
-    toPopulate[4] = last_gps_query_time = millis(); //Update the time
-    toPopulate[0] = myGNSS.getLatitude();
-    toPopulate[1] = myGNSS.getLongitude();
-    toPopulate[2] = myGNSS.getAltitude();
-    toPopulate[3] = myGNSS.getSIV();
-    
-    if(toPopulate[3] >= MIN_SATELLITES){
-      String gps_str = "";
-      logStr(gps_str);
-      if (myGNSS.getDateValid()){
-        gps_str += "Date:"+String(myGNSS.getYear())+"-"+String(myGNSS.getMonth())+"-"+String(myGNSS.getDay());
-      }//if
-      if (myGNSS.getTimeValid()){
-        gps_str += ", Time:"+String(myGNSS.getHour())+":"+String(myGNSS.getMinute())+":"+String(myGNSS.getSecond());
-      }//if
-      gps_str += ", Lat:"+String(toPopulate[0])+", Long:"+String(toPopulate[1])+", Alt:"+String(toPopulate[2])+", Satellites:"+String(toPopulate[3])+"\n";
-      logStr(gps_str);
+  toPopulate[4] = last_gps_query_time = millis(); //Update the time
+  toPopulate[0] = myGNSS.getLatitude();
+  toPopulate[1] = myGNSS.getLongitude();
+  toPopulate[2] = myGNSS.getAltitude();
+  toPopulate[3] = myGNSS.getSIV();
+  
+  if(gps_log_counter % GPS_LOG_ITERATIONS == 0){  // to only log with enough: toPopulate[3] >= MIN_SATELLITES && 
+    gps_log_counter = 0;
+    String gps_str = "";
+    logStr(gps_str);
+    if (myGNSS.getDateValid()){
+      gps_str += "Date:"+String(myGNSS.getYear())+"-"+String(myGNSS.getMonth())+"-"+String(myGNSS.getDay());
     }//if
+    if (myGNSS.getTimeValid()){
+      gps_str += ", Time:"+String(myGNSS.getHour())+":"+String(myGNSS.getMinute())+":"+String(myGNSS.getSecond());
+    }//if
+    gps_str += ", Lat:"+String(toPopulate[0])+", Long:"+String(toPopulate[1])+", Alt:"+String(toPopulate[2])+", Satellites:"+String(toPopulate[3])+"\n";
+    logStr(gps_str);
   }//if
-  else{
-    toPopulate[3] = -1;
-  }//else
+  gps_log_counter +=1;
 }//getCoordinates()
 
 
@@ -276,9 +278,15 @@ void getHeadingVector(double* toPopulate){
     double magnetic[3];
     getGravVector(&gravity[0]);
     getMagVector(&magnetic[0]);
-    logStr("Gravity -- x:"+String(gravity[0])+", y:"+String(gravity[1])+", z:"+String(gravity[2])+"\n");
-    logStr("Magnetic -- x:"+String(magnetic[0])+", y:"+String(magnetic[1])+", z:"+String(magnetic[2])+"\n");
+    if(imu_log_counter % IMU_LOG_ITERATIONS == 0){
+      logStr("Gravity -- x:"+String(gravity[0])+", y:"+String(gravity[1])+", z:"+String(gravity[2])+"\n");
+      logStr("Magnetic -- x:"+String(magnetic[0])+", y:"+String(magnetic[1])+", z:"+String(magnetic[2])+"\n");
+    }//if
     buildHeadingVector(toPopulate, gravity, magnetic);
+    imu_log_counter += 1;
+    if(imu_log_counter % IMU_LOG_ITERATIONS == 0){
+      imu_log_counter = 0;
+    }//if
 }//getHeadingVector
 
 
@@ -301,7 +309,7 @@ double desiredHeadingDelta(long* targetCoords){
 //  sign: positive if the a vector is to the right of the b vector (i.e. a x b > 0), else negative
 // therefore, return value is within (-pi,pi]
 double vectorAngle(double ax, double ay, double bx, double by){
-  Serial.println("ax:"+String(ax)+" ay:"+String(ay)+" bx:"+String(bx)+" by:"+String(by));
+  // Serial.println("ax:"+String(ax)+" ay:"+String(ay)+" bx:"+String(bx)+" by:"+String(by));
   double alpha = abs(acos(
     (bx*ax + by*ay) / (sqrt(sq(bx) + sq(by)) * sqrt(sq(ax) + sq(ay)))
   )); // absolute value( arccos( dot product of {desired, current} trajectory unit vectors ) )
@@ -335,8 +343,9 @@ void buildHeadingVector(double* toPopulate, double* gravitational, double* magne
     double p = sqrt(px*px + py*py + pz*pz);
     double np = sqrt(npx*npx + npy*npy + npz*npz);
 
-    logStr("z vector -- G:"+String(gz/ sqrt(sq(gx)+ sq(gy) + sq(gz)))+", Np:"+String(npz/np)+", P:"+String(pz/p)+"\n");
-
+    if(imu_log_counter % IMU_LOG_ITERATIONS == 0){
+      logStr("z vector -- G:"+String(gz/ sqrt(sq(gx)+ sq(gy) + sq(gz)))+", Np:"+String(npz/np)+", P:"+String(pz/p)+"\n");
+    }//if
     toPopulate[0] = -pz/p;
     toPopulate[1] = npz/np;
 }//buildHeadingVector
@@ -421,7 +430,7 @@ void loop() {
   double time1 = millis();
   if(time1 - last_gps_query_time > GPS_QUERY_DELAY){
     last_gps_query_time = time1;
-    // desiredAngleDelta = desiredHeadingDelta(&targetCoordinates[0]);  // TODO: uncomment
+    desiredAngleDelta = desiredHeadingDelta(&targetCoordinates[0]);  // TODO: uncomment
   }//if
   double time2 = millis();  // refresh our time just in case that took long
   if(time2 - last_imu_query_time > IMU_QUERY_DELAY){
@@ -432,7 +441,9 @@ void loop() {
     // this is the change in compass heading between the last time it used GPS and now
     double offset = desiredAngleDelta - alpha;  // angle offset from where we want to be
     double rawPIDVal = linearPID(offset, time2);
-    logStr("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal)+"\n");
+    if(imu_log_counter % IMU_LOG_ITERATIONS == 0){
+      logStr("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal)+"\n");
+    }//if
     servoActuate(rawPIDVal);
     delay(IMU_QUERY_DELAY);
   }//if
