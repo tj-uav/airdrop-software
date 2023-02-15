@@ -302,6 +302,20 @@ double desiredHeadingDelta(long* targetCoords){
   return value;
 }//desiredHeadingDelta
 
+
+// gets the new GPS coordinates, updates global vars, and returns the desired heading change
+double gpsHeadingAngle(){
+  long northHeading[2] = {0, 1};
+  long currentCoordinates[COORDINATES_LENGTH];
+  getCoordinates(&currentCoordinates[0]);
+  long vx = currentCoordinates[1] - previousCoordinates[1];  // velocity x (east,west) component
+  // vx is actually this times r/dt, but whatever, magnitudes cancel later anyway
+  long vy = currentCoordinates[0] - previousCoordinates[0];  // velocity y (north,south) component
+  double alpha = vectorAngle(northHeading[0], northHeading[1], vx, vy);
+  copyTo(&currentCoordinates[0], &previousCoordinates[0], COORDINATES_LENGTH);
+  return alpha;
+}//gpsHeadingAngle
+
 /////////////////////////////// Functional helpers //////////////////////////////////////////
 // Should all be purely functional!! no device interfacing or global vars
 
@@ -430,21 +444,16 @@ void loop() {
   double time1 = millis();
   if(time1 - last_gps_query_time > GPS_QUERY_DELAY){
     last_gps_query_time = time1;
-    desiredAngleDelta = desiredHeadingDelta(&targetCoordinates[0]);  // TODO: uncomment
+    logStr("heading-angle:"+String(gpsHeadingAngle())+"\n");
   }//if
   double time2 = millis();  // refresh our time just in case that took long
   if(time2 - last_imu_query_time > IMU_QUERY_DELAY){
     last_imu_query_time = time2;
     double heading[HEADING_LENGTH];
     getHeadingVector(&heading[0]);
-    double alpha = vectorAngle(heading[0], heading[1], initialHeading[0], initialHeading[1]);  
-    // this is the change in compass heading between the last time it used GPS and now
-    double offset = desiredAngleDelta - alpha;  // angle offset from where we want to be
-    double rawPIDVal = linearPID(offset, time2);
+    double alpha = vectorAngle(heading[0], heading[1], 0, 1);
     if(imu_log_counter % IMU_LOG_ITERATIONS == 0){
-      logStr("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal)+"\n");
+      logStr("angle:"+String(alpha)+"\n");
     }//if
-    servoActuate(rawPIDVal);
-    delay(IMU_QUERY_DELAY);
   }//if
 }//loop
