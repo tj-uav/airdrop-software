@@ -34,7 +34,12 @@ def main():
     longs = []
     lats = []
     colors = []
-    heading_angles = []
+    gps_headings = []
+
+    imu_x = []
+    imu_y = []
+    imu_coords = []
+
     with open(log_path, 'r') as log_file:
         log_lines = list(log_file.readlines())
         line_idx = 0
@@ -45,13 +50,25 @@ def main():
                 longs.append(extract_var(cur_line, "Long"))
                 lats.append(extract_var(cur_line, "Lat"))
                 colors.append(extract_time(cur_line))
-                heading_angles.append(extract_var(log_lines[line_idx+1], "heading-angle"))
+                gps_headings.append(extract_var(log_lines[line_idx+1], "heading-angle"))
                 line_idx += 1
+            elif len(longs) > 0:  # if we have some gps coords to assign it to yet
+                np_comp = extract_var(cur_line, "Np")
+                if np_comp is not None: 
+                    p_comp = extract_var(cur_line, "P")
+                    imu_x.append(p_comp)
+                    imu_y.append(np_comp)
+                    imu_coords.append(len(longs)-1)
             line_idx += 1
     longs_arr = np.asarray(longs) * coordinate_multiplier
     lats_arr = np.asarray(lats) * coordinate_multiplier
+
+    imu_coords_arr = np.asarray(imu_coords)
+    imu_x_arr = np.asarray(imu_x)
+    imu_y_arr = np.asarray(imu_y)
+ 
     colors_arr = np.asarray(colors)
-    heading_arr = np.asarray(heading_angles) + np.pi/2
+    heading_arr = np.asarray(gps_headings) + np.pi/2
 
     vec_x = np.cos(heading_arr)
     vec_y = np.sin(heading_arr)
@@ -62,7 +79,8 @@ def main():
     plt.xlim(map_bounds[0], map_bounds[1])
     plt.ylim(map_bounds[2], map_bounds[3])
     plt.scatter(longs_arr, lats_arr, c=colors_arr)
-    plt.quiver(longs_arr, lats_arr, vec_x, vec_y, scale=20, c=colors_arr)
+    plt.quiver(longs_arr, lats_arr, vec_x, vec_y, scale=20)  # plots gps heading
+    plt.quiver(longs_arr[imu_coords_arr], lats_arr[imu_coords_arr], imu_x, imu_y, color=['r']*len(imu_coords_arr), scale=20)  # plots imu heading
     plt.show()
 
 if __name__ == '__main__':
