@@ -1,0 +1,2877 @@
+Attached servo.
+Initializing GPS...finished GPS init.
+, Lat:0, Long:0, Alt:0, Satellites:0
+Initializing IMU...finished IMU init.
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.06, y:-38.25, z:-55.38
+z vector -- G:0.99, Np:-0.13, P:0.07
+--------------- INITIALIZATION FINISHED ------------------, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.61
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.38, y:-38.25, z:-54.38
+z vector -- G:0.99, Np:-0.13, P:0.07
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.61
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.06, y:-38.25, z:-54.06
+z vector -- G:0.99, Np:-0.13, P:0.07
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.61
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.75, y:-37.88, z:-55.06
+z vector -- G:0.99, Np:-0.13, P:0.07
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.61
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.38, y:-38.25, z:-54.38
+z vector -- G:0.99, Np:-0.13, P:0.07
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.61
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.06, y:-38.88, z:-55.06
+z vector -- G:0.99, Np:-0.13, P:0.08
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Time:22:51:7, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.60
+, Time:22:51:8, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.06, y:-38.25, z:-55.50
+z vector -- G:0.99, Np:-0.13, P:0.07
+, Time:22:51:9, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Time:22:51:10, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Time:22:51:11, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+, Time:22:51:12, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.61
+, Time:22:51:13, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.75, y:-38.25, z:-54.06
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:51:14, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:15, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:16, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:17, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.62
+Date:2023-2-22, Time:22:51:18, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.06, y:-37.88, z:-55.06
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:51:19, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:20, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:21, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:22, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.60
+Date:2023-2-22, Time:22:51:23, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.38, y:-37.88, z:-54.75
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:51:24, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:25, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:26, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:27, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.61
+Date:2023-2-22, Time:22:51:28, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.38, y:-37.50, z:-54.38
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:51:29, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:30, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:31, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:32, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.61
+Date:2023-2-22, Time:22:51:33, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.06, y:-39.25, z:-54.38
+z vector -- G:0.99, Np:-0.12, P:0.08
+Date:2023-2-22, Time:22:51:34, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:35, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:36, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Date:2023-2-22, Time:22:51:37, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+angle:-2.62
+Date:2023-2-22, Time:22:51:38, Lat:0, Long:0, Alt:0, Satellites:0
+heading-angle: nan
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.38, y:-37.88, z:-53.25
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:51:39, Lat:0, Long:-1026934153, Alt:6782628, Satellites:0
+heading-angle:1.57
+Date:2023-2-22, Time:22:51:40, Lat:343879533, Long:-1026910039, Alt:6784981, Satellites:0
+heading-angle:-0.00
+Date:2023-2-22, Time:22:51:41, Lat:343947358, Long:-1026497144, Alt:6761734, Satellites:0
+heading-angle:-1.41
+Date:2023-2-22, Time:22:51:42, Lat:343276894, Long:-1025454270, Alt:6696867, Satellites:0
+heading-angle:-2.14
+angle:-2.60
+Date:2023-2-22, Time:22:51:43, Lat:341402753, Long:-1022446232, Alt:6501400, Satellites:0
+heading-angle:-2.13
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.75, y:-39.25, z:-54.69
+z vector -- G:0.99, Np:-0.13, P:0.08
+Date:2023-2-22, Time:22:51:44, Lat:335724612, Long:-1022422981, Alt:6503720, Satellites:0
+heading-angle:-3.14
+Date:2023-2-22, Time:22:51:45, Lat:335792288, Long:-1022399719, Alt:6506040, Satellites:0
+heading-angle:-0.33
+Date:2023-2-22, Time:22:51:46, Lat:335859959, Long:-1020793567, Alt:6402844, Satellites:0
+heading-angle:-1.53
+Date:2023-2-22, Time:22:51:47, Lat:332843389, Long:-1019121857, Alt:6294873, Satellites:0
+heading-angle:-2.64
+angle:-2.60
+Date:2023-2-22, Time:22:51:48, Lat:329672166, Long:-1017380426, Alt:6181827, Satellites:0
+heading-angle:-2.64
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.06, y:-37.88, z:-54.38
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:51:49, Lat:326334684, Long:-1019076630, Alt:6299463, Satellites:0
+heading-angle:2.67
+Date:2023-2-22, Time:22:51:50, Lat:329807288, Long:-1020701714, Alt:6412077, Satellites:0
+heading-angle:0.44
+Date:2023-2-22, Time:22:51:51, Lat:333113830, Long:-1022259944, Alt:6519964, Satellites:0
+heading-angle:0.44
+Date:2023-2-22, Time:22:51:52, Lat:336265906, Long:-1023755251, Alt:6623399, Satellites:0
+heading-angle:0.44
+angle:-2.60
+Date:2023-2-22, Time:22:51:53, Lat:339274083, Long:-1023731593, Alt:6625732, Satellites:0
+heading-angle:-0.01
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.06, y:-38.25, z:-53.56
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:51:54, Lat:339341769, Long:-1022189922, Alt:6526927, Satellites:0
+heading-angle:-1.53
+Date:2023-2-22, Time:22:51:55, Lat:336468827, Long:-1022166561, Alt:6529248, Satellites:0
+heading-angle:-3.13
+Date:2023-2-22, Time:22:51:56, Lat:336536460, Long:-1022143190, Alt:6531569, Satellites:0
+heading-angle:-0.33
+Date:2023-2-22, Time:22:51:57, Lat:336604089, Long:-1023636859, Alt:6635063, Satellites:0
+heading-angle:1.53
+angle:-2.61
+Date:2023-2-22, Time:22:51:58, Lat:339612474, Long:-1023613150, Alt:6637397, Satellites:0
+heading-angle:-0.01
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.06, y:-37.50, z:-55.06
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:51:59, Lat:339680140, Long:-1023589430, Alt:6639730, Satellites:0
+heading-angle:-0.34
+Date:2023-2-22, Time:22:52:0, Lat:339747803, Long:-1022049607, Alt:6540855, Satellites:0
+heading-angle:-1.53
+Date:2023-2-22, Time:22:52:1, Lat:336874566, Long:-1020448309, Alt:6437475, Satellites:0
+heading-angle:-2.63
+Date:2023-2-22, Time:22:52:2, Lat:333857229, Long:-1018781714, Alt:6329307, Satellites:0
+heading-angle:-2.64
+angle:-2.61
+Date:2023-2-22, Time:22:52:3, Lat:330685215, Long:-1017945611, Alt:6276788, Satellites:0
+heading-angle:-2.88
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.38, y:-38.88, z:-55.06
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:52:4, Lat:329139431, Long:-1012207743, Alt:5891780, Satellites:0
+heading-angle:-1.83
+Date:2023-2-22, Time:22:52:5, Lat:317686003, Long:-1009443233, Alt:5707045, Satellites:0
+heading-angle:-2.90
+Date:2023-2-22, Time:22:52:6, Lat:312108587, Long:-1004445959, Alt:5368823, Satellites:0
+heading-angle:-2.41
+Date:2023-2-22, Time:22:52:7, Lat:301743582, Long:-1015017264, Alt:6093842, Satellites:0
+heading-angle:2.35
+angle:-2.60
+Date:2023-2-22, Time:22:52:8, Lat:323724482, Long:-1020553484, Alt:6471599, Satellites:0
+heading-angle:0.25
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.38, y:-37.88, z:-55.06
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:52:9, Lat:334854712, Long:-1022222429, Alt:6587494, Satellites:0
+heading-angle:0.15
+Date:2023-2-22, Time:22:52:10, Lat:338231348, Long:-1023819000, Alt:6698223, Satellites:0
+heading-angle:0.44
+Date:2023-2-22, Time:22:52:11, Lat:341441970, Long:-1025347684, Alt:6804107, Satellites:0
+heading-angle:0.44
+Date:2023-2-22, Time:22:52:12, Lat:344498524, Long:-1026812604, Alt:6905446, Satellites:0
+heading-angle:0.45
+angle:-2.61
+Date:2023-2-22, Time:22:52:13, Lat:347411861, Long:-1028217558, Alt:7002514, Satellites:0
+heading-angle:0.45
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-32.69, y:-38.56, z:-54.69
+z vector -- G:0.99, Np:-0.13, P:0.08
+Date:2023-2-22, Time:22:52:14, Lat:350191854, Long:-1029566051, Alt:7095568, Satellites:0
+heading-angle:0.45
+Date:2023-2-22, Time:22:52:15, Lat:352847507, Long:-1030861321, Alt:7184845, Satellites:0
+heading-angle:0.45
+Date:2023-2-22, Time:22:52:16, Lat:355387042, Long:-1030835843, Alt:7187233, Satellites:0
+heading-angle:-0.01
+Date:2023-2-22, Time:22:52:17, Lat:355454866, Long:-1032080617, Alt:7272961, Satellites:0
+heading-angle:1.52
+angle:-2.60
+Date:2023-2-22, Time:22:52:18, Lat:357885843, Long:-1032054860, Alt:7275358, Satellites:0
+heading-angle:-0.01
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.38, y:-38.56, z:-55.06
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:52:19, Lat:357953697, Long:-1033199709, Alt:7354330, Satellites:0
+heading-angle:1.51
+Date:2023-2-22, Time:22:52:20, Lat:360186716, Long:-1031894821, Alt:7273038, Satellites:0
+heading-angle:-0.53
+Date:2023-2-22, Time:22:52:21, Lat:357888027, Long:-1035672904, Alt:7523502, Satellites:0
+heading-angle:2.12
+Date:2023-2-22, Time:22:52:22, Lat:364951034, Long:-1037011166, Alt:7614239, Satellites:0
+heading-angle:0.19
+angle:-2.60
+Date:2023-2-22, Time:22:52:23, Lat:367496104, Long:-1038424727, Alt:7709476, Satellites:0
+heading-angle:0.51
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-34.19, y:-38.56, z:-54.69
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:52:24, Lat:370160025, Long:-1039920036, Alt:7809548, Satellites:0
+heading-angle:0.51
+Date:2023-2-22, Time:22:52:25, Lat:372951385, Long:-1038582738, Alt:7727993, Satellites:0
+heading-angle:-0.45
+Date:2023-2-22, Time:22:52:26, Lat:370677122, Long:-1037037552, Alt:7632591, Satellites:0
+heading-angle:-2.54
+Date:2023-2-22, Time:22:52:27, Lat:368010027, Long:-1038528370, Alt:7732866, Satellites:0
+heading-angle:2.63
+angle:-2.60
+Date:2023-2-22, Time:22:52:28, Lat:370813169, Long:-1035619960, Alt:7549081, Satellites:0
+heading-angle:-0.80
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.75, y:-37.50, z:-54.25
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:52:29, Lat:365669215, Long:-1035670663, Alt:7556526, Satellites:0
+heading-angle:3.13
+Date:2023-2-22, Time:22:52:30, Lat:365878116, Long:-1037242032, Alt:7662484, Satellites:0
+heading-angle:1.44
+Date:2023-2-22, Time:22:52:31, Lat:368846526, Long:-1038916984, Alt:7774614, Satellites:0
+heading-angle:0.51
+Date:2023-2-22, Time:22:52:32, Lat:371977846, Long:-1040332979, Alt:7869612, Satellites:0
+heading-angle:0.42
+angle:-2.61
+Date:2023-2-22, Time:22:52:33, Lat:374623054, Long:-1040305339, Alt:7872060, Satellites:0
+heading-angle:-0.01
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.38, y:-38.56, z:-53.88
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:52:34, Lat:374691109, Long:-1040277687, Alt:7874507, Satellites:0
+heading-angle:-0.39
+Date:2023-2-22, Time:22:52:35, Lat:374759160, Long:-1040622803, Alt:7900804, Satellites:0
+heading-angle:1.38
+Date:2023-2-22, Time:22:52:36, Lat:375490096, Long:-1042536588, Alt:8026990, Satellites:0
+heading-angle:1.21
+Date:2023-2-22, Time:22:52:37, Lat:378990479, Long:-1042508454, Alt:8029450, Satellites:0
+heading-angle:-0.01
+angle:-2.60
+Date:2023-2-22, Time:22:52:38, Lat:379058589, Long:-1042480308, Alt:8031909, Satellites:0
+heading-angle:-0.39
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-32.25, y:-38.25, z:-53.88
+z vector -- G:0.99, Np:-0.12, P:0.08
+Date:2023-2-22, Time:22:52:39, Lat:379126693, Long:-771444980, Alt:30000, Satellites:0
+heading-angle:-1.57
+Date:2023-2-22, Time:22:52:40, Lat:388921080, Long:-771428971, Alt:30000, Satellites:0
+heading-angle:-0.00
+Date:2023-2-22, Time:22:52:41, Lat:388925262, Long:-771430056, Alt:30000, Satellites:0
+heading-angle:0.25
+Date:2023-2-22, Time:22:52:42, Lat:388924934, Long:-771428104, Alt:30000, Satellites:0
+heading-angle:-1.74
+angle:-2.61
+Date:2023-2-22, Time:22:52:43, Lat:388925561, Long:-771429313, Alt:30000, Satellites:0
+heading-angle:1.09
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.06, y:-37.88, z:-54.56
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:52:44, Lat:388925415, Long:-771426700, Alt:30000, Satellites:0
+heading-angle:-1.63
+Date:2023-2-22, Time:22:52:45, Lat:388926107, Long:-771425863, Alt:30000, Satellites:0
+heading-angle:-0.88
+Date:2023-2-22, Time:22:52:46, Lat:388926266, Long:-771427859, Alt:30000, Satellites:0
+heading-angle:1.49
+Date:2023-2-22, Time:22:52:47, Lat:388925778, Long:-771430467, Alt:30000, Satellites:0
+heading-angle:1.76
+angle:-2.61
+Date:2023-2-22, Time:22:52:48, Lat:388925011, Long:-771202228, Alt:30000, Satellites:3
+heading-angle:-1.57
+Gravity -- x:-1.39, y:-0.35, z:9.70
+Magnetic -- x:-33.38, y:-38.56, z:-55.38
+z vector -- G:0.99, Np:-0.13, P:0.07
+Date:2023-2-22, Time:22:52:49, Lat:389023438, Long:-771202158, Alt:29956, Satellites:3
+heading-angle:-0.00
+Date:2023-2-22, Time:22:52:50, Lat:389023419, Long:-771201397, Alt:30447, Satellites:3
+heading-angle:-1.60
+Date:2023-2-22, Time:22:52:51, Lat:389023314, Long:-771200343, Alt:31956, Satellites:3
+heading-angle:-1.67
+Date:2023-2-22, Time:22:52:52, Lat:389023125, Long:-771200059, Alt:30321, Satellites:3
+heading-angle:-2.16
+angle:-1.26
+Date:2023-2-22, Time:22:52:53, Lat:389023040, Long:-771199980, Alt:29919, Satellites:3
+heading-angle:-2.39
+Gravity -- x:-4.27, y:0.32, z:8.81
+Magnetic -- x:21.06, y:-40.06, z:-68.00
+z vector -- G:0.90, Np:-0.09, P:0.43
+Date:2023-2-22, Time:22:52:54, Lat:389022990, Long:-771199788, Alt:29677, Satellites:3
+heading-angle:-1.83
+Date:2023-2-22, Time:22:52:55, Lat:389022893, Long:-771199548, Alt:30117, Satellites:3
+heading-angle:-1.95
+Date:2023-2-22, Time:22:52:56, Lat:389022772, Long:-771199396, Alt:29867, Satellites:3
+heading-angle:-2.24
+Date:2023-2-22, Time:22:52:57, Lat:389022632, Long:-771199279, Alt:29739, Satellites:3
+heading-angle:-2.45
+angle:-2.33
+Date:2023-2-22, Time:22:52:58, Lat:389022557, Long:-771199213, Alt:28881, Satellites:3
+heading-angle:-2.42
+Gravity -- x:-4.45, y:0.42, z:8.72
+Magnetic -- x:-27.75, y:-51.50, z:-88.50
+z vector -- G:0.89, Np:-0.34, P:0.30
+Date:2023-2-22, Time:22:52:59, Lat:389022491, Long:-771199177, Alt:27878, Satellites:3
+heading-angle:-2.64
+Date:2023-2-22, Time:22:53:0, Lat:389022446, Long:-771199107, Alt:28268, Satellites:3
+heading-angle:-2.14
+Date:2023-2-22, Time:22:53:1, Lat:389022435, Long:-771199278, Alt:29547, Satellites:3
+heading-angle:1.64
+Date:2023-2-22, Time:22:53:2, Lat:389022443, Long:-771199485, Alt:29581, Satellites:3
+heading-angle:1.53
+angle:-0.83
+Date:2023-2-22, Time:22:53:3, Lat:389022462, Long:-771199481, Alt:29354, Satellites:3
+heading-angle:-0.21
+Gravity -- x:-4.31, y:0.32, z:8.79
+Magnetic -- x:57.00, y:-25.75, z:-18.19
+z vector -- G:0.90, Np:0.40, P:0.19
+Date:2023-2-22, Time:22:53:4, Lat:389022502, Long:-771199440, Alt:27017, Satellites:3
+heading-angle:-0.80
+Date:2023-2-22, Time:22:53:5, Lat:389022538, Long:-771199511, Alt:26905, Satellites:3
+heading-angle:1.10
+Date:2023-2-22, Time:22:53:6, Lat:389022516, Long:-771199469, Alt:26772, Satellites:3
+heading-angle:-2.05
+Date:2023-2-22, Time:22:53:7, Lat:389022580, Long:-771199601, Alt:28280, Satellites:3
+heading-angle:1.12
+angle:-0.14
+Date:2023-2-22, Time:22:53:8, Lat:389022655, Long:-771199491, Alt:25359, Satellites:3
+heading-angle:-0.97
+Gravity -- x:-2.68, y:0.31, z:9.42
+Magnetic -- x:50.06, y:-11.25, z:-17.50
+z vector -- G:0.96, Np:0.27, P:0.03
+Date:2023-2-22, Time:22:53:9, Lat:389022736, Long:-771202248, Alt:44854, Satellites:4
+heading-angle:1.54
+Date:2023-2-22, Time:22:53:10, Lat:389023939, Long:-771201927, Alt:40158, Satellites:4
+heading-angle:-0.26
+Date:2023-2-22, Time:22:53:11, Lat:389023900, Long:-771202152, Alt:35505, Satellites:4
+heading-angle:1.74
+Date:2023-2-22, Time:22:53:12, Lat:389023703, Long:-771201509, Alt:27675, Satellites:4
+heading-angle:-1.87
+angle:-0.12
+Date:2023-2-22, Time:22:53:13, Lat:389023654, Long:-771201143, Alt:22171, Satellites:4
+heading-angle:-1.70
+Gravity -- x:-2.68, y:0.31, z:9.42
+Magnetic -- x:49.06, y:-11.69, z:-18.19
+z vector -- G:0.96, Np:0.27, P:0.04
+Date:2023-2-22, Time:22:53:14, Lat:389023653, Long:-771200814, Alt:15825, Satellites:4
+heading-angle:-1.57
+Date:2023-2-22, Time:22:53:15, Lat:389023632, Long:-771200346, Alt:5466, Satellites:4
+heading-angle:-1.62
+Date:2023-2-22, Time:22:53:16, Lat:389023552, Long:-771200052, Alt:63, Satellites:4
+heading-angle:-1.84
+Date:2023-2-22, Time:22:53:17, Lat:389023512, Long:-771199821, Alt:-3604, Satellites:4
+heading-angle:-1.74
+angle:-0.38
+Date:2023-2-22, Time:22:53:18, Lat:389023480, Long:-771199703, Alt:-5443, Satellites:4
+heading-angle:-1.84
+Gravity -- x:-2.69, y:0.28, z:9.42
+Magnetic -- x:51.50, y:-20.38, z:-40.88
+z vector -- G:0.96, Np:0.26, P:0.10
+Date:2023-2-22, Time:22:53:19, Lat:389023459, Long:-771199589, Alt:-7360, Satellites:4
+heading-angle:-1.75
+Date:2023-2-22, Time:22:53:20, Lat:389023444, Long:-771199509, Alt:-9046, Satellites:4
+heading-angle:-1.76
+Date:2023-2-22, Time:22:53:21, Lat:389023433, Long:-771199461, Alt:-9793, Satellites:4
+heading-angle:-1.80
+Date:2023-2-22, Time:22:53:22, Lat:389023410, Long:-771199413, Alt:-10402, Satellites:4
+heading-angle:-2.02
+angle:-0.38
+Date:2023-2-22, Time:22:53:23, Lat:389023390, Long:-771199365, Alt:-10915, Satellites:4
+heading-angle:-1.97
+Gravity -- x:-2.69, y:0.28, z:9.42
+Magnetic -- x:52.56, y:-21.19, z:-41.19
+z vector -- G:0.96, Np:0.26, P:0.10
+Date:2023-2-22, Time:22:53:24, Lat:389023374, Long:-771199326, Alt:-10663, Satellites:4
+heading-angle:-1.96
+Date:2023-2-22, Time:22:53:25, Lat:389023364, Long:-771199226, Alt:-11446, Satellites:4
+heading-angle:-1.67
+Date:2023-2-22, Time:22:53:26, Lat:389023350, Long:-771199158, Alt:-11195, Satellites:4
+heading-angle:-1.77
+Date:2023-2-22, Time:22:53:27, Lat:389023340, Long:-771199026, Alt:-10663, Satellites:4
+heading-angle:-1.65
+angle:-0.58
+Date:2023-2-22, Time:22:53:28, Lat:389023339, Long:-771198865, Alt:-9218, Satellites:4
+heading-angle:-1.58
+Gravity -- x:-2.21, y:-0.15, z:9.55
+Magnetic -- x:45.25, y:-14.06, z:-18.00
+z vector -- G:0.97, Np:0.21, P:0.09
+Date:2023-2-22, Time:22:53:29, Lat:389023338, Long:-771198734, Alt:-8213, Satellites:4
+heading-angle:-1.58
+Date:2023-2-22, Time:22:53:30, Lat:389023336, Long:-771198664, Alt:-7446, Satellites:4
+heading-angle:-1.60
+Date:2023-2-22, Time:22:53:31, Lat:389023326, Long:-771198535, Alt:-7248, Satellites:4
+heading-angle:-1.65
+Date:2023-2-22, Time:22:53:32, Lat:389023324, Long:-771198440, Alt:-5109, Satellites:4
+heading-angle:-1.59
+angle:-0.41
+Date:2023-2-22, Time:22:53:33, Lat:389023328, Long:-771198390, Alt:-2820, Satellites:4
+heading-angle:-1.49
+Gravity -- x:-2.39, y:0.00, z:9.51
+Magnetic -- x:45.75, y:-16.19, z:-23.19
+z vector -- G:0.97, Np:0.22, P:0.09
+Date:2023-2-22, Time:22:53:34, Lat:389023325, Long:-771198349, Alt:216, Satellites:4
+heading-angle:-1.64
+Date:2023-2-22, Time:22:53:35, Lat:389023317, Long:-771198322, Alt:3063, Satellites:4
+heading-angle:-1.86
+Date:2023-2-22, Time:22:53:36, Lat:389023309, Long:-771198305, Alt:5923, Satellites:4
+heading-angle:-2.01
+Date:2023-2-22, Time:22:53:37, Lat:389023297, Long:-771198289, Alt:7186, Satellites:4
+heading-angle:-2.21
+angle:-0.34
+Date:2023-2-22, Time:22:53:38, Lat:389023290, Long:-771198315, Alt:9650, Satellites:4
+heading-angle:1.83
+Gravity -- x:-2.11, y:-3.71, z:8.82
+Magnetic -- x:23.75, y:26.88, z:-36.56
+z vector -- G:0.90, Np:0.39, P:0.19
+Date:2023-2-22, Time:22:53:39, Lat:389023228, Long:-771198301, Alt:11620, Satellites:4
+heading-angle:-2.92
+Date:2023-2-22, Time:22:53:40, Lat:389023165, Long:-771198330, Alt:13188, Satellites:4
+heading-angle:2.71
+Date:2023-2-22, Time:22:53:41, Lat:389023119, Long:-771198249, Alt:13783, Satellites:4
+heading-angle:-2.09
+Date:2023-2-22, Time:22:53:42, Lat:389023093, Long:-771198278, Alt:14656, Satellites:4
+heading-angle:2.30
+angle:2.50
+Date:2023-2-22, Time:22:53:43, Lat:389023029, Long:-771198115, Alt:15589, Satellites:4
+heading-angle:-1.94
+Gravity -- x:-2.28, y:-9.27, z:-2.19
+Magnetic -- x:-27.56, y:-39.75, z:138.75
+z vector -- G:-0.22, Np:0.97, P:-0.12
+Date:2023-2-22, Time:22:53:44, Lat:389023018, Long:-771198427, Alt:16368, Satellites:4
+heading-angle:1.61
+Date:2023-2-22, Time:22:53:45, Lat:389022881, Long:-771198155, Alt:18737, Satellites:4
+heading-angle:-2.04
+Date:2023-2-22, Time:22:53:46, Lat:389022909, Long:-771197966, Alt:21663, Satellites:4
+heading-angle:-1.42
+Date:2023-2-22, Time:22:53:47, Lat:389022939, Long:-771197776, Alt:24337, Satellites:4
+heading-angle:-1.41
+angle:-2.63
+Date:2023-2-22, Time:22:53:48, Lat:389022960, Long:-771197889, Alt:25532, Satellites:4
+heading-angle:1.39
+Gravity -- x:-0.76, y:-9.74, z:-0.79
+Magnetic -- x:62.06, y:-115.19, z:-126.56
+z vector -- G:-0.08, Np:-0.85, P:0.52
+Date:2023-2-22, Time:22:53:49, Lat:389022905, Long:-771197814, Alt:27371, Satellites:4
+heading-angle:-2.20
+Date:2023-2-22, Time:22:53:50, Lat:389022901, Long:-771197969, Alt:28900, Satellites:4
+heading-angle:1.60
+Date:2023-2-22, Time:22:53:51, Lat:389022800, Long:-771197973, Alt:29525, Satellites:4
+heading-angle:3.10
+Date:2023-2-22, Time:22:53:52, Lat:389022788, Long:-771197763, Alt:30040, Satellites:4
+heading-angle:-1.63
+angle:-2.35
+Date:2023-2-22, Time:22:53:53, Lat:389022863, Long:-771197719, Alt:30405, Satellites:4
+heading-angle:-0.53
+Gravity -- x:-0.21, y:-9.66, z:-1.64
+Magnetic -- x:75.06, y:-150.06, z:-101.88
+z vector -- G:-0.17, Np:-0.68, P:0.71
+Date:2023-2-22, Time:22:53:54, Lat:389022882, Long:-771197605, Alt:31547, Satellites:4
+heading-angle:-1.41
+Date:2023-2-22, Time:22:53:55, Lat:389022904, Long:-771197376, Alt:33234, Satellites:4
+heading-angle:-1.48
+Date:2023-2-22, Time:22:53:56, Lat:389022948, Long:-771197219, Alt:35106, Satellites:4
+heading-angle:-1.30
+Date:2023-2-22, Time:22:53:57, Lat:389022946, Long:-771197091, Alt:37801, Satellites:4
+heading-angle:-1.59
+angle:-2.35
+Date:2023-2-22, Time:22:53:58, Lat:389022898, Long:-771196910, Alt:41271, Satellites:4
+heading-angle:-1.83
+Gravity -- x:-0.22, y:-9.66, z:-1.62
+Magnetic -- x:74.75, y:-150.06, z:-102.25
+z vector -- G:-0.17, Np:-0.69, P:0.71
+Date:2023-2-22, Time:22:53:59, Lat:389022841, Long:-771196767, Alt:44601, Satellites:4
+heading-angle:-1.95
+Date:2023-2-22, Time:22:54:0, Lat:389022780, Long:-771196517, Alt:46890, Satellites:4
+heading-angle:-1.81
+Date:2023-2-22, Time:22:54:1, Lat:389022802, Long:-771196400, Alt:48918, Satellites:4
+heading-angle:-1.38
+Date:2023-2-22, Time:22:54:2, Lat:389022790, Long:-771196332, Alt:50920, Satellites:4
+heading-angle:-1.75
+angle:-1.50
+Date:2023-2-22, Time:22:54:3, Lat:389022733, Long:-771196350, Alt:51723, Satellites:4
+heading-angle:2.84
+Gravity -- x:-0.85, y:-9.69, z:1.23
+Magnetic -- x:127.50, y:-192.69, z:190.50
+z vector -- G:0.13, Np:0.75, P:0.65
+Date:2023-2-22, Time:22:54:4, Lat:389022686, Long:-771196018, Alt:58544, Satellites:4
+heading-angle:-1.71
+Date:2023-2-22, Time:22:54:5, Lat:389022563, Long:-771195749, Alt:62403, Satellites:4
+heading-angle:-2.00
+Date:2023-2-22, Time:22:54:6, Lat:389022494, Long:-771195520, Alt:65033, Satellites:4
+heading-angle:-1.86
+Date:2023-2-22, Time:22:54:7, Lat:389022404, Long:-771195321, Alt:67434, Satellites:4
+heading-angle:-2.00
+angle:-1.50
+Date:2023-2-22, Time:22:54:8, Lat:389022335, Long:-771195231, Alt:65100, Satellites:4
+heading-angle:-2.22
+Gravity -- x:-6.20, y:-7.59, z:0.05
+Magnetic -- x:34.38, y:-265.06, z:28.50
+z vector -- G:0.01, Np:0.14, P:0.99
+Date:2023-2-22, Time:22:54:9, Lat:389022235, Long:-771195280, Alt:64153, Satellites:4
+heading-angle:2.69
+Date:2023-2-22, Time:22:54:10, Lat:389022165, Long:-771195296, Alt:66074, Satellites:4
+heading-angle:2.92
+Date:2023-2-22, Time:22:54:11, Lat:389022132, Long:-771195281, Alt:66945, Satellites:4
+heading-angle:-2.71
+Date:2023-2-22, Time:22:54:12, Lat:389022097, Long:-771195405, Alt:63857, Satellites:4
+heading-angle:1.85
+angle:-1.73
+Date:2023-2-22, Time:22:54:13, Lat:389022128, Long:-771195856, Alt:61047, Satellites:4
+heading-angle:1.50
+Gravity -- x:-3.20, y:-9.26, z:-0.15
+Magnetic -- x:16.56, y:-196.25, z:-18.25
+z vector -- G:-0.02, Np:-0.19, P:0.98
+Date:2023-2-22, Time:22:54:14, Lat:389022116, Long:-771196043, Alt:61789, Satellites:4
+heading-angle:1.63
+Date:2023-2-22, Time:22:54:15, Lat:389022058, Long:-771196146, Alt:61197, Satellites:4
+heading-angle:2.08
+Date:2023-2-22, Time:22:54:16, Lat:389022005, Long:-771196399, Alt:57675, Satellites:4
+heading-angle:1.78
+Date:2023-2-22, Time:22:54:17, Lat:389022001, Long:-771196434, Alt:52088, Satellites:4
+heading-angle:1.68
+angle:-2.32
+Date:2023-2-22, Time:22:54:18, Lat:389022045, Long:-771196373, Alt:52436, Satellites:4
+heading-angle:-0.95
+Gravity -- x:-3.81, y:-8.95, z:-1.19
+Magnetic -- x:-14.38, y:-17.00, z:-12.50
+z vector -- G:-0.12, Np:-0.83, P:-0.55
+Date:2023-2-22, Time:22:54:19, Lat:389022016, Long:-771196498, Alt:51992, Satellites:4
+heading-angle:1.80
+Date:2023-2-22, Time:22:54:20, Lat:389021909, Long:-771197109, Alt:48889, Satellites:3
+heading-angle:1.74
+Date:2023-2-22, Time:22:54:21, Lat:389022081, Long:-771197007, Alt:40871, Satellites:4
+heading-angle:-0.54
+Date:2023-2-22, Time:22:54:22, Lat:389022033, Long:-771196951, Alt:40345, Satellites:4
+heading-angle:-2.28
+angle:2.65
+Date:2023-2-22, Time:22:54:23, Lat:389021974, Long:-771196859, Alt:39573, Satellites:4
+heading-angle:-2.14
+Gravity -- x:-5.52, y:-8.01, z:1.21
+Magnetic -- x:19.00, y:6.25, z:-27.50
+z vector -- G:0.12, Np:-0.90, P:0.43
+Date:2023-2-22, Time:22:54:24, Lat:389021906, Long:-771196834, Alt:38910, Satellites:4
+heading-angle:-2.79
+Date:2023-2-22, Time:22:54:25, Lat:389021894, Long:-771197124, Alt:38522, Satellites:4
+heading-angle:1.61
+Date:2023-2-22, Time:22:54:26, Lat:389021791, Long:-771197823, Alt:38513, Satellites:4
+heading-angle:1.72
+Date:2023-2-22, Time:22:54:27, Lat:389021630, Long:-771198182, Alt:38281, Satellites:4
+heading-angle:1.99
+angle:2.92
+Date:2023-2-22, Time:22:54:28, Lat:389021581, Long:-771196863, Alt:37877, Satellites:4
+heading-angle:-1.61
+Gravity -- x:-1.66, y:-9.18, z:3.00
+Magnetic -- x:-15.06, y:37.75, z:-21.50
+z vector -- G:0.31, Np:-0.40, P:-0.86
+Date:2023-2-22, Time:22:54:29, Lat:389021867, Long:-771196742, Alt:37695, Satellites:4
+heading-angle:-0.40
+Date:2023-2-22, Time:22:54:30, Lat:389021879, Long:-771196793, Alt:37623, Satellites:4
+heading-angle:1.34
+Date:2023-2-22, Time:22:54:31, Lat:389021760, Long:-771196403, Alt:35543, Satellites:3
+heading-angle:-1.87
+Date:2023-2-22, Time:22:54:32, Lat:389021650, Long:-771195793, Alt:31592, Satellites:3
+heading-angle:-1.75
+angle:1.82
+Date:2023-2-22, Time:22:54:33, Lat:389021598, Long:-771195261, Alt:31743, Satellites:3
+heading-angle:-1.67
+Gravity -- x:-4.93, y:-8.44, z:0.60
+Magnetic -- x:27.56, y:27.25, z:-18.19
+z vector -- G:0.06, Np:-0.84, P:0.53
+Date:2023-2-22, Time:22:54:34, Lat:389021688, Long:-771195666, Alt:29176, Satellites:3
+heading-angle:1.35
+Date:2023-2-22, Time:22:54:35, Lat:389021636, Long:-771196311, Alt:28130, Satellites:3
+heading-angle:1.65
+Date:2023-2-22, Time:22:54:36, Lat:389021592, Long:-771196196, Alt:28032, Satellites:4
+heading-angle:-1.94
+Date:2023-2-22, Time:22:54:37, Lat:389021805, Long:-771196382, Alt:27827, Satellites:4
+heading-angle:0.72
+angle:-1.85
+Date:2023-2-22, Time:22:54:38, Lat:389021853, Long:-771196335, Alt:31033, Satellites:3
+heading-angle:-0.77
+Gravity -- x:-4.95, y:-8.36, z:1.27
+Magnetic -- x:36.50, y:24.19, z:-7.50
+z vector -- G:0.13, Np:-0.12, P:0.98
+Date:2023-2-22, Time:22:54:39, Lat:389021784, Long:-771196686, Alt:28102, Satellites:3
+heading-angle:1.76
+Date:2023-2-22, Time:22:54:40, Lat:389021700, Long:-771196821, Alt:27297, Satellites:3
+heading-angle:2.13
+Date:2023-2-22, Time:22:54:41, Lat:389021891, Long:-771195538, Alt:25469, Satellites:4
+heading-angle:-1.42
+Date:2023-2-22, Time:22:54:42, Lat:389021973, Long:-771195980, Alt:25249, Satellites:4
+heading-angle:1.39
+angle:-1.61
+Date:2023-2-22, Time:22:54:43, Lat:389021796, Long:-771195923, Alt:25662, Satellites:4
+heading-angle:-2.83
+Gravity -- x:-3.77, y:-8.93, z:-1.42
+Magnetic -- x:33.56, y:23.88, z:4.06
+z vector -- G:-0.14, Np:-0.05, P:0.99
+Date:2023-2-22, Time:22:54:44, Lat:389021846, Long:-771194795, Alt:26402, Satellites:4
+heading-angle:-1.53
+Date:2023-2-22, Time:22:54:45, Lat:389021970, Long:-771194215, Alt:27716, Satellites:4
+heading-angle:-1.36
+Date:2023-2-22, Time:22:54:46, Lat:389021939, Long:-771193947, Alt:28872, Satellites:4
+heading-angle:-1.69
+Date:2023-2-22, Time:22:54:47, Lat:389021841, Long:-771192597, Alt:31114, Satellites:4
+heading-angle:-1.64
+angle:-2.16
+Date:2023-2-22, Time:22:54:48, Lat:389021694, Long:-771192451, Alt:32072, Satellites:4
+heading-angle:-2.36
+Gravity -- x:-5.00, y:-8.42, z:0.41
+Magnetic -- x:31.00, y:19.19, z:-8.00
+z vector -- G:0.04, Np:-0.37, P:0.93
+Date:2023-2-22, Time:22:54:49, Lat:389021666, Long:-771192973, Alt:32632, Satellites:4
+heading-angle:1.62
+Date:2023-2-22, Time:22:54:50, Lat:389021610, Long:-771193803, Alt:33137, Satellites:4
+heading-angle:1.64
+Date:2023-2-22, Time:22:54:51, Lat:389021450, Long:-771194096, Alt:33595, Satellites:4
+heading-angle:2.07
+Date:2023-2-22, Time:22:54:52, Lat:389021488, Long:-771194774, Alt:34953, Satellites:4
+heading-angle:1.51
+angle:-1.62
+Date:2023-2-22, Time:22:54:53, Lat:389021398, Long:-771195631, Alt:36421, Satellites:4
+heading-angle:1.68
+Gravity -- x:-5.07, y:-8.33, z:1.01
+Magnetic -- x:34.56, y:20.00, z:-16.38
+z vector -- G:0.10, Np:-0.55, P:0.83
+Date:2023-2-22, Time:22:54:54, Lat:389021307, Long:-771196195, Alt:37606, Satellites:4
+heading-angle:1.73
+Date:2023-2-22, Time:22:54:55, Lat:389021278, Long:-771196985, Alt:38524, Satellites:4
+heading-angle:1.61
+Date:2023-2-22, Time:22:54:56, Lat:389021142, Long:-771197247, Alt:39597, Satellites:4
+heading-angle:2.05
+Date:2023-2-22, Time:22:54:57, Lat:389021113, Long:-771197520, Alt:40726, Satellites:4
+heading-angle:1.68
+angle:-2.26
+Date:2023-2-22, Time:22:54:58, Lat:389021102, Long:-771197863, Alt:41753, Satellites:4
+heading-angle:1.60
+Gravity -- x:-4.71, y:-8.58, z:0.57
+Magnetic -- x:32.00, y:24.06, z:-15.75
+z vector -- G:0.06, Np:-0.64, P:0.77
+Date:2023-2-22, Time:22:54:59, Lat:389021018, Long:-771197603, Alt:42776, Satellites:4
+heading-angle:-1.88
+Date:2023-2-22, Time:22:55:0, Lat:389021074, Long:-771197934, Alt:44035, Satellites:4
+heading-angle:1.40
+Date:2023-2-22, Time:22:55:1, Lat:389020922, Long:-771197308, Alt:46194, Satellites:4
+heading-angle:-1.81
+Date:2023-2-22, Time:22:55:2, Lat:389021019, Long:-771196471, Alt:49637, Satellites:4
+heading-angle:-1.46
+angle:0.12
+Date:2023-2-22, Time:22:55:3, Lat:389021181, Long:-771195872, Alt:51196, Satellites:4
+heading-angle:-1.31
+Gravity -- x:0.33, y:-8.90, z:4.09
+Magnetic -- x:-1.25, y:52.50, z:-6.00
+z vector -- G:0.42, Np:0.91, P:0.04
+Date:2023-2-22, Time:22:55:4, Lat:389021358, Long:-771195522, Alt:51732, Satellites:4
+heading-angle:-1.10
+Date:2023-2-22, Time:22:55:5, Lat:389021489, Long:-771195407, Alt:52714, Satellites:4
+heading-angle:-0.72
+Date:2023-2-22, Time:22:55:6, Lat:389021525, Long:-771195295, Alt:53161, Satellites:4
+heading-angle:-1.26
+Date:2023-2-22, Time:22:55:7, Lat:389021572, Long:-771195254, Alt:53332, Satellites:4
+heading-angle:-0.72
+angle:-0.00
+Date:2023-2-22, Time:22:55:8, Lat:389021602, Long:-771195193, Alt:53931, Satellites:4
+heading-angle:-1.11
+Gravity -- x:-3.46, y:-9.16, z:-0.50
+Magnetic -- x:28.56, y:34.38, z:14.25
+z vector -- G:-0.05, Np:0.64, P:0.77
+Date:2023-2-22, Time:22:55:9, Lat:389021619, Long:-771195169, Alt:55362, Satellites:4
+heading-angle:-0.95
+Date:2023-2-22, Time:22:55:10, Lat:389021618, Long:-771195016, Alt:54956, Satellites:4
+heading-angle:-1.58
+Date:2023-2-22, Time:22:55:11, Lat:389021644, Long:-771194886, Alt:55228, Satellites:4
+heading-angle:-1.37
+Date:2023-2-22, Time:22:55:12, Lat:389021665, Long:-771194889, Alt:55685, Satellites:4
+heading-angle:0.14
+angle:-0.86
+Date:2023-2-22, Time:22:55:13, Lat:389021630, Long:-771194888, Alt:58318, Satellites:4
+heading-angle:-3.11
+Gravity -- x:-3.18, y:-8.73, z:3.12
+Magnetic -- x:23.00, y:29.56, z:-0.38
+z vector -- G:0.32, Np:0.66, P:0.69
+Date:2023-2-22, Time:22:55:14, Lat:389021572, Long:-771194814, Alt:59006, Satellites:4
+heading-angle:-2.24
+Date:2023-2-22, Time:22:55:15, Lat:389021536, Long:-771194629, Alt:59145, Satellites:4
+heading-angle:-1.76
+Date:2023-2-22, Time:22:55:16, Lat:389021482, Long:-771194527, Alt:61346, Satellites:4
+heading-angle:-2.06
+Date:2023-2-22, Time:22:55:17, Lat:389021427, Long:-771194392, Alt:63521, Satellites:4
+heading-angle:-1.96
+angle:-1.41
+Date:2023-2-22, Time:22:55:18, Lat:389021297, Long:-771194201, Alt:64364, Satellites:4
+heading-angle:-2.17
+Gravity -- x:-4.98, y:-6.18, z:5.75
+Magnetic -- x:39.75, y:6.50, z:-12.06
+z vector -- G:0.59, Np:0.23, P:0.78
+Date:2023-2-22, Time:22:55:19, Lat:389021213, Long:-771194078, Alt:67455, Satellites:4
+heading-angle:-2.17
+Date:2023-2-22, Time:22:55:20, Lat:389021174, Long:-771194085, Alt:72737, Satellites:4
+heading-angle:2.96
+Date:2023-2-22, Time:22:55:21, Lat:389021244, Long:-771193725, Alt:70442, Satellites:4
+heading-angle:-1.38
+Date:2023-2-22, Time:22:55:22, Lat:389021329, Long:-771193476, Alt:70859, Satellites:4
+heading-angle:-1.24
+angle:-1.91
+Date:2023-2-22, Time:22:55:23, Lat:389021417, Long:-771193161, Alt:71943, Satellites:4
+heading-angle:-1.30
+Gravity -- x:-3.68, y:-6.84, z:5.97
+Magnetic -- x:34.56, y:6.38, z:-29.75
+z vector -- G:0.61, Np:-0.28, P:0.74
+Date:2023-2-22, Time:22:55:24, Lat:389021468, Long:-771192811, Alt:73017, Satellites:4
+heading-angle:-1.43
+Date:2023-2-22, Time:22:55:25, Lat:389021487, Long:-771192529, Alt:72459, Satellites:4
+heading-angle:-1.50
+Date:2023-2-22, Time:22:55:26, Lat:389021485, Long:-771192078, Alt:74304, Satellites:4
+heading-angle:-1.58
+Date:2023-2-22, Time:22:55:27, Lat:389021492, Long:-771191821, Alt:77640, Satellites:4
+heading-angle:-1.54
+angle:-1.69
+Date:2023-2-22, Time:22:55:28, Lat:389021445, Long:-771191492, Alt:77821, Satellites:4
+heading-angle:-1.71
+Gravity -- x:-3.73, y:-6.09, z:6.71
+Magnetic -- x:33.19, y:16.06, z:-20.06
+z vector -- G:0.68, Np:0.23, P:0.69
+Date:2023-2-22, Time:22:55:29, Lat:389021430, Long:-771191131, Alt:77601, Satellites:4
+heading-angle:-1.61
+Date:2023-2-22, Time:22:55:30, Lat:389021288, Long:-771190769, Alt:78427, Satellites:4
+heading-angle:-1.94
+Date:2023-2-22, Time:22:55:31, Lat:389021185, Long:-771190417, Alt:79041, Satellites:4
+heading-angle:-1.86
+Date:2023-2-22, Time:22:55:32, Lat:389020992, Long:-771190301, Alt:86753, Satellites:4
+heading-angle:-2.60
+angle:-0.89
+Date:2023-2-22, Time:22:55:33, Lat:389020592, Long:-771190108, Alt:88730, Satellites:4
+heading-angle:-2.69
+Gravity -- x:-3.52, y:-6.72, z:6.21
+Magnetic -- x:20.06, y:27.25, z:-14.00
+z vector -- G:0.63, Np:0.69, P:0.34
+Date:2023-2-22, Time:22:55:34, Lat:389020284, Long:-771189994, Alt:91653, Satellites:4
+heading-angle:-2.79
+Date:2023-2-22, Time:22:55:35, Lat:389020036, Long:-771189714, Alt:94885, Satellites:4
+heading-angle:-2.30
+Date:2023-2-22, Time:22:55:36, Lat:389019545, Long:-771189582, Alt:97661, Satellites:4
+heading-angle:-2.88
+Date:2023-2-22, Time:22:55:37, Lat:389019057, Long:-771189649, Alt:108425, Satellites:4
+heading-angle:3.01
+angle:0.09
+Date:2023-2-22, Time:22:55:38, Lat:389018614, Long:-771189968, Alt:123350, Satellites:4
+heading-angle:2.52
+Gravity -- x:-3.61, y:-7.12, z:5.68
+Magnetic -- x:16.75, y:34.69, z:-7.06
+z vector -- G:0.58, Np:0.81, P:-0.04
+Date:2023-2-22, Time:22:55:39, Lat:389018256, Long:-771190173, Alt:134651, Satellites:4
+heading-angle:2.62
+Date:2023-2-22, Time:22:55:40, Lat:389018007, Long:-771190302, Alt:141168, Satellites:4
+heading-angle:2.66
+Date:2023-2-22, Time:22:55:41, Lat:389017783, Long:-771190186, Alt:146350, Satellites:4
+heading-angle:-2.66
+Date:2023-2-22, Time:22:55:42, Lat:389017669, Long:-771190000, Alt:146678, Satellites:4
+heading-angle:-2.12
+angle:-1.42
+Date:2023-2-22, Time:22:55:43, Lat:389017642, Long:-771189415, Alt:137871, Satellites:4
+heading-angle:-1.62
+Gravity -- x:-6.48, y:-4.95, z:5.44
+Magnetic -- x:40.75, y:-8.25, z:-31.38
+z vector -- G:0.55, Np:-0.27, P:0.79
+Date:2023-2-22, Time:22:55:44, Lat:389017640, Long:-771188794, Alt:129353, Satellites:4
+heading-angle:-1.57
+Date:2023-2-22, Time:22:55:45, Lat:389017728, Long:-771187799, Alt:104248, Satellites:4
+heading-angle:-1.48
+Date:2023-2-22, Time:22:55:46, Lat:389017668, Long:-771186933, Alt:85683, Satellites:4
+heading-angle:-1.64
+Date:2023-2-22, Time:22:55:47, Lat:389017649, Long:-771186333, Alt:76295, Satellites:4
+heading-angle:-1.60
+angle:-2.31
+Date:2023-2-22, Time:22:55:48, Lat:389017802, Long:-771185873, Alt:71870, Satellites:4
+heading-angle:-1.25
+Gravity -- x:-0.84, y:-6.83, z:6.97
+Magnetic -- x:16.06, y:10.69, z:-44.75
+z vector -- G:0.71, Np:-0.59, P:0.38
+Date:2023-2-22, Time:22:55:49, Lat:389017940, Long:-771185606, Alt:68972, Satellites:4
+heading-angle:-1.09
+Date:2023-2-22, Time:22:55:50, Lat:389018095, Long:-771185619, Alt:66590, Satellites:4
+heading-angle:0.08
+Date:2023-2-22, Time:22:55:51, Lat:389018149, Long:-771185762, Alt:65690, Satellites:4
+heading-angle:1.21
+Date:2023-2-22, Time:22:55:52, Lat:389018160, Long:-771185764, Alt:63717, Satellites:4
+heading-angle:0.18
+angle:-2.32
+Date:2023-2-22, Time:22:55:53, Lat:389018321, Long:-771185646, Alt:64137, Satellites:4
+heading-angle:-0.63
+Gravity -- x:-3.18, y:-6.69, z:6.42
+Magnetic -- x:28.69, y:14.88, z:-40.00
+z vector -- G:0.65, Np:-0.43, P:0.62
+Date:2023-2-22, Time:22:55:54, Lat:389018505, Long:-771185864, Alt:61660, Satellites:4
+heading-angle:0.87
+Date:2023-2-22, Time:22:55:55, Lat:389018617, Long:-771185957, Alt:58457, Satellites:4
+heading-angle:0.69
+Date:2023-2-22, Time:22:55:56, Lat:389018784, Long:-771186062, Alt:57004, Satellites:4
+heading-angle:0.56
+Date:2023-2-22, Time:22:55:57, Lat:389018922, Long:-771185875, Alt:57735, Satellites:4
+heading-angle:-0.94
+angle:-2.02
+Date:2023-2-22, Time:22:55:58, Lat:389019059, Long:-771185734, Alt:58786, Satellites:4
+heading-angle:-0.80
+Gravity -- x:-4.61, y:-6.97, z:5.12
+Magnetic -- x:33.19, y:10.50, z:-35.88
+z vector -- G:0.52, Np:-0.51, P:0.68
+Date:2023-2-22, Time:22:55:59, Lat:389019202, Long:-771185669, Alt:62719, Satellites:4
+heading-angle:-0.43
+Date:2023-2-22, Time:22:56:0, Lat:389019235, Long:-771185432, Alt:65197, Satellites:4
+heading-angle:-1.43
+Date:2023-2-22, Time:22:56:1, Lat:389019372, Long:-771185456, Alt:64223, Satellites:4
+heading-angle:0.17
+Date:2023-2-22, Time:22:56:2, Lat:389019535, Long:-771185336, Alt:63474, Satellites:4
+heading-angle:-0.63
+angle:-1.94
+Date:2023-2-22, Time:22:56:3, Lat:389019713, Long:-771184906, Alt:65874, Satellites:4
+heading-angle:-1.18
+Gravity -- x:-4.29, y:-6.92, z:5.45
+Magnetic -- x:38.25, y:13.38, z:-26.75
+z vector -- G:0.56, Np:-0.15, P:0.82
+Date:2023-2-22, Time:22:56:4, Lat:389019867, Long:-771184526, Alt:66738, Satellites:4
+heading-angle:-1.19
+Date:2023-2-22, Time:22:56:5, Lat:389020055, Long:-771184191, Alt:66178, Satellites:4
+heading-angle:-1.06
+Date:2023-2-22, Time:22:56:6, Lat:389020267, Long:-771183852, Alt:64868, Satellites:4
+heading-angle:-1.01
+Date:2023-2-22, Time:22:56:7, Lat:389020498, Long:-771183804, Alt:62624, Satellites:4
+heading-angle:-0.20
+angle:-1.89
+Date:2023-2-22, Time:22:56:8, Lat:389020673, Long:-771183784, Alt:61083, Satellites:4
+heading-angle:-0.11
+Gravity -- x:-4.16, y:-6.73, z:5.78
+Magnetic -- x:35.75, y:11.75, z:-26.56
+z vector -- G:0.59, Np:-0.15, P:0.79
+Date:2023-2-22, Time:22:56:9, Lat:389020799, Long:-771183554, Alt:59333, Satellites:4
+heading-angle:-1.07
+Date:2023-2-22, Time:22:56:10, Lat:389020983, Long:-771183150, Alt:60037, Satellites:4
+heading-angle:-1.14
+Date:2023-2-22, Time:22:56:11, Lat:389021168, Long:-771182805, Alt:60183, Satellites:4
+heading-angle:-1.08
+Date:2023-2-22, Time:22:56:12, Lat:389021358, Long:-771182385, Alt:60059, Satellites:4
+heading-angle:-1.15
+angle:-2.07
+Date:2023-2-22, Time:22:56:13, Lat:389021606, Long:-771182105, Alt:58891, Satellites:4
+heading-angle:-0.85
+Gravity -- x:-4.37, y:-6.81, z:5.52
+Magnetic -- x:35.88, y:8.00, z:-32.69
+z vector -- G:0.56, Np:-0.35, P:0.75
+Date:2023-2-22, Time:22:56:14, Lat:389021854, Long:-771181850, Alt:59451, Satellites:4
+heading-angle:-0.80
+Date:2023-2-22, Time:22:56:15, Lat:389022050, Long:-771181457, Alt:59553, Satellites:4
+heading-angle:-1.11
+Date:2023-2-22, Time:22:56:16, Lat:389022299, Long:-771181270, Alt:59650, Satellites:4
+heading-angle:-0.64
+Date:2023-2-22, Time:22:56:17, Lat:389022473, Long:-771181085, Alt:58158, Satellites:4
+heading-angle:-0.82
+angle:-1.88
+Date:2023-2-22, Time:22:56:18, Lat:389022691, Long:-771180776, Alt:56026, Satellites:4
+heading-angle:-0.96
+Gravity -- x:-2.82, y:-8.05, z:4.82
+Magnetic -- x:32.56, y:21.00, z:-27.38
+z vector -- G:0.49, Np:-0.30, P:0.82
+Date:2023-2-22, Time:22:56:19, Lat:389022961, Long:-771181051, Alt:51590, Satellites:4
+heading-angle:0.79
+Date:2023-2-22, Time:22:56:20, Lat:389023067, Long:-771181326, Alt:49035, Satellites:4
+heading-angle:1.20
+Date:2023-2-22, Time:22:56:21, Lat:389023156, Long:-771180978, Alt:47539, Satellites:4
+heading-angle:-1.32
+Date:2023-2-22, Time:22:56:22, Lat:389023207, Long:-771180376, Alt:48454, Satellites:4
+heading-angle:-1.49
+angle:-1.21
+Date:2023-2-22, Time:22:56:23, Lat:389023207, Long:-771179112, Alt:50891, Satellites:4
+heading-angle:-1.57
+Gravity -- x:-3.73, y:-7.19, z:5.52
+Magnetic -- x:35.00, y:29.38, z:-15.88
+z vector -- G:0.56, Np:0.43, P:0.71
+Date:2023-2-22, Time:22:56:24, Lat:389023272, Long:-771177667, Alt:52822, Satellites:4
+heading-angle:-1.53
+Date:2023-2-22, Time:22:56:25, Lat:389023326, Long:-771177029, Alt:50384, Satellites:4
+heading-angle:-1.49
+Date:2023-2-22, Time:22:56:26, Lat:389023272, Long:-771176503, Alt:48923, Satellites:4
+heading-angle:-1.67
+Date:2023-2-22, Time:22:56:27, Lat:389023199, Long:-771175833, Alt:50584, Satellites:4
+heading-angle:-1.68
+angle:-1.08
+Date:2023-2-22, Time:22:56:28, Lat:389023094, Long:-771175369, Alt:51530, Satellites:4
+heading-angle:-1.79
+Gravity -- x:-3.85, y:-6.94, z:5.75
+Magnetic -- x:38.38, y:23.50, z:-16.69
+z vector -- G:0.59, Np:0.32, P:0.74
+Date:2023-2-22, Time:22:56:29, Lat:389022987, Long:-771174661, Alt:53589, Satellites:4
+heading-angle:-1.72
+Date:2023-2-22, Time:22:56:30, Lat:389022935, Long:-771174090, Alt:56153, Satellites:4
+heading-angle:-1.66
+Date:2023-2-22, Time:22:56:31, Lat:389022916, Long:-771173525, Alt:55851, Satellites:4
+heading-angle:-1.60
+Date:2023-2-22, Time:22:56:32, Lat:389022894, Long:-771172828, Alt:57166, Satellites:4
+heading-angle:-1.60
+angle:-1.15
+Date:2023-2-22, Time:22:56:33, Lat:389022852, Long:-771172116, Alt:60840, Satellites:4
+heading-angle:-1.63
+Gravity -- x:-3.74, y:-6.00, z:6.78
+Magnetic -- x:38.25, y:13.19, z:-23.38
+z vector -- G:0.69, Np:0.14, P:0.71
+Date:2023-2-22, Time:22:56:34, Lat:389022807, Long:-771172091, Alt:58546, Satellites:4
+heading-angle:-2.63
+Date:2023-2-22, Time:22:56:35, Lat:389022887, Long:-771171313, Alt:58356, Satellites:4
+heading-angle:-1.47
+Date:2023-2-22, Time:22:56:36, Lat:389022863, Long:-771170561, Alt:63908, Satellites:4
+heading-angle:-1.60
+Date:2023-2-22, Time:22:56:37, Lat:389022801, Long:-771169690, Alt:64621, Satellites:4
+heading-angle:-1.64
+angle:-1.23
+Date:2023-2-22, Time:22:56:38, Lat:389022735, Long:-771168967, Alt:67544, Satellites:4
+heading-angle:-1.66
+Gravity -- x:-4.46, y:-5.74, z:6.57
+Magnetic -- x:39.88, y:15.38, z:-22.38
+z vector -- G:0.67, Np:0.25, P:0.70
+Date:2023-2-22, Time:22:56:39, Lat:389022819, Long:-771168198, Alt:70917, Satellites:5
+heading-angle:-1.46
+Date:2023-2-22, Time:22:56:40, Lat:389022945, Long:-771167645, Alt:72557, Satellites:5
+heading-angle:-1.35
+Date:2023-2-22, Time:22:56:41, Lat:389022986, Long:-771166785, Alt:77415, Satellites:5
+heading-angle:-1.52
+Date:2023-2-22, Time:22:56:42, Lat:389022932, Long:-771165813, Alt:81489, Satellites:5
+heading-angle:-1.63
+angle:-1.28
+Date:2023-2-22, Time:22:56:43, Lat:389022881, Long:-771165109, Alt:86541, Satellites:5
+heading-angle:-1.64
+Gravity -- x:-4.53, y:-5.77, z:6.49
+Magnetic -- x:39.69, y:15.50, z:-22.38
+z vector -- G:0.66, Np:0.25, P:0.71
+Date:2023-2-22, Time:22:56:44, Lat:389022893, Long:-771164370, Alt:92850, Satellites:5
+heading-angle:-1.55
+Date:2023-2-22, Time:22:56:45, Lat:389022855, Long:-771163763, Alt:93408, Satellites:5
+heading-angle:-1.63
+Date:2023-2-22, Time:22:56:46, Lat:389022845, Long:-771162940, Alt:93063, Satellites:5
+heading-angle:-1.58
+Date:2023-2-22, Time:22:56:47, Lat:389022790, Long:-771161827, Alt:85819, Satellites:5
+heading-angle:-1.62
+angle:-1.50
+Date:2023-2-22, Time:22:56:48, Lat:389022803, Long:-771160879, Alt:83350, Satellites:5
+heading-angle:-1.56
+Gravity -- x:-4.98, y:-5.40, z:6.48
+Magnetic -- x:42.56, y:4.06, z:-26.06
+z vector -- G:0.66, Np:0.04, P:0.75
+Date:2023-2-22, Time:22:56:49, Lat:389022834, Long:-771159896, Alt:81312, Satellites:5
+heading-angle:-1.54
+Date:2023-2-22, Time:22:56:50, Lat:389022985, Long:-771158814, Alt:74384, Satellites:5
+heading-angle:-1.43
+Date:2023-2-22, Time:22:56:51, Lat:389023276, Long:-771157747, Alt:65080, Satellites:5
+heading-angle:-1.30
+Date:2023-2-22, Time:22:56:52, Lat:389023740, Long:-771157004, Alt:59531, Satellites:5
+heading-angle:-1.01
+angle:-1.96
+Date:2023-2-22, Time:22:56:53, Lat:389024253, Long:-771156405, Alt:54532, Satellites:5
+heading-angle:-0.86
+Gravity -- x:-4.98, y:-5.86, z:6.08
+Magnetic -- x:31.00, y:4.69, z:-37.75
+z vector -- G:0.62, Np:-0.46, P:0.63
+Date:2023-2-22, Time:22:56:54, Lat:389024835, Long:-771155842, Alt:52075, Satellites:5
+heading-angle:-0.77
+Date:2023-2-22, Time:22:56:55, Lat:389025493, Long:-771155669, Alt:48559, Satellites:5
+heading-angle:-0.26
+Date:2023-2-22, Time:22:56:56, Lat:389026049, Long:-771155389, Alt:46261, Satellites:5
+heading-angle:-0.47
+Date:2023-2-22, Time:22:56:57, Lat:389026573, Long:-771154992, Alt:44556, Satellites:5
+heading-angle:-0.65
+angle:-2.14
+Date:2023-2-22, Time:22:56:58, Lat:389027045, Long:-771154765, Alt:43679, Satellites:5
+heading-angle:-0.45
+Gravity -- x:-3.96, y:-6.73, z:5.92
+Magnetic -- x:29.88, y:11.25, z:-33.00
+z vector -- G:0.60, Np:-0.39, P:0.69
+Date:2023-2-22, Time:22:56:59, Lat:389027248, Long:-771154487, Alt:42385, Satellites:5
+heading-angle:-0.94
+Date:2023-2-22, Time:22:57:0, Lat:389027376, Long:-771154169, Alt:43211, Satellites:5
+heading-angle:-1.19
+Date:2023-2-22, Time:22:57:1, Lat:389027490, Long:-771153577, Alt:44267, Satellites:5
+heading-angle:-1.38
+Date:2023-2-22, Time:22:57:2, Lat:389027498, Long:-771152926, Alt:44228, Satellites:5
+heading-angle:-1.56
+angle:-1.15
+Date:2023-2-22, Time:22:57:3, Lat:389027444, Long:-771152793, Alt:48177, Satellites:5
+heading-angle:-1.96
+Gravity -- x:-1.95, y:-7.38, z:6.15
+Magnetic -- x:26.56, y:35.88, z:-12.25
+z vector -- G:0.63, Np:0.55, P:0.55
+Date:2023-2-22, Time:22:57:4, Lat:389027199, Long:-771152503, Alt:50263, Satellites:5
+heading-angle:-2.27
+Date:2023-2-22, Time:22:57:5, Lat:389026982, Long:-771152080, Alt:49686, Satellites:5
+heading-angle:-2.04
+Date:2023-2-22, Time:22:57:6, Lat:389026880, Long:-771151613, Alt:50208, Satellites:5
+heading-angle:-1.79
+Date:2023-2-22, Time:22:57:7, Lat:389026766, Long:-771151200, Alt:50507, Satellites:5
+heading-angle:-1.84
+angle:-0.85
+Date:2023-2-22, Time:22:57:8, Lat:389026682, Long:-771150484, Alt:50943, Satellites:5
+heading-angle:-1.69
+Gravity -- x:-4.49, y:-7.64, z:4.18
+Magnetic -- x:39.56, y:34.56, z:-5.75
+z vector -- G:0.43, Np:0.63, P:0.65
+Date:2023-2-22, Time:22:57:9, Lat:389026559, Long:-771149906, Alt:52432, Satellites:5
+heading-angle:-1.78
+Date:2023-2-22, Time:22:57:10, Lat:389026366, Long:-771149297, Alt:52958, Satellites:5
+heading-angle:-1.88
+Date:2023-2-22, Time:22:57:11, Lat:389026212, Long:-771148893, Alt:58805, Satellites:5
+heading-angle:-1.93
+Date:2023-2-22, Time:22:57:12, Lat:389026059, Long:-771148385, Alt:57615, Satellites:5
+heading-angle:-1.86
+angle:-0.75
+Date:2023-2-22, Time:22:57:13, Lat:389025893, Long:-771148234, Alt:57421, Satellites:5
+heading-angle:-2.40
+Gravity -- x:-3.78, y:-6.90, z:5.84
+Magnetic -- x:35.50, y:37.69, z:-18.56
+z vector -- G:0.60, Np:0.61, P:0.53
+Date:2023-2-22, Time:22:57:14, Lat:389025668, Long:-771147744, Alt:57880, Satellites:5
+heading-angle:-2.00
+Date:2023-2-22, Time:22:57:15, Lat:389025482, Long:-771147299, Alt:63075, Satellites:5
+heading-angle:-1.97
+Date:2023-2-22, Time:22:57:16, Lat:389025319, Long:-771146802, Alt:67852, Satellites:5
+heading-angle:-1.89
+Date:2023-2-22, Time:22:57:17, Lat:389025179, Long:-771146249, Alt:69158, Satellites:5
+heading-angle:-1.82
+angle:-0.69
+Date:2023-2-22, Time:22:57:18, Lat:389025037, Long:-771145708, Alt:70090, Satellites:5
+heading-angle:-1.83
+Gravity -- x:-3.43, y:-7.74, z:4.94
+Magnetic -- x:33.19, y:43.25, z:-14.69
+z vector -- G:0.50, Np:0.64, P:0.58
+Date:2023-2-22, Time:22:57:19, Lat:389024865, Long:-771145245, Alt:71835, Satellites:5
+heading-angle:-1.93
+Date:2023-2-22, Time:22:57:20, Lat:389024694, Long:-771144798, Alt:73135, Satellites:5
+heading-angle:-1.94
+Date:2023-2-22, Time:22:57:21, Lat:389024528, Long:-771144327, Alt:73976, Satellites:5
+heading-angle:-1.91
+Date:2023-2-22, Time:22:57:22, Lat:389024348, Long:-771143789, Alt:73649, Satellites:5
+heading-angle:-1.89
+angle:-0.65
+Date:2023-2-22, Time:22:57:23, Lat:389024175, Long:-771143388, Alt:75716, Satellites:5
+heading-angle:-1.98
+Gravity -- x:-3.24, y:-8.00, z:4.64
+Magnetic -- x:30.75, y:46.56, z:-12.19
+z vector -- G:0.47, Np:0.71, P:0.52
+Date:2023-2-22, Time:22:57:24, Lat:389023984, Long:-771143075, Alt:83064, Satellites:5
+heading-angle:-2.12
+Date:2023-2-22, Time:22:57:25, Lat:389023813, Long:-771142662, Alt:86304, Satellites:5
+heading-angle:-1.96
+Date:2023-2-22, Time:22:57:26, Lat:389023656, Long:-771142180, Alt:88021, Satellites:5
+heading-angle:-1.89
+Date:2023-2-22, Time:22:57:27, Lat:389023526, Long:-771141713, Alt:88746, Satellites:5
+heading-angle:-1.84
+angle:-0.86
+Date:2023-2-22, Time:22:57:28, Lat:389023413, Long:-771141248, Alt:89868, Satellites:5
+heading-angle:-1.81
+Gravity -- x:-3.74, y:-7.31, z:5.35
+Magnetic -- x:34.19, y:35.25, z:-17.19
+z vector -- G:0.55, Np:0.52, P:0.66
+Date:2023-2-22, Time:22:57:29, Lat:389023318, Long:-771140788, Alt:90859, Satellites:5
+heading-angle:-1.77
+Date:2023-2-22, Time:22:57:30, Lat:389023178, Long:-771140344, Alt:92245, Satellites:5
+heading-angle:-1.88
+Date:2023-2-22, Time:22:57:31, Lat:389023021, Long:-771139852, Alt:92156, Satellites:5
+heading-angle:-1.88
+Date:2023-2-22, Time:22:57:32, Lat:389022858, Long:-771139342, Alt:92795, Satellites:5
+heading-angle:-1.88
+angle:-0.47
+Date:2023-2-22, Time:22:57:33, Lat:389022704, Long:-771138947, Alt:96988, Satellites:5
+heading-angle:-1.94
+Gravity -- x:-4.37, y:-7.37, z:4.75
+Magnetic -- x:31.38, y:41.00, z:-11.38
+z vector -- G:0.48, Np:0.81, P:0.33
+Date:2023-2-22, Time:22:57:34, Lat:389022572, Long:-771138507, Alt:98049, Satellites:5
+heading-angle:-1.86
+Date:2023-2-22, Time:22:57:35, Lat:389022421, Long:-771138041, Alt:98524, Satellites:5
+heading-angle:-1.88
+Date:2023-2-22, Time:22:57:36, Lat:389022256, Long:-771137634, Alt:101273, Satellites:5
+heading-angle:-1.96
+Date:2023-2-22, Time:22:57:37, Lat:389022115, Long:-771137286, Alt:107658, Satellites:5
+heading-angle:-1.96
+angle:-0.79
+Date:2023-2-22, Time:22:57:38, Lat:389021985, Long:-771136893, Alt:109533, Satellites:5
+heading-angle:-1.89
+Gravity -- x:-3.73, y:-7.98, z:4.29
+Magnetic -- x:37.56, y:35.06, z:-8.75
+z vector -- G:0.44, Np:0.50, P:0.74
+Date:2023-2-22, Time:22:57:39, Lat:389021882, Long:-771136533, Alt:112115, Satellites:5
+heading-angle:-1.85
+Date:2023-2-22, Time:22:57:40, Lat:389021795, Long:-771136051, Alt:114759, Satellites:5
+heading-angle:-1.75
+Date:2023-2-22, Time:22:57:41, Lat:389021764, Long:-771135685, Alt:111699, Satellites:5
+heading-angle:-1.66
+Date:2023-2-22, Time:22:57:42, Lat:389021852, Long:-771135256, Alt:109173, Satellites:5
+heading-angle:-1.37
+angle:-2.25
+Date:2023-2-22, Time:22:57:43, Lat:389021949, Long:-771135211, Alt:102562, Satellites:5
+heading-angle:-0.43
+Gravity -- x:-3.87, y:-7.07, z:5.58
+Magnetic -- x:12.75, y:29.56, z:-38.06
+z vector -- G:0.57, Np:-0.80, P:-0.18
+Date:2023-2-22, Time:22:57:44, Lat:389022243, Long:-771135187, Alt:100742, Satellites:5
+heading-angle:-0.08
+Date:2023-2-22, Time:22:57:45, Lat:389022530, Long:-771135464, Alt:98841, Satellites:5
+heading-angle:0.77
+Date:2023-2-22, Time:22:57:46, Lat:389022831, Long:-771135741, Alt:98114, Satellites:5
+heading-angle:0.74
+Date:2023-2-22, Time:22:57:47, Lat:389023156, Long:-771136077, Alt:97642, Satellites:5
+heading-angle:0.80
+angle:2.75
+Date:2023-2-22, Time:22:57:48, Lat:389023483, Long:-771136390, Alt:97203, Satellites:5
+heading-angle:0.76
+Gravity -- x:-3.19, y:-7.76, z:5.06
+Magnetic -- x:8.75, y:36.88, z:-41.50
+z vector -- G:0.52, Np:-0.80, P:-0.29
+Date:2023-2-22, Time:22:57:49, Lat:389023800, Long:-771136614, Alt:97114, Satellites:5
+heading-angle:0.62
+Date:2023-2-22, Time:22:57:50, Lat:389024109, Long:-771136888, Alt:94932, Satellites:5
+heading-angle:0.73
+Date:2023-2-22, Time:22:57:51, Lat:389024541, Long:-771136955, Alt:94022, Satellites:5
+heading-angle:0.15
+Date:2023-2-22, Time:22:57:52, Lat:389024923, Long:-771137211, Alt:93727, Satellites:5
+heading-angle:0.59
+angle:2.77
+Date:2023-2-22, Time:22:57:53, Lat:389025308, Long:-771137407, Alt:93030, Satellites:5
+heading-angle:0.47
+Gravity -- x:-3.62, y:-7.40, z:5.30
+Magnetic -- x:6.88, y:35.19, z:-37.88
+z vector -- G:0.54, Np:-0.69, P:-0.49
+Date:2023-2-22, Time:22:57:54, Lat:389025724, Long:-771137821, Alt:91649, Satellites:5
+heading-angle:0.78
+Date:2023-2-22, Time:22:57:55, Lat:389026164, Long:-771138184, Alt:90509, Satellites:5
+heading-angle:0.69
+Date:2023-2-22, Time:22:57:56, Lat:389026511, Long:-771138549, Alt:88940, Satellites:5
+heading-angle:0.81
+Date:2023-2-22, Time:22:57:57, Lat:389026911, Long:-771138761, Alt:86754, Satellites:5
+heading-angle:0.49
+angle:-3.07
+Date:2023-2-22, Time:22:57:58, Lat:389027239, Long:-771139019, Alt:85505, Satellites:5
+heading-angle:0.67
+Gravity -- x:-3.67, y:-6.96, z:5.84
+Magnetic -- x:10.06, y:23.38, z:-42.38
+z vector -- G:0.60, Np:-0.80, P:-0.08
+Date:2023-2-22, Time:22:57:59, Lat:389027571, Long:-771139316, Alt:84131, Satellites:5
+heading-angle:0.73
+Date:2023-2-22, Time:22:58:0, Lat:389027889, Long:-771139593, Alt:83396, Satellites:5
+heading-angle:0.72
+Date:2023-2-22, Time:22:58:1, Lat:389028196, Long:-771139835, Alt:82736, Satellites:5
+heading-angle:0.67
+Date:2023-2-22, Time:22:58:2, Lat:389028492, Long:-771140030, Alt:82280, Satellites:5
+heading-angle:0.58
+angle:2.85
+Date:2023-2-22, Time:22:58:3, Lat:389028766, Long:-771140248, Alt:81960, Satellites:5
+heading-angle:0.67
+Gravity -- x:-4.27, y:-7.05, z:5.30
+Magnetic -- x:10.56, y:31.56, z:-39.06
+z vector -- G:0.54, Np:-0.76, P:-0.36
+Date:2023-2-22, Time:22:58:4, Lat:389029030, Long:-771140466, Alt:81539, Satellites:5
+heading-angle:0.69
+Date:2023-2-22, Time:22:58:5, Lat:389029276, Long:-771140690, Alt:81084, Satellites:5
+heading-angle:0.74
+Date:2023-2-22, Time:22:58:6, Lat:389029506, Long:-771140843, Alt:79589, Satellites:5
+heading-angle:0.59
+Date:2023-2-22, Time:22:58:7, Lat:389029749, Long:-771140843, Alt:78508, Satellites:5
+heading-angle:-0.00
+angle:-3.00
+Date:2023-2-22, Time:22:58:8, Lat:389029997, Long:-771140932, Alt:77748, Satellites:5
+heading-angle:0.34
+Gravity -- x:-3.83, y:-6.33, z:6.42
+Magnetic -- x:15.50, y:13.88, z:-44.56
+z vector -- G:0.66, Np:-0.72, P:0.21
+Date:2023-2-22, Time:22:58:9, Lat:389030256, Long:-771140896, Alt:76510, Satellites:5
+heading-angle:-0.14
+Date:2023-2-22, Time:22:58:10, Lat:389030595, Long:-771140931, Alt:76337, Satellites:5
+heading-angle:0.10
+Date:2023-2-22, Time:22:58:11, Lat:389030945, Long:-771140830, Alt:76498, Satellites:5
+heading-angle:-0.28
+Date:2023-2-22, Time:22:58:12, Lat:389031345, Long:-771140763, Alt:75945, Satellites:5
+heading-angle:-0.17
+angle:-2.55
+Date:2023-2-22, Time:22:58:13, Lat:389031795, Long:-771140413, Alt:72146, Satellites:5
+heading-angle:-0.66
+Gravity -- x:-3.43, y:-6.72, z:6.25
+Magnetic -- x:25.25, y:14.56, z:-40.88
+z vector -- G:0.64, Np:-0.54, P:0.54
+Date:2023-2-22, Time:22:58:14, Lat:389032249, Long:-771140262, Alt:70615, Satellites:5
+heading-angle:-0.32
+Date:2023-2-22, Time:22:58:15, Lat:389032654, Long:-771139987, Alt:68913, Satellites:5
+heading-angle:-0.60
+Date:2023-2-22, Time:22:58:16, Lat:389033018, Long:-771139639, Alt:66687, Satellites:5
+heading-angle:-0.76
+Date:2023-2-22, Time:22:58:17, Lat:389033344, Long:-771139261, Alt:66806, Satellites:5
+heading-angle:-0.86
+angle:-1.93
+Date:2023-2-22, Time:22:58:18, Lat:389033584, Long:-771138922, Alt:67754, Satellites:5
+heading-angle:-0.95
+Gravity -- x:-4.15, y:-6.75, z:5.76
+Magnetic -- x:36.19, y:18.06, z:-29.69
+z vector -- G:0.59, Np:-0.14, P:0.80
+Date:2023-2-22, Time:22:58:19, Lat:389033785, Long:-771138717, Alt:69182, Satellites:5
+heading-angle:-0.80
+Date:2023-2-22, Time:22:58:20, Lat:389033941, Long:-771138498, Alt:70512, Satellites:5
+heading-angle:-0.95
+Date:2023-2-22, Time:22:58:21, Lat:389034090, Long:-771138302, Alt:72094, Satellites:5
+heading-angle:-0.92
+Date:2023-2-22, Time:22:58:22, Lat:389034183, Long:-771138067, Alt:73636, Satellites:5
+heading-angle:-1.19
+angle:-1.79
+Date:2023-2-22, Time:22:58:23, Lat:389034277, Long:-771137803, Alt:73945, Satellites:5
+heading-angle:-1.23
+Gravity -- x:-4.29, y:-6.52, z:5.92
+Magnetic -- x:38.88, y:16.38, z:-28.56
+z vector -- G:0.60, Np:-0.05, P:0.79
+Date:2023-2-22, Time:22:58:24, Lat:389034371, Long:-771137517, Alt:74341, Satellites:5
+heading-angle:-1.25
+Date:2023-2-22, Time:22:58:25, Lat:389034476, Long:-771137319, Alt:74779, Satellites:5
+heading-angle:-1.08
+Date:2023-2-22, Time:22:58:26, Lat:389034528, Long:-771137145, Alt:74898, Satellites:5
+heading-angle:-1.28
+Date:2023-2-22, Time:22:58:27, Lat:389034575, Long:-771137063, Alt:72106, Satellites:5
+heading-angle:-1.05
+angle:-1.70
+Date:2023-2-22, Time:22:58:28, Lat:389034674, Long:-771136947, Alt:71705, Satellites:5
+heading-angle:-0.86
+Gravity -- x:-3.85, y:-6.80, z:5.91
+Magnetic -- x:36.38, y:15.38, z:-28.56
+z vector -- G:0.60, Np:-0.13, P:0.79
+Date:2023-2-22, Time:22:58:29, Lat:389034723, Long:-771136966, Alt:73006, Satellites:5
+heading-angle:0.37
+Date:2023-2-22, Time:22:58:30, Lat:389034729, Long:-771136881, Alt:72657, Satellites:5
+heading-angle:-1.50
+Date:2023-2-22, Time:22:58:31, Lat:389034832, Long:-771136917, Alt:72648, Satellites:5
+heading-angle:0.34
+Date:2023-2-22, Time:22:58:32, Lat:389034899, Long:-771136816, Alt:73864, Satellites:5
+heading-angle:-0.99
+angle:-1.99
+Date:2023-2-22, Time:22:58:33, Lat:389034900, Long:-771136697, Alt:73958, Satellites:5
+heading-angle:-1.56
+Gravity -- x:-2.75, y:-5.69, z:7.49
+Magnetic -- x:27.56, y:14.69, z:-43.19
+z vector -- G:0.76, Np:-0.27, P:0.58
+Date:2023-2-22, Time:22:58:34, Lat:389034942, Long:-771136576, Alt:75150, Satellites:5
+heading-angle:-1.24
+Date:2023-2-22, Time:22:58:35, Lat:389035044, Long:-771136418, Alt:75333, Satellites:5
+heading-angle:-1.00
+Date:2023-2-22, Time:22:58:36, Lat:389035164, Long:-771136405, Alt:74758, Satellites:5
+heading-angle:-0.11
+Date:2023-2-22, Time:22:58:37, Lat:389035334, Long:-771136464, Alt:73939, Satellites:5
+heading-angle:0.33
+angle:-1.97
+Date:2023-2-22, Time:22:58:38, Lat:389035507, Long:-771136578, Alt:74464, Satellites:5
+heading-angle:0.58
+Gravity -- x:-2.95, y:-7.50, z:5.57
+Magnetic -- x:27.38, y:21.06, z:-38.00
+z vector -- G:0.57, Np:-0.52, P:0.64
+Date:2023-2-22, Time:22:58:39, Lat:389035628, Long:-771137157, Alt:72833, Satellites:5
+heading-angle:1.36
+Date:2023-2-22, Time:22:58:40, Lat:389035667, Long:-771137425, Alt:72040, Satellites:5
+heading-angle:1.43
+Date:2023-2-22, Time:22:58:41, Lat:389035783, Long:-771137894, Alt:70588, Satellites:5
+heading-angle:1.33
+Date:2023-2-22, Time:22:58:42, Lat:389035870, Long:-771138282, Alt:70073, Satellites:5
+heading-angle:1.35
+angle:-2.06
+Date:2023-2-22, Time:22:58:43, Lat:389036020, Long:-771138429, Alt:70358, Satellites:5
+heading-angle:0.78
+Gravity -- x:-3.43, y:-7.40, z:5.42
+Magnetic -- x:31.19, y:25.56, z:-35.50
+z vector -- G:0.55, Np:-0.40, P:0.73
+Date:2023-2-22, Time:22:58:44, Lat:389036193, Long:-771138195, Alt:70856, Satellites:5
+heading-angle:-0.93
+Date:2023-2-22, Time:22:58:45, Lat:389036496, Long:-771138069, Alt:71539, Satellites:5
+heading-angle:-0.39
+Date:2023-2-22, Time:22:58:46, Lat:389036773, Long:-771138057, Alt:71680, Satellites:5
+heading-angle:-0.04
+Date:2023-2-22, Time:22:58:47, Lat:389037041, Long:-771138111, Alt:71979, Satellites:5
+heading-angle:0.20
+angle:-3.14
+Date:2023-2-22, Time:22:58:48, Lat:389037268, Long:-771138090, Alt:73427, Satellites:5
+heading-angle:-0.09
+Gravity -- x:-4.07, y:-7.30, z:5.12
+Magnetic -- x:33.19, y:21.00, z:-33.88
+z vector -- G:0.52, Np:-0.43, P:0.74
+Date:2023-2-22, Time:22:58:49, Lat:389037502, Long:-771137913, Alt:74897, Satellites:5
+heading-angle:-0.65
+Date:2023-2-22, Time:22:58:50, Lat:389037767, Long:-771138077, Alt:74721, Satellites:5
+heading-angle:0.55
+Date:2023-2-22, Time:22:58:51, Lat:389037992, Long:-771137643, Alt:73799, Satellites:5
+heading-angle:-1.09
+Date:2023-2-22, Time:22:58:52, Lat:389038416, Long:-771136454, Alt:76432, Satellites:5
+heading-angle:-1.23
+angle:-2.44
+Date:2023-2-22, Time:22:58:53, Lat:389038982, Long:-771136097, Alt:77110, Satellites:5
+heading-angle:-0.56
+Gravity -- x:-4.02, y:-6.75, z:5.85
+Magnetic -- x:26.75, y:15.38, z:-41.38
+z vector -- G:0.60, Np:-0.60, P:0.53
+Date:2023-2-22, Time:22:58:54, Lat:389039403, Long:-771135994, Alt:77461, Satellites:5
+heading-angle:-0.24
+Date:2023-2-22, Time:22:58:55, Lat:389039746, Long:-771135448, Alt:78909, Satellites:5
+heading-angle:-1.01
+Date:2023-2-22, Time:22:58:56, Lat:389040159, Long:-771134944, Alt:79811, Satellites:5
+heading-angle:-0.88
+Date:2023-2-22, Time:22:58:57, Lat:389040597, Long:-771134526, Alt:80310, Satellites:5
+heading-angle:-0.76
+angle:-2.54
+Date:2023-2-22, Time:22:58:58, Lat:389041016, Long:-771134204, Alt:81393, Satellites:5
+heading-angle:-0.66
+Gravity -- x:-4.36, y:-6.07, z:6.33
+Magnetic -- x:26.88, y:11.06, z:-43.50
+z vector -- G:0.65, Np:-0.57, P:0.51
+Date:2023-2-22, Time:22:58:59, Lat:389041439, Long:-771133844, Alt:81801, Satellites:5
+heading-angle:-0.71
+Date:2023-2-22, Time:22:59:0, Lat:389041894, Long:-771133594, Alt:81734, Satellites:5
+heading-angle:-0.50
+Date:2023-2-22, Time:22:59:1, Lat:389042350, Long:-771133260, Alt:81480, Satellites:5
+heading-angle:-0.63
+Date:2023-2-22, Time:22:59:2, Lat:389042818, Long:-771132898, Alt:80988, Satellites:5
+heading-angle:-0.66
+angle:-2.63
+Date:2023-2-22, Time:22:59:3, Lat:389043322, Long:-771132540, Alt:80609, Satellites:5
+heading-angle:-0.62
+Gravity -- x:-4.41, y:-5.54, z:6.77
+Magnetic -- x:26.38, y:4.75, z:-42.69
+z vector -- G:0.69, Np:-0.50, P:0.52
+Date:2023-2-22, Time:22:59:4, Lat:389043841, Long:-771132236, Alt:80324, Satellites:5
+heading-angle:-0.53
+Date:2023-2-22, Time:22:59:5, Lat:389044367, Long:-771131941, Alt:80017, Satellites:5
+heading-angle:-0.51
+Date:2023-2-22, Time:22:59:6, Lat:389044847, Long:-771131747, Alt:79969, Satellites:5
+heading-angle:-0.38
+Date:2023-2-22, Time:22:59:7, Lat:389045277, Long:-771131589, Alt:79526, Satellites:5
+heading-angle:-0.35
+angle:-2.95
+Date:2023-2-22, Time:22:59:8, Lat:389045683, Long:-771131647, Alt:78689, Satellites:5
+heading-angle:0.14
+Gravity -- x:-4.54, y:-5.96, z:6.32
+Magnetic -- x:16.00, y:15.06, z:-44.75
+z vector -- G:0.64, Np:-0.75, P:0.13
+Date:2023-2-22, Time:22:59:9, Lat:389046082, Long:-771131918, Alt:77785, Satellites:5
+heading-angle:0.60
+Date:2023-2-22, Time:22:59:10, Lat:389046466, Long:-771132329, Alt:76570, Satellites:5
+heading-angle:0.82
+Date:2023-2-22, Time:22:59:11, Lat:389046837, Long:-771132816, Alt:75231, Satellites:5
+heading-angle:0.92
+Date:2023-2-22, Time:22:59:12, Lat:389047199, Long:-771133407, Alt:74559, Satellites:5
+heading-angle:1.02
+angle:2.43
+Date:2023-2-22, Time:22:59:13, Lat:389047551, Long:-771133996, Alt:73860, Satellites:5
+heading-angle:1.03
+Gravity -- x:-3.21, y:-6.95, z:6.12
+Magnetic -- x:0.38, y:29.50, z:-41.25
+z vector -- G:0.62, Np:-0.62, P:-0.48
+Date:2023-2-22, Time:22:59:14, Lat:389047960, Long:-771134639, Alt:73350, Satellites:5
+heading-angle:1.00
+Date:2023-2-22, Time:22:59:15, Lat:389048429, Long:-771135220, Alt:73266, Satellites:5
+heading-angle:0.89
+Date:2023-2-22, Time:22:59:16, Lat:389048776, Long:-771135740, Alt:73468, Satellites:5
+heading-angle:0.98
+Date:2023-2-22, Time:22:59:17, Lat:389049077, Long:-771136369, Alt:72557, Satellites:5
+heading-angle:1.12
+angle:2.53
+Date:2023-2-22, Time:22:59:18, Lat:389049517, Long:-771136964, Alt:72262, Satellites:5
+heading-angle:0.93
+Gravity -- x:-4.13, y:-6.59, z:5.96
+Magnetic -- x:5.25, y:30.06, z:-42.88
+z vector -- G:0.61, Np:-0.66, P:-0.45
+Date:2023-2-22, Time:22:59:19, Lat:389049878, Long:-771137085, Alt:72071, Satellites:6
+heading-angle:0.32
+Date:2023-2-22, Time:22:59:20, Lat:389050084, Long:-771137380, Alt:72311, Satellites:6
+heading-angle:0.96
+Date:2023-2-22, Time:22:59:21, Lat:389050353, Long:-771137772, Alt:72554, Satellites:6
+heading-angle:0.97
+Date:2023-2-22, Time:22:59:22, Lat:389050595, Long:-771138133, Alt:72515, Satellites:6
+heading-angle:0.98
+angle:2.49
+Date:2023-2-22, Time:22:59:23, Lat:389050831, Long:-771138517, Alt:72270, Satellites:6
+heading-angle:1.02
+Gravity -- x:-3.22, y:-6.83, z:6.24
+Magnetic -- x:-1.88, y:27.56, z:-41.06
+z vector -- G:0.64, Np:-0.59, P:-0.49
+Date:2023-2-22, Time:22:59:24, Lat:389051033, Long:-771138823, Alt:71642, Satellites:6
+heading-angle:0.99
+Date:2023-2-22, Time:22:59:25, Lat:389051277, Long:-771139105, Alt:71594, Satellites:6
+heading-angle:0.86
+Date:2023-2-22, Time:22:59:26, Lat:389051515, Long:-771139291, Alt:71132, Satellites:6
+heading-angle:0.66
+Date:2023-2-22, Time:22:59:27, Lat:389051778, Long:-771139499, Alt:70784, Satellites:6
+heading-angle:0.67
+angle:-3.04
+Date:2023-2-22, Time:22:59:28, Lat:389052021, Long:-771139538, Alt:70602, Satellites:6
+heading-angle:0.16
+Gravity -- x:-2.89, y:-6.54, z:6.70
+Magnetic -- x:15.88, y:14.38, z:-46.56
+z vector -- G:0.68, Np:-0.67, P:0.28
+Date:2023-2-22, Time:22:59:29, Lat:389052388, Long:-771139553, Alt:67803, Satellites:6
+heading-angle:0.04
+Date:2023-2-22, Time:22:59:30, Lat:389052752, Long:-771139176, Alt:67289, Satellites:6
+heading-angle:-0.80
+Date:2023-2-22, Time:22:59:31, Lat:389053202, Long:-771138902, Alt:67037, Satellites:6
+heading-angle:-0.55
+Date:2023-2-22, Time:22:59:32, Lat:389053614, Long:-771138669, Alt:66538, Satellites:6
+heading-angle:-0.51
+angle:-2.38
+Date:2023-2-22, Time:22:59:33, Lat:389054032, Long:-771138426, Alt:65352, Satellites:6
+heading-angle:-0.53
+Gravity -- x:-3.47, y:-6.03, z:6.90
+Magnetic -- x:24.19, y:12.25, z:-42.06
+z vector -- G:0.70, Np:-0.49, P:0.52
+Date:2023-2-22, Time:22:59:34, Lat:389054469, Long:-771138239, Alt:64883, Satellites:6
+heading-angle:-0.40
+Date:2023-2-22, Time:22:59:35, Lat:389054894, Long:-771137982, Alt:64689, Satellites:6
+heading-angle:-0.54
+Date:2023-2-22, Time:22:59:36, Lat:389055319, Long:-771137807, Alt:64350, Satellites:6
+heading-angle:-0.39
+Date:2023-2-22, Time:22:59:37, Lat:389055655, Long:-771137637, Alt:63735, Satellites:6
+heading-angle:-0.47
+angle:-2.16
+Date:2023-2-22, Time:22:59:38, Lat:389056023, Long:-771137339, Alt:63876, Satellites:6
+heading-angle:-0.68
+Gravity -- x:-3.37, y:-6.42, z:6.59
+Magnetic -- x:28.50, y:14.50, z:-40.00
+z vector -- G:0.67, Np:-0.40, P:0.62
+Date:2023-2-22, Time:22:59:39, Lat:389056409, Long:-771137117, Alt:63564, Satellites:6
+heading-angle:-0.52
+Date:2023-2-22, Time:22:59:40, Lat:389056793, Long:-771136688, Alt:63885, Satellites:6
+heading-angle:-0.84
+Date:2023-2-22, Time:22:59:41, Lat:389057206, Long:-771136267, Alt:63414, Satellites:6
+heading-angle:-0.79
+Date:2023-2-22, Time:22:59:42, Lat:389057596, Long:-771135847, Alt:63478, Satellites:6
+heading-angle:-0.82
+angle:-2.16
+Date:2023-2-22, Time:22:59:43, Lat:389058009, Long:-771135312, Alt:63297, Satellites:6
+heading-angle:-0.91
+Gravity -- x:-3.47, y:-6.86, z:6.08
+Magnetic -- x:29.00, y:16.88, z:-37.25
+z vector -- G:0.62, Np:-0.42, P:0.66
+Date:2023-2-22, Time:22:59:44, Lat:389058459, Long:-771134933, Alt:62972, Satellites:6
+heading-angle:-0.70
+Date:2023-2-22, Time:22:59:45, Lat:389058863, Long:-771134535, Alt:62816, Satellites:6
+heading-angle:-0.78
+Date:2023-2-22, Time:22:59:46, Lat:389059250, Long:-771134083, Alt:63091, Satellites:6
+heading-angle:-0.86
+Date:2023-2-22, Time:22:59:47, Lat:389059616, Long:-771133719, Alt:62627, Satellites:6
+heading-angle:-0.78
+angle:-2.11
+Date:2023-2-22, Time:22:59:48, Lat:389060030, Long:-771133463, Alt:61728, Satellites:6
+heading-angle:-0.55
+Gravity -- x:-4.88, y:-6.18, z:5.83
+Magnetic -- x:30.88, y:13.06, z:-38.38
+z vector -- G:0.60, Np:-0.51, P:0.62
+Date:2023-2-22, Time:22:59:49, Lat:389060477, Long:-771133268, Alt:61944, Satellites:6
+heading-angle:-0.41
+Date:2023-2-22, Time:22:59:50, Lat:389060947, Long:-771133225, Alt:61262, Satellites:6
+heading-angle:-0.09
+Date:2023-2-22, Time:22:59:51, Lat:389061411, Long:-771133253, Alt:60590, Satellites:6
+heading-angle:0.06
+Date:2023-2-22, Time:22:59:52, Lat:389061832, Long:-771133298, Alt:60486, Satellites:6
+heading-angle:0.11
+angle:-2.92
+Date:2023-2-22, Time:22:59:53, Lat:389062194, Long:-771133267, Alt:60724, Satellites:6
+heading-angle:-0.09
+Gravity -- x:-3.60, y:-8.48, z:3.35
+Magnetic -- x:25.19, y:37.56, z:-32.75
+z vector -- G:0.34, Np:-0.83, P:0.45
+Date:2023-2-22, Time:22:59:54, Lat:389062518, Long:-771133121, Alt:60997, Satellites:6
+heading-angle:-0.42
+Date:2023-2-22, Time:22:59:55, Lat:389062792, Long:-771132925, Alt:61379, Satellites:6
+heading-angle:-0.62
+Date:2023-2-22, Time:22:59:56, Lat:389063043, Long:-771132667, Alt:61561, Satellites:6
+heading-angle:-0.80
+Date:2023-2-22, Time:22:59:57, Lat:389063299, Long:-771132540, Alt:61824, Satellites:6
+heading-angle:-0.46
+angle:-2.47
+Date:2023-2-22, Time:22:59:58, Lat:389063558, Long:-771132433, Alt:62248, Satellites:6
+heading-angle:-0.39
+Gravity -- x:-5.06, y:-7.48, z:3.79
+Magnetic -- x:32.38, y:28.25, z:-34.56
+z vector -- G:0.39, Np:-0.76, P:0.53
+Date:2023-2-22, Time:22:59:59, Lat:389063821, Long:-771132379, Alt:63827, Satellites:6
+heading-angle:-0.20
+Date:2023-2-22, Time:23:0:0, Lat:389064051, Long:-771132338, Alt:63723, Satellites:6
+heading-angle:-0.18
+Date:2023-2-22, Time:23:0:1, Lat:389064274, Long:-771132246, Alt:64224, Satellites:6
+heading-angle:-0.39
+Date:2023-2-22, Time:23:0:2, Lat:389064414, Long:-771131854, Alt:64456, Satellites:6
+heading-angle:-1.23
+angle:-1.73
+Date:2023-2-22, Time:23:0:3, Lat:389064595, Long:-771131735, Alt:65075, Satellites:6
+heading-angle:-0.58
+Gravity -- x:-4.75, y:-8.39, z:1.75
+Magnetic -- x:40.19, y:38.25, z:-12.00
+z vector -- G:0.18, Np:-0.14, P:0.97
+Date:2023-2-22, Time:23:0:4, Lat:389064666, Long:-771131609, Alt:65296, Satellites:6
+heading-angle:-1.06
+Date:2023-2-22, Time:23:0:5, Lat:389064752, Long:-771131455, Alt:65473, Satellites:6
+heading-angle:-1.06
+Date:2023-2-22, Time:23:0:6, Lat:389064849, Long:-771131374, Alt:65347, Satellites:6
+heading-angle:-0.70
+Date:2023-2-22, Time:23:0:7, Lat:389064943, Long:-771131307, Alt:65279, Satellites:6
+heading-angle:-0.62
+angle:-1.43
+Date:2023-2-22, Time:23:0:8, Lat:389065018, Long:-771131343, Alt:65926, Satellites:6
+heading-angle:0.45
+Gravity -- x:-5.04, y:-8.40, z:-0.22
+Magnetic -- x:41.25, y:32.75, z:5.19
+z vector -- G:-0.02, Np:0.22, P:0.98
+Date:2023-2-22, Time:23:0:9, Lat:389065016, Long:-771131297, Alt:66216, Satellites:6
+heading-angle:-1.61
+Date:2023-2-22, Time:23:0:10, Lat:389065031, Long:-771131230, Alt:66534, Satellites:6
+heading-angle:-1.35
+Date:2023-2-22, Time:23:0:11, Lat:389065033, Long:-771131170, Alt:66091, Satellites:6
+heading-angle:-1.54
+Date:2023-2-22, Time:23:0:12, Lat:389065052, Long:-771131191, Alt:65810, Satellites:6
+heading-angle:0.84
+angle:0.40
+Date:2023-2-22, Time:23:0:13, Lat:389065057, Long:-771131233, Alt:65406, Satellites:6
+heading-angle:1.45
+Gravity -- x:-5.78, y:-7.89, z:0.56
+Magnetic -- x:27.50, y:54.56, z:19.38
+z vector -- G:0.06, Np:0.91, P:-0.40
+Date:2023-2-22, Time:23:0:14, Lat:389065068, Long:-771131212, Alt:64685, Satellites:6
+heading-angle:-1.09
+Date:2023-2-22, Time:23:0:15, Lat:389065106, Long:-771131256, Alt:63931, Satellites:6
+heading-angle:0.86
+Date:2023-2-22, Time:23:0:16, Lat:389065127, Long:-771131286, Alt:63427, Satellites:6
+heading-angle:0.96
+Date:2023-2-22, Time:23:0:17, Lat:389065155, Long:-771131225, Alt:63019, Satellites:6
+heading-angle:-1.14
+angle:-2.58
+Date:2023-2-22, Time:23:0:18, Lat:389065183, Long:-771131243, Alt:62366, Satellites:6
+heading-angle:0.57
+Gravity -- x:-2.22, y:-9.39, z:1.74
+Magnetic -- x:62.06, y:161.38, z:-41.56
+z vector -- G:0.18, Np:-0.40, P:0.90
+Date:2023-2-22, Time:23:0:19, Lat:389065171, Long:-771131417, Alt:62483, Satellites:6
+heading-angle:1.64
+Date:2023-2-22, Time:23:0:20, Lat:389065139, Long:-771131440, Alt:63919, Satellites:6
+heading-angle:2.52
+Date:2023-2-22, Time:23:0:21, Lat:389065108, Long:-771131422, Alt:64950, Satellites:6
+heading-angle:-2.62
+Date:2023-2-22, Time:23:0:22, Lat:389065103, Long:-771131514, Alt:65662, Satellites:6
+heading-angle:1.63
+angle:1.20
+Date:2023-2-22, Time:23:0:23, Lat:389065061, Long:-771131614, Alt:66388, Satellites:6
+heading-angle:1.97
+Gravity -- x:-4.87, y:-8.49, z:-0.45
+Magnetic -- x:63.00, y:257.19, z:30.69
+z vector -- G:-0.05, Np:0.25, P:-0.97
+Date:2023-2-22, Time:23:0:24, Lat:389065024, Long:-771131598, Alt:67136, Satellites:6
+heading-angle:-2.73
+Date:2023-2-22, Time:23:0:25, Lat:389065033, Long:-771131656, Alt:67439, Satellites:6
+heading-angle:1.42
+Date:2023-2-22, Time:23:0:26, Lat:389065012, Long:-771131867, Alt:67466, Satellites:6
+heading-angle:1.67
+Date:2023-2-22, Time:23:0:27, Lat:389064974, Long:-771131878, Alt:67053, Satellites:6
+heading-angle:2.86
+angle:0.38
+Date:2023-2-22, Time:23:0:28, Lat:389065012, Long:-771131762, Alt:66646, Satellites:6
+heading-angle:-1.25
+Gravity -- x:1.81, y:-9.63, z:0.02
+Magnetic -- x:30.19, y:271.06, z:27.75
+z vector -- G:0.00, Np:0.33, P:0.94
+Date:2023-2-22, Time:23:0:29, Lat:389065073, Long:-771131761, Alt:66954, Satellites:6
+heading-angle:-0.02
+Date:2023-2-22, Time:23:0:30, Lat:389065075, Long:-771131762, Alt:66173, Satellites:6
+heading-angle:0.46
+Date:2023-2-22, Time:23:0:31, Lat:389065117, Long:-771131735, Alt:66064, Satellites:6
+heading-angle:-0.57
+Date:2023-2-22, Time:23:0:32, Lat:389065132, Long:-771131764, Alt:66682, Satellites:6
+heading-angle:1.09
+angle:-0.57
+Date:2023-2-22, Time:23:0:33, Lat:389065069, Long:-771131849, Alt:66962, Satellites:6
+heading-angle:2.21
+Gravity -- x:-0.47, y:-9.77, z:0.64
+Magnetic -- x:40.75, y:275.38, z:23.50
+z vector -- G:0.07, Np:0.83, P:0.55
+Date:2023-2-22, Time:23:0:34, Lat:389065028, Long:-771131863, Alt:67111, Satellites:6
+heading-angle:2.81
+Date:2023-2-22, Time:23:0:35, Lat:389065014, Long:-771131868, Alt:67552, Satellites:6
+heading-angle:2.80
+Date:2023-2-22, Time:23:0:36, Lat:389064992, Long:-771131857, Alt:67809, Satellites:6
+heading-angle:-2.68
+Date:2023-2-22, Time:23:0:37, Lat:389064984, Long:-771131959, Alt:68118, Satellites:6
+heading-angle:1.65
+angle:-0.59
+Date:2023-2-22, Time:23:0:38, Lat:389064945, Long:-771132093, Alt:68505, Satellites:6
+heading-angle:1.85
+Gravity -- x:-0.47, y:-9.77, z:0.64
+Magnetic -- x:41.88, y:275.75, z:25.25
+z vector -- G:0.07, Np:0.83, P:0.55
+Date:2023-2-22, Time:23:0:39, Lat:389064893, Long:-771132266, Alt:68751, Satellites:6
+heading-angle:1.86
+Date:2023-2-22, Time:23:0:40, Lat:389064833, Long:-771132300, Alt:68765, Satellites:6
+heading-angle:2.63
+Date:2023-2-22, Time:23:0:41, Lat:389064828, Long:-771132459, Alt:69096, Satellites:6
+heading-angle:1.60
+Date:2023-2-22, Time:23:0:42, Lat:389064768, Long:-771132507, Alt:69264, Satellites:6
+heading-angle:2.47
+angle:-0.59
+Date:2023-2-22, Time:23:0:43, Lat:389064753, Long:-771132582, Alt:69582, Satellites:6
+heading-angle:1.77
+Gravity -- x:-0.47, y:-9.77, z:0.64
+Magnetic -- x:40.75, y:275.75, z:23.88
+z vector -- G:0.07, Np:0.83, P:0.55
+Date:2023-2-22, Time:23:0:44, Lat:389064733, Long:-771132691, Alt:69866, Satellites:6
+heading-angle:1.75
+Date:2023-2-22, Time:23:0:45, Lat:389064706, Long:-771132729, Alt:69794, Satellites:6
+heading-angle:2.19
+Date:2023-2-22, Time:23:0:46, Lat:389064718, Long:-771132854, Alt:69661, Satellites:6
+heading-angle:1.48
+Date:2023-2-22, Time:23:0:47, Lat:389064702, Long:-771132910, Alt:69532, Satellites:6
+heading-angle:1.85
+angle:-0.58
+Date:2023-2-22, Time:23:0:48, Lat:389064707, Long:-771132852, Alt:69500, Satellites:6
+heading-angle:-1.48
+Gravity -- x:-0.47, y:-9.77, z:0.64
+Magnetic -- x:41.50, y:275.75, z:23.50
+z vector -- G:0.07, Np:0.83, P:0.56
+Date:2023-2-22, Time:23:0:49, Lat:389064733, Long:-771132744, Alt:69929, Satellites:6
+heading-angle:-1.33
+Date:2023-2-22, Time:23:0:50, Lat:389064761, Long:-771132695, Alt:70492, Satellites:6
+heading-angle:-1.05
+Date:2023-2-22, Time:23:0:51, Lat:389064763, Long:-771132583, Alt:70805, Satellites:6
+heading-angle:-1.55
+Date:2023-2-22, Time:23:0:52, Lat:389064792, Long:-771132555, Alt:70905, Satellites:6
+heading-angle:-0.77
+angle:2.92
+Date:2023-2-22, Time:23:0:53, Lat:389064811, Long:-771132528, Alt:71260, Satellites:6
+heading-angle:-0.96
+Gravity -- x:-0.47, y:-9.77, z:0.64
+Magnetic -- x:-5.06, y:9.75, z:-25.25
+z vector -- G:0.07, Np:-0.97, P:-0.22
+Date:2023-2-22, Time:23:0:54, Lat:389064815, Long:-771132628, Alt:71465, Satellites:6
+heading-angle:1.53
+Date:2023-2-22, Time:23:0:55, Lat:389064775, Long:-771132647, Alt:71317, Satellites:6
+heading-angle:2.70
+Date:2023-2-22, Time:23:0:56, Lat:389064783, Long:-771132752, Alt:71285, Satellites:6
+heading-angle:1.49
+Date:2023-2-22, Time:23:0:57, Lat:389064761, Long:-771133058, Alt:70883, Satellites:6
+heading-angle:1.64
+angle:2.96
+Date:2023-2-22, Time:23:0:58, Lat:389064693, Long:-771133242, Alt:70504, Satellites:6
+heading-angle:1.92
+Gravity -- x:-0.47, y:-9.77, z:0.64
+Magnetic -- x:-5.06, y:10.88, z:-26.00
+z vector -- G:0.07, Np:-0.97, P:-0.22
+Date:2023-2-22, Time:23:0:59, Lat:389064657, Long:-771133315, Alt:70157, Satellites:6
+heading-angle:2.03
+Date:2023-2-22, Time:23:1:0, Lat:389064648, Long:-771133478, Alt:69981, Satellites:6
+heading-angle:1.63
+Date:2023-2-22, Time:23:1:1, Lat:389064612, Long:-771132720, Alt:57006, Satellites:8
+heading-angle:-1.62
+Date:2023-2-22, Time:23:1:2, Lat:389065123, Long:-771132464, Alt:50250, Satellites:8
+heading-angle:-0.46
+angle:2.90
+Date:2023-2-22, Time:23:1:3, Lat:389065379, Long:-771132288, Alt:45493, Satellites:8
+heading-angle:-0.60
+Gravity -- x:-0.58, y:-9.73, z:1.05
+Magnetic -- x:-2.19, y:8.00, z:-17.50
+z vector -- G:0.11, Np:-0.98, P:-0.16
+Date:2023-2-22, Time:23:1:4, Lat:389065550, Long:-771132170, Alt:41910, Satellites:8
+heading-angle:-0.60
+Date:2023-2-22, Time:23:1:5, Lat:389065666, Long:-771132018, Alt:38307, Satellites:9
+heading-angle:-0.92
+Date:2023-2-22, Time:23:1:6, Lat:389065811, Long:-771131881, Alt:34914, Satellites:9
+heading-angle:-0.76
+Date:2023-2-22, Time:23:1:7, Lat:389065943, Long:-771131751, Alt:31966, Satellites:9
+heading-angle:-0.78
+angle:-1.75
+Date:2023-2-22, Time:23:1:8, Lat:389066053, Long:-771131646, Alt:30501, Satellites:9
+heading-angle:-0.76
+Gravity -- x:-1.11, y:-9.61, z:1.54
+Magnetic -- x:121.19, y:-159.25, z:9.19
+z vector -- G:0.16, Np:-0.10, P:0.98
+Date:2023-2-22, Time:23:1:9, Lat:389066117, Long:-771131534, Alt:28706, Satellites:7
+heading-angle:-1.05
+Date:2023-2-22, Time:23:1:10, Lat:389066149, Long:-771131430, Alt:28297, Satellites:8
+heading-angle:-1.27
+Date:2023-2-22, Time:23:1:11, Lat:389066194, Long:-771131501, Alt:26047, Satellites:9
+heading-angle:1.01
+Date:2023-2-22, Time:23:1:12, Lat:389066261, Long:-771131534, Alt:25671, Satellites:9
+heading-angle:0.46
+angle:-1.94
+Date:2023-2-22, Time:23:1:13, Lat:389066333, Long:-771131540, Alt:25221, Satellites:9
+heading-angle:0.08
+Gravity -- x:-5.83, y:-7.86, z:-0.45
+Magnetic -- x:120.19, y:24.50, z:-45.56
+z vector -- G:-0.05, Np:-0.52, P:0.85
+Date:2023-2-22, Time:23:1:14, Lat:389066364, Long:-771131499, Alt:25504, Satellites:9
+heading-angle:-0.92
+Date:2023-2-22, Time:23:1:15, Lat:389066359, Long:-771131470, Alt:25849, Satellites:9
+heading-angle:-1.74
+Date:2023-2-22, Time:23:1:16, Lat:389066356, Long:-771131444, Alt:26123, Satellites:9
+heading-angle:-1.69
+Date:2023-2-22, Time:23:1:17, Lat:389066363, Long:-771131434, Alt:26198, Satellites:9
+heading-angle:-0.96
+angle:-1.80
+Date:2023-2-22, Time:23:1:18, Lat:389066378, Long:-771131417, Alt:26422, Satellites:9
+heading-angle:-0.85
+Gravity -- x:-5.76, y:-7.92, z:-0.37
+Magnetic -- x:120.25, y:11.88, z:-23.06
+z vector -- G:-0.04, Np:-0.28, P:0.96
+Date:2023-2-22, Time:23:1:19, Lat:389066365, Long:-771131412, Alt:26781, Satellites:9
+heading-angle:-2.77
+Date:2023-2-22, Time:23:1:20, Lat:389066360, Long:-771131395, Alt:27083, Satellites:9
+heading-angle:-1.86
+Date:2023-2-22, Time:23:1:21, Lat:389066367, Long:-771131385, Alt:27306, Satellites:9
+heading-angle:-0.96
+Date:2023-2-22, Time:23:1:22, Lat:389066368, Long:-771131380, Alt:27385, Satellites:9
+heading-angle:-1.37
+angle:-1.56
+Date:2023-2-22, Time:23:1:23, Lat:389066361, Long:-771131356, Alt:27664, Satellites:9
+heading-angle:-1.85
+Gravity -- x:-5.81, y:-7.89, z:0.14
+Magnetic -- x:162.00, y:-87.25, z:61.25
+z vector -- G:0.01, Np:0.32, P:0.95
+Date:2023-2-22, Time:23:1:24, Lat:389066335, Long:-771131345, Alt:28340, Satellites:9
+heading-angle:-2.74
+Date:2023-2-22, Time:23:1:25, Lat:389066333, Long:-771131263, Alt:28696, Satellites:9
+heading-angle:-1.60
+Date:2023-2-22, Time:23:1:26, Lat:389066321, Long:-771131195, Alt:29218, Satellites:9
+heading-angle:-1.75
+Date:2023-2-22, Time:23:1:27, Lat:389066316, Long:-771131171, Alt:29643, Satellites:9
+heading-angle:-1.78
+angle:0.20
+Date:2023-2-22, Time:23:1:28, Lat:389066325, Long:-771131104, Alt:30003, Satellites:9
+heading-angle:-1.44
+Gravity -- x:-3.32, y:-9.19, z:0.72
+Magnetic -- x:-38.50, y:3.88, z:129.88
+z vector -- G:0.07, Np:0.96, P:-0.28
+Date:2023-2-22, Time:23:1:29, Lat:389066336, Long:-771131186, Alt:30015, Satellites:9
+heading-angle:1.44
+Date:2023-2-22, Time:23:1:30, Lat:389066381, Long:-771131034, Alt:28089, Satellites:9
+heading-angle:-1.28
+Date:2023-2-22, Time:23:1:31, Lat:389066431, Long:-771130960, Alt:27026, Satellites:9
+heading-angle:-0.98
+Date:2023-2-22, Time:23:1:32, Lat:389066460, Long:-771130917, Alt:26625, Satellites:9
+heading-angle:-0.98
+angle:0.35
+Date:2023-2-22, Time:23:1:33, Lat:389066433, Long:-771130908, Alt:25817, Satellites:9
+heading-angle:-2.82
+Gravity -- x:-4.18, y:-7.85, z:4.12
+Magnetic -- x:-38.50, y:-20.38, z:84.25
+z vector -- G:0.42, Np:0.84, P:-0.34
+Date:2023-2-22, Time:23:1:34, Lat:389066451, Long:-771130905, Alt:25738, Satellites:9
+heading-angle:-0.17
+Date:2023-2-22, Time:23:1:35, Lat:389066414, Long:-771130918, Alt:25575, Satellites:9
+heading-angle:2.80
+Date:2023-2-22, Time:23:1:36, Lat:389066409, Long:-771130950, Alt:25895, Satellites:9
+heading-angle:1.73
+Date:2023-2-22, Time:23:1:37, Lat:389066365, Long:-771131035, Alt:26106, Satellites:9
+heading-angle:2.05
+angle:0.10
+Date:2023-2-22, Time:23:1:38, Lat:389066363, Long:-771131064, Alt:26316, Satellites:9
+heading-angle:1.64
+Gravity -- x:-4.22, y:-7.52, z:4.65
+Magnetic -- x:-17.56, y:-28.75, z:84.00
+z vector -- G:0.47, Np:0.88, P:-0.02
+Date:2023-2-22, Time:23:1:39, Lat:389066244, Long:-771131204, Alt:27533, Satellites:9
+heading-angle:2.28
+Date:2023-2-22, Time:23:1:40, Lat:389066208, Long:-771131297, Alt:28116, Satellites:9
+heading-angle:1.94
+Date:2023-2-22, Time:23:1:41, Lat:389066185, Long:-771131453, Alt:28940, Satellites:9
+heading-angle:1.72
+Date:2023-2-22, Time:23:1:42, Lat:389066186, Long:-771131548, Alt:29950, Satellites:9
+heading-angle:1.56
+angle:0.49
+Date:2023-2-22, Time:23:1:43, Lat:389066096, Long:-771131747, Alt:30777, Satellites:9
+heading-angle:2.00
+Gravity -- x:-3.46, y:-7.83, z:4.77
+Magnetic -- x:-25.19, y:-24.38, z:67.00
+z vector -- G:0.49, Np:0.83, P:-0.26
+Date:2023-2-22, Time:23:1:44, Lat:389066025, Long:-771131904, Alt:31611, Satellites:9
+heading-angle:2.00
+Date:2023-2-22, Time:23:1:45, Lat:389065942, Long:-771132098, Alt:32803, Satellites:9
+heading-angle:1.98
+Date:2023-2-22, Time:23:1:46, Lat:389065874, Long:-771132244, Alt:33470, Satellites:9
+heading-angle:2.01
+Date:2023-2-22, Time:23:1:47, Lat:389065625, Long:-771132352, Alt:34696, Satellites:9
+heading-angle:2.73
+angle:-0.03
+Date:2023-2-22, Time:23:1:48, Lat:389065397, Long:-771132545, Alt:36526, Satellites:9
+heading-angle:2.44
+Gravity -- x:-3.03, y:-7.39, z:5.68
+Magnetic -- x:-13.50, y:-27.19, z:80.56
+z vector -- G:0.58, Np:0.81, P:-0.04
+Date:2023-2-22, Time:23:1:49, Lat:389065217, Long:-771132645, Alt:38670, Satellites:9
+heading-angle:2.63
+Date:2023-2-22, Time:23:1:50, Lat:389064966, Long:-771132676, Alt:39938, Satellites:9
+heading-angle:3.02
+Date:2023-2-22, Time:23:1:51, Lat:389064720, Long:-771132809, Alt:41755, Satellites:9
+heading-angle:2.65
+Date:2023-2-22, Time:23:1:52, Lat:389064481, Long:-771133138, Alt:43147, Satellites:9
+heading-angle:2.20
+angle:0.35
+Date:2023-2-22, Time:23:1:53, Lat:389064301, Long:-771133515, Alt:44349, Satellites:9
+heading-angle:2.02
+Gravity -- x:-2.49, y:-7.82, z:5.35
+Magnetic -- x:-31.00, y:-18.50, z:55.00
+z vector -- G:0.55, Np:0.67, P:-0.51
+Date:2023-2-22, Time:23:1:54, Lat:389064196, Long:-771133821, Alt:45555, Satellites:9
+heading-angle:1.90
+Date:2023-2-22, Time:23:1:55, Lat:389063924, Long:-771134169, Alt:47179, Satellites:9
+heading-angle:2.23
+Date:2023-2-22, Time:23:1:56, Lat:389063627, Long:-771134572, Alt:48784, Satellites:9
+heading-angle:2.21
+Date:2023-2-22, Time:23:1:57, Lat:389063368, Long:-771134925, Alt:50259, Satellites:9
+heading-angle:2.20
+angle:0.86
+Date:2023-2-22, Time:23:1:58, Lat:389063139, Long:-771135344, Alt:50993, Satellites:8
+heading-angle:2.07
+Gravity -- x:-3.84, y:-6.79, z:5.92
+Magnetic -- x:-27.38, y:-20.88, z:55.38
+z vector -- G:0.60, Np:0.70, P:-0.38
+Date:2023-2-22, Time:23:1:59, Lat:389062900, Long:-771135725, Alt:51977, Satellites:8
+heading-angle:2.13
+Date:2023-2-22, Time:23:2:0, Lat:389062501, Long:-771136123, Alt:52406, Satellites:8
+heading-angle:2.36
+Date:2023-2-22, Time:23:2:1, Lat:389062134, Long:-771136490, Alt:53826, Satellites:8
+heading-angle:2.36
+Date:2023-2-22, Time:23:2:2, Lat:389061878, Long:-771136921, Alt:55490, Satellites:9
+heading-angle:2.11
+angle:0.42
+Date:2023-2-22, Time:23:2:3, Lat:389061649, Long:-771137274, Alt:57522, Satellites:9
+heading-angle:2.15
+Gravity -- x:-4.74, y:-6.31, z:5.81
+Magnetic -- x:-18.06, y:-17.00, z:58.25
+z vector -- G:0.59, Np:0.80, P:-0.10
+Date:2023-2-22, Time:23:2:4, Lat:389061517, Long:-771137572, Alt:59666, Satellites:9
+heading-angle:1.99
+Date:2023-2-22, Time:23:2:5, Lat:389061335, Long:-771137724, Alt:60577, Satellites:8
+heading-angle:2.45
+Date:2023-2-22, Time:23:2:6, Lat:389060990, Long:-771137976, Alt:61561, Satellites:9
+heading-angle:2.51
+Date:2023-2-22, Time:23:2:7, Lat:389060684, Long:-771138257, Alt:62486, Satellites:9
+heading-angle:2.40
+angle:0.11
+Date:2023-2-22, Time:23:2:8, Lat:389060509, Long:-771138426, Alt:63672, Satellites:9
+heading-angle:2.37
+Gravity -- x:-4.60, y:-6.14, z:6.09
+Magnetic -- x:-15.38, y:-13.50, z:55.75
+z vector -- G:0.62, Np:0.78, P:-0.10
+Date:2023-2-22, Time:23:2:9, Lat:389060391, Long:-771138588, Alt:64879, Satellites:9
+heading-angle:2.20
+Date:2023-2-22, Time:23:2:10, Lat:389060111, Long:-771138724, Alt:66517, Satellites:8
+heading-angle:2.69
+Date:2023-2-22, Time:23:2:11, Lat:389059919, Long:-771138893, Alt:68099, Satellites:8
+heading-angle:2.42
+Date:2023-2-22, Time:23:2:12, Lat:389059722, Long:-771139151, Alt:69646, Satellites:9
+heading-angle:2.22
+angle:0.13
+Date:2023-2-22, Time:23:2:13, Lat:389059639, Long:-771139357, Alt:70980, Satellites:9
+heading-angle:1.95
+Gravity -- x:-3.39, y:-6.31, z:6.69
+Magnetic -- x:-3.75, y:6.88, z:56.56
+z vector -- G:0.68, Np:0.72, P:-0.11
+Date:2023-2-22, Time:23:2:14, Lat:389059479, Long:-771139457, Alt:72482, Satellites:9
+heading-angle:2.58
+Date:2023-2-22, Time:23:2:15, Lat:389059309, Long:-771139587, Alt:73843, Satellites:9
+heading-angle:2.49
+Date:2023-2-22, Time:23:2:16, Lat:389059167, Long:-771139717, Alt:75400, Satellites:9
+heading-angle:2.40
+Date:2023-2-22, Time:23:2:17, Lat:389058987, Long:-771139910, Alt:77138, Satellites:9
+heading-angle:2.32
+angle:0.48
+Date:2023-2-22, Time:23:2:18, Lat:389058877, Long:-771140098, Alt:79105, Satellites:9
+heading-angle:2.10
+Gravity -- x:-3.89, y:-6.72, z:5.98
+Magnetic -- x:-20.00, y:-9.25, z:21.06
+z vector -- G:0.61, Np:0.32, P:-0.72
+Date:2023-2-22, Time:23:2:19, Lat:389058797, Long:-771140235, Alt:80798, Satellites:9
+heading-angle:2.10
+Date:2023-2-22, Time:23:2:20, Lat:389058638, Long:-771140462, Alt:82529, Satellites:9
+heading-angle:2.18
+Date:2023-2-22, Time:23:2:21, Lat:389058554, Long:-771140864, Alt:84470, Satellites:9
+heading-angle:1.78
+Date:2023-2-22, Time:23:2:22, Lat:389058610, Long:-771141170, Alt:87240, Satellites:9
+heading-angle:1.39
+angle:0.75
+Date:2023-2-22, Time:23:2:23, Lat:389058626, Long:-771141498, Alt:89609, Satellites:9
+heading-angle:1.52
+Gravity -- x:-4.45, y:-7.13, z:5.04
+Magnetic -- x:-11.50, y:-20.00, z:19.06
+z vector -- G:0.51, Np:0.84, P:0.16
+Date:2023-2-22, Time:23:2:24, Lat:389058650, Long:-771141976, Alt:91039, Satellites:9
+heading-angle:1.52
+Date:2023-2-22, Time:23:2:25, Lat:389058737, Long:-771142496, Alt:92409, Satellites:10
+heading-angle:1.41
+Date:2023-2-22, Time:23:2:26, Lat:389058827, Long:-771143055, Alt:94125, Satellites:10
+heading-angle:1.41
+Date:2023-2-22, Time:23:2:27, Lat:389058939, Long:-771143549, Alt:96379, Satellites:10
+heading-angle:1.35
+angle:0.04
+Date:2023-2-22, Time:23:2:28, Lat:389059052, Long:-771144120, Alt:98157, Satellites:9
+heading-angle:1.38
+Gravity -- x:-4.54, y:-7.20, z:4.86
+Magnetic -- x:-10.56, y:-17.19, z:24.38
+z vector -- G:0.50, Np:0.87, P:0.02
+Date:2023-2-22, Time:23:2:29, Lat:389059198, Long:-771144468, Alt:101730, Satellites:10
+heading-angle:1.17
+Date:2023-2-22, Time:23:2:30, Lat:389059308, Long:-771144750, Alt:104686, Satellites:10
+heading-angle:1.20
+Date:2023-2-22, Time:23:2:31, Lat:389059412, Long:-771144878, Alt:108821, Satellites:10
+heading-angle:0.89
+Date:2023-2-22, Time:23:2:32, Lat:389059346, Long:-771145111, Alt:111333, Satellites:10
+heading-angle:1.85
+angle:-0.17
+Date:2023-2-22, Time:23:2:33, Lat:389059395, Long:-771145451, Alt:113124, Satellites:10
+heading-angle:1.43
+Gravity -- x:-5.04, y:-5.77, z:6.10
+Magnetic -- x:-11.00, y:-7.50, z:31.38
+z vector -- G:0.62, Np:0.77, P:-0.16
+Date:2023-2-22, Time:23:2:34, Lat:389059318, Long:-771145805, Alt:114895, Satellites:10
+heading-angle:1.78
+Date:2023-2-22, Time:23:2:35, Lat:389059205, Long:-771146100, Alt:117344, Satellites:9
+heading-angle:1.94
+Date:2023-2-22, Time:23:2:36, Lat:389059046, Long:-771146419, Alt:119405, Satellites:9
+heading-angle:2.03
+Date:2023-2-22, Time:23:2:37, Lat:389058813, Long:-771146779, Alt:120883, Satellites:9
+heading-angle:2.15
+angle:0.29
+Date:2023-2-22, Time:23:2:38, Lat:389058559, Long:-771147173, Alt:121994, Satellites:9
+heading-angle:2.14
+Gravity -- x:-4.07, y:-5.18, z:7.25
+Magnetic -- x:-5.38, y:-0.19, z:42.75
+z vector -- G:0.74, Np:0.66, P:-0.10
+Date:2023-2-22, Time:23:2:39, Lat:389058303, Long:-771147538, Alt:124254, Satellites:10
+heading-angle:2.18
+Date:2023-2-22, Time:23:2:40, Lat:389058041, Long:-771147707, Alt:126290, Satellites:10
+heading-angle:2.57
+Date:2023-2-22, Time:23:2:41, Lat:389057660, Long:-771147927, Alt:127464, Satellites:10
+heading-angle:2.62
+Date:2023-2-22, Time:23:2:42, Lat:389057309, Long:-771148056, Alt:129868, Satellites:10
+heading-angle:2.79
+angle:-0.07
+Date:2023-2-22, Time:23:2:43, Lat:389057079, Long:-771148223, Alt:131459, Satellites:10
+heading-angle:2.51
+Gravity -- x:-1.86, y:-5.06, z:8.18
+Magnetic -- x:-1.00, y:-1.00, z:45.88
+z vector -- G:0.83, Np:0.55, P:-0.01
+Date:2023-2-22, Time:23:2:44, Lat:389056876, Long:-771148562, Alt:132660, Satellites:10
+heading-angle:2.11
+Date:2023-2-22, Time:23:2:45, Lat:389056755, Long:-771149088, Alt:133814, Satellites:10
+heading-angle:1.80
+Date:2023-2-22, Time:23:2:46, Lat:389056617, Long:-771149515, Alt:135661, Satellites:10
+heading-angle:1.88
+Date:2023-2-22, Time:23:2:47, Lat:389056297, Long:-771150008, Alt:135986, Satellites:9
+heading-angle:2.15
+angle:-0.36
+Date:2023-2-22, Time:23:2:48, Lat:389056069, Long:-771150245, Alt:136877, Satellites:9
+heading-angle:2.34
+Gravity -- x:-0.89, y:-5.16, z:8.28
+Magnetic -- x:7.06, y:-4.69, z:44.75
+z vector -- G:0.85, Np:0.50, P:0.18
+Date:2023-2-22, Time:23:2:49, Lat:389055866, Long:-771150363, Alt:138581, Satellites:10
+heading-angle:2.62
+Date:2023-2-22, Time:23:2:50, Lat:389055658, Long:-771150383, Alt:141313, Satellites:10
+heading-angle:3.05
+Date:2023-2-22, Time:23:2:51, Lat:389055454, Long:-771150387, Alt:146184, Satellites:10
+heading-angle:3.12
+Date:2023-2-22, Time:23:2:52, Lat:389054996, Long:-771150565, Alt:149607, Satellites:10
+heading-angle:2.77
+angle:0.33
+Date:2023-2-22, Time:23:2:53, Lat:389054695, Long:-771150706, Alt:151332, Satellites:10
+heading-angle:2.70
+Gravity -- x:-2.04, y:-4.72, z:8.34
+Magnetic -- x:-11.25, y:-4.69, z:41.69
+z vector -- G:0.85, Np:0.45, P:-0.27
+Date:2023-2-22, Time:23:2:54, Lat:389054434, Long:-771150800, Alt:153504, Satellites:10
+heading-angle:2.80
+Date:2023-2-22, Time:23:2:55, Lat:389054240, Long:-771151043, Alt:153802, Satellites:8
+heading-angle:2.24
+Date:2023-2-22, Time:23:2:56, Lat:389054114, Long:-771151176, Alt:156338, Satellites:10
+heading-angle:2.33
+Date:2023-2-22, Time:23:2:57, Lat:389053918, Long:-771151360, Alt:158769, Satellites:10
+heading-angle:2.39
+angle:1.25
+Date:2023-2-22, Time:23:2:58, Lat:389053826, Long:-771151424, Alt:161172, Satellites:10
+heading-angle:2.53
+Gravity -- x:-3.02, y:-8.32, z:4.20
+Magnetic -- x:-31.00, y:-9.38, z:23.06
+z vector -- G:0.43, Np:0.39, P:-0.81
+Date:2023-2-22, Time:23:2:59, Lat:389053794, Long:-771151609, Alt:165108, Satellites:10
+heading-angle:1.74
+Date:2023-2-22, Time:23:3:0, Lat:389053800, Long:-771151815, Alt:168780, Satellites:10
+heading-angle:1.54
+Date:2023-2-22, Time:23:3:1, Lat:389053739, Long:-771152055, Alt:172392, Satellites:10
+heading-angle:1.82
+Date:2023-2-22, Time:23:3:2, Lat:389053769, Long:-771152489, Alt:174666, Satellites:9
+heading-angle:1.50
+angle:-1.52
+Date:2023-2-22, Time:23:3:3, Lat:389053811, Long:-771153084, Alt:176256, Satellites:9
+heading-angle:1.50
+Gravity -- x:-5.05, y:-6.76, z:4.99
+Magnetic -- x:-4.50, y:-28.38, z:10.75
+z vector -- G:0.51, Np:-0.23, P:0.83
+Date:2023-2-22, Time:23:3:4, Lat:389053942, Long:-771153584, Alt:177767, Satellites:9
+heading-angle:1.31
+Date:2023-2-22, Time:23:3:5, Lat:389054066, Long:-771154153, Alt:178099, Satellites:9
+heading-angle:1.36
+Date:2023-2-22, Time:23:3:6, Lat:389054252, Long:-771154861, Alt:178606, Satellites:9
+heading-angle:1.31
+Date:2023-2-22, Time:23:3:7, Lat:389054458, Long:-771155605, Alt:179829, Satellites:8
+heading-angle:1.30
+angle:-1.14
+Date:2023-2-22, Time:23:3:8, Lat:389054582, Long:-771156363, Alt:179942, Satellites:8
+heading-angle:1.41
+Gravity -- x:-5.74, y:-4.82, z:6.31
+Magnetic -- x:-4.50, y:-7.56, z:19.75
+z vector -- G:0.64, Np:0.73, P:0.22
+Date:2023-2-22, Time:23:3:9, Lat:389054595, Long:-771157069, Alt:179602, Satellites:8
+heading-angle:1.55
+Date:2023-2-22, Time:23:3:10, Lat:389054442, Long:-771157624, Alt:178183, Satellites:8
+heading-angle:1.84
+Date:2023-2-22, Time:23:3:11, Lat:389054133, Long:-771158101, Alt:178165, Satellites:8
+heading-angle:2.15
+Date:2023-2-22, Time:23:3:12, Lat:389053634, Long:-771158294, Alt:182055, Satellites:10
+heading-angle:2.77
+angle:-0.15
+Date:2023-2-22, Time:23:3:13, Lat:389053263, Long:-771158455, Alt:185519, Satellites:10
+heading-angle:2.73
+Gravity -- x:-2.33, y:-5.01, z:8.09
+Magnetic -- x:6.56, y:1.50, z:29.88
+z vector -- G:0.83, Np:0.55, P:0.14
+Date:2023-2-22, Time:23:3:14, Lat:389052940, Long:-771158597, Alt:188398, Satellites:10
+heading-angle:2.73
+Date:2023-2-22, Time:23:3:15, Lat:389052737, Long:-771158863, Alt:189714, Satellites:10
+heading-angle:2.22
+Date:2023-2-22, Time:23:3:16, Lat:389052435, Long:-771159234, Alt:190104, Satellites:10
+heading-angle:2.25
+Date:2023-2-22, Time:23:3:17, Lat:389052223, Long:-771159555, Alt:192105, Satellites:9
+heading-angle:2.15
+angle:-0.02
+Date:2023-2-22, Time:23:3:18, Lat:389051748, Long:-771160041, Alt:191918, Satellites:10
+heading-angle:2.34
+Gravity -- x:-1.85, y:-4.40, z:8.56
+Magnetic -- x:-1.88, y:19.19, z:10.25
+z vector -- G:0.87, Np:0.44, P:-0.20
+Date:2023-2-22, Time:23:3:19, Lat:389051338, Long:-771160271, Alt:192284, Satellites:10
+heading-angle:2.63
+Date:2023-2-22, Time:23:3:20, Lat:389050914, Long:-771160782, Alt:191708, Satellites:10
+heading-angle:2.26
+Date:2023-2-22, Time:23:3:21, Lat:389050482, Long:-771161333, Alt:191186, Satellites:10
+heading-angle:2.24
+Date:2023-2-22, Time:23:3:22, Lat:389050179, Long:-771161816, Alt:191495, Satellites:10
+heading-angle:2.13
+angle:0.74
+Date:2023-2-22, Time:23:3:23, Lat:389049907, Long:-771162226, Alt:191600, Satellites:10
+heading-angle:2.16
+Gravity -- x:-2.51, y:-2.62, z:9.10
+Magnetic -- x:3.06, y:30.06, z:4.38
+z vector -- G:0.93, Np:0.29, P:-0.23
+Date:2023-2-22, Time:23:3:24, Lat:389049535, Long:-771162708, Alt:191327, Satellites:10
+heading-angle:2.23
+Date:2023-2-22, Time:23:3:25, Lat:389049146, Long:-771163089, Alt:192172, Satellites:10
+heading-angle:2.37
+Date:2023-2-22, Time:23:3:26, Lat:389048701, Long:-771163417, Alt:192835, Satellites:10
+heading-angle:2.51
+Date:2023-2-22, Time:23:3:27, Lat:389048292, Long:-771163707, Alt:192511, Satellites:10
+heading-angle:2.52
+angle:1.02
+Date:2023-2-22, Time:23:3:28, Lat:389048011, Long:-771163963, Alt:192283, Satellites:10
+heading-angle:2.40
+Gravity -- x:-4.25, y:-3.21, z:8.23
+Magnetic -- x:2.38, y:37.06, z:-3.00
+z vector -- G:0.84, Np:0.30, P:-0.45
+Date:2023-2-22, Time:23:3:29, Lat:389047709, Long:-771164271, Alt:192210, Satellites:10
+heading-angle:2.35
+Date:2023-2-22, Time:23:3:30, Lat:389047400, Long:-771164538, Alt:192577, Satellites:10
+heading-angle:2.43
+Date:2023-2-22, Time:23:3:31, Lat:389047054, Long:-771164751, Alt:192902, Satellites:10
+heading-angle:2.59
+Date:2023-2-22, Time:23:3:32, Lat:389046715, Long:-771164990, Alt:193007, Satellites:10
+heading-angle:2.53
+angle:1.03
+Date:2023-2-22, Time:23:3:33, Lat:389046375, Long:-771165207, Alt:192584, Satellites:7
+heading-angle:2.57
+Gravity -- x:-2.71, y:-3.34, z:8.80
+Magnetic -- x:0.00, y:45.00, z:-5.50
+z vector -- G:0.90, Np:0.31, P:-0.31
+Date:2023-2-22, Time:23:3:34, Lat:389046108, Long:-771165391, Alt:192372, Satellites:9
+heading-angle:2.54
+Date:2023-2-22, Time:23:3:35, Lat:389045804, Long:-771165587, Alt:192965, Satellites:10
+heading-angle:2.57
+Date:2023-2-22, Time:23:3:36, Lat:389045534, Long:-771165741, Alt:193799, Satellites:10
+heading-angle:2.62
+Date:2023-2-22, Time:23:3:37, Lat:389045299, Long:-771165924, Alt:195039, Satellites:10
+heading-angle:2.48
+angle:0.52
+Date:2023-2-22, Time:23:3:38, Lat:389045129, Long:-771166126, Alt:194962, Satellites:10
+heading-angle:2.27
+Gravity -- x:-1.97, y:-2.37, z:9.30
+Magnetic -- x:5.00, y:46.56, z:-9.69
+z vector -- G:0.95, Np:0.25, P:-0.19
+Date:2023-2-22, Time:23:3:39, Lat:389044848, Long:-771166297, Alt:195329, Satellites:10
+heading-angle:2.59
+Date:2023-2-22, Time:23:3:40, Lat:389044623, Long:-771166420, Alt:195423, Satellites:10
+heading-angle:2.64
+Date:2023-2-22, Time:23:3:41, Lat:389044314, Long:-771166503, Alt:196475, Satellites:10
+heading-angle:2.88
+Date:2023-2-22, Time:23:3:42, Lat:389044092, Long:-771166680, Alt:197218, Satellites:8
+heading-angle:2.47
+angle:0.73
+Date:2023-2-22, Time:23:3:43, Lat:389043942, Long:-771166797, Alt:198360, Satellites:8
+heading-angle:2.48
+Gravity -- x:-3.06, y:-2.11, z:9.07
+Magnetic -- x:9.25, y:43.00, z:-2.06
+z vector -- G:0.93, Np:0.26, P:-0.27
+Date:2023-2-22, Time:23:3:44, Lat:389043695, Long:-771166988, Alt:199102, Satellites:8
+heading-angle:2.48
+Date:2023-2-22, Time:23:3:45, Lat:389043440, Long:-771167146, Alt:199291, Satellites:10
+heading-angle:2.59
+Date:2023-2-22, Time:23:3:46, Lat:389043181, Long:-771167207, Alt:200387, Satellites:10
+heading-angle:2.91
+Date:2023-2-22, Time:23:3:47, Lat:389042878, Long:-771167280, Alt:201761, Satellites:10
+heading-angle:2.91
+angle:1.28
+Date:2023-2-22, Time:23:3:48, Lat:389042611, Long:-771167335, Alt:203326, Satellites:10
+heading-angle:2.94
+Gravity -- x:-3.86, y:-2.08, z:8.76
+Magnetic -- x:7.69, y:31.56, z:9.88
+z vector -- G:0.89, Np:0.31, P:-0.32
+Date:2023-2-22, Time:23:3:49, Lat:389042375, Long:-771167396, Alt:204576, Satellites:10
+heading-angle:2.89
+Date:2023-2-22, Time:23:3:50, Lat:389042153, Long:-771167482, Alt:205972, Satellites:10
+heading-angle:2.77
+Date:2023-2-22, Time:23:3:51, Lat:389041970, Long:-771167588, Alt:207053, Satellites:10
+heading-angle:2.62
+Date:2023-2-22, Time:23:3:52, Lat:389041764, Long:-771167681, Alt:208219, Satellites:10
+heading-angle:2.72
+angle:1.06
+Date:2023-2-22, Time:23:3:53, Lat:389041475, Long:-771167825, Alt:208583, Satellites:10
+heading-angle:2.68
+Gravity -- x:-2.46, y:-0.58, z:9.47
+Magnetic -- x:6.19, y:47.25, z:-23.38
+z vector -- G:0.97, Np:0.06, P:-0.25
+Date:2023-2-22, Time:23:3:54, Lat:389041254, Long:-771167888, Alt:209080, Satellites:10
+heading-angle:2.86
+Date:2023-2-22, Time:23:3:55, Lat:389040952, Long:-771167936, Alt:208859, Satellites:10
+heading-angle:2.98
+Date:2023-2-22, Time:23:3:56, Lat:389040662, Long:-771168078, Alt:208817, Satellites:10
+heading-angle:2.69
+Date:2023-2-22, Time:23:3:57, Lat:389040475, Long:-771168191, Alt:208746, Satellites:10
+heading-angle:2.60
+angle:1.55
+Date:2023-2-22, Time:23:3:58, Lat:389040207, Long:-771168308, Alt:208134, Satellites:10
+heading-angle:2.73
+Gravity -- x:-4.16, y:-0.54, z:8.85
+Magnetic -- x:15.25, y:41.88, z:-10.69
+z vector -- G:0.90, Np:0.14, P:-0.40
+Date:2023-2-22, Time:23:3:59, Lat:389039983, Long:-771168409, Alt:207553, Satellites:10
+heading-angle:2.72
+Date:2023-2-22, Time:23:4:0, Lat:389039714, Long:-771168468, Alt:207854, Satellites:10
+heading-angle:2.93
+Date:2023-2-22, Time:23:4:1, Lat:389039571, Long:-771168560, Alt:208048, Satellites:10
+heading-angle:2.57
+Date:2023-2-22, Time:23:4:2, Lat:389039439, Long:-771168624, Alt:207929, Satellites:10
+heading-angle:2.69
+angle:0.99
+Date:2023-2-22, Time:23:4:3, Lat:389039259, Long:-771168638, Alt:207960, Satellites:10
+heading-angle:3.06
+Gravity -- x:-3.25, y:-2.35, z:8.94
+Magnetic -- x:4.00, y:46.25, z:-7.00
+z vector -- G:0.91, Np:0.24, P:-0.33
+Date:2023-2-22, Time:23:4:4, Lat:389039012, Long:-771168692, Alt:207936, Satellites:10
+heading-angle:2.93
+Date:2023-2-22, Time:23:4:5, Lat:389038843, Long:-771168708, Alt:208066, Satellites:10
+heading-angle:3.05
+Date:2023-2-22, Time:23:4:6, Lat:389038707, Long:-771168744, Alt:207834, Satellites:10
+heading-angle:2.88
+Date:2023-2-22, Time:23:4:7, Lat:389038489, Long:-771168827, Alt:208147, Satellites:10
+heading-angle:2.78
+angle:1.18
+Date:2023-2-22, Time:23:4:8, Lat:389038327, Long:-771168797, Alt:208111, Satellites:9
+heading-angle:-2.96
+Gravity -- x:-4.00, y:-1.84, z:8.76
+Magnetic -- x:7.69, y:51.75, z:-14.06
+z vector -- G:0.89, Np:0.18, P:-0.41
+Date:2023-2-22, Time:23:4:9, Lat:389038118, Long:-771168770, Alt:207802, Satellites:9
+heading-angle:-3.01
+Date:2023-2-22, Time:23:4:10, Lat:389037871, Long:-771168791, Alt:207180, Satellites:9
+heading-angle:3.06
+Date:2023-2-22, Time:23:4:11, Lat:389037672, Long:-771168807, Alt:206711, Satellites:10
+heading-angle:3.06
+Date:2023-2-22, Time:23:4:12, Lat:389037459, Long:-771168827, Alt:206305, Satellites:10
+heading-angle:3.05
+angle:0.93
+Date:2023-2-22, Time:23:4:13, Lat:389037250, Long:-771168844, Alt:205735, Satellites:10
+heading-angle:3.06
+Gravity -- x:-3.71, y:0.04, z:9.07
+Magnetic -- x:15.19, y:45.38, z:-9.25
+z vector -- G:0.93, Np:0.08, P:-0.37
+Date:2023-2-22, Time:23:4:14, Lat:389037013, Long:-771168882, Alt:205624, Satellites:10
+heading-angle:2.98
+Date:2023-2-22, Time:23:4:15, Lat:389036733, Long:-771168861, Alt:206030, Satellites:10
+heading-angle:-3.07
+Date:2023-2-22, Time:23:4:16, Lat:389036496, Long:-771168916, Alt:205611, Satellites:10
+heading-angle:2.91
+Date:2023-2-22, Time:23:4:17, Lat:389036300, Long:-771169000, Alt:204791, Satellites:10
+heading-angle:2.74
+angle:1.24
+Date:2023-2-22, Time:23:4:18, Lat:389036081, Long:-771169087, Alt:204691, Satellites:9
+heading-angle:2.76
+Gravity -- x:-1.49, y:-0.35, z:9.68
+Magnetic -- x:6.19, y:39.19, z:2.06
+z vector -- G:0.99, Np:0.06, P:-0.14
+Date:2023-2-22, Time:23:4:19, Lat:389035840, Long:-771169144, Alt:205199, Satellites:8
+heading-angle:2.91
+Date:2023-2-22, Time:23:4:20, Lat:389035558, Long:-771169276, Alt:204873, Satellites:8
+heading-angle:2.70
+Date:2023-2-22, Time:23:4:21, Lat:389035371, Long:-771169303, Alt:204322, Satellites:10
+heading-angle:3.00
+Date:2023-2-22, Time:23:4:22, Lat:389035102, Long:-771169348, Alt:203941, Satellites:10
+heading-angle:2.98
+angle:1.25
+Date:2023-2-22, Time:23:4:23, Lat:389034829, Long:-771169376, Alt:203878, Satellites:10
+heading-angle:3.04
+Gravity -- x:-2.98, y:-1.48, z:9.22
+Magnetic -- x:9.19, y:42.19, z:-0.25
+z vector -- G:0.94, Np:0.20, P:-0.27
+Date:2023-2-22, Time:23:4:24, Lat:389034572, Long:-771169423, Alt:203942, Satellites:10
+heading-angle:2.96
+Date:2023-2-22, Time:23:4:25, Lat:389034328, Long:-771169450, Alt:204146, Satellites:10
+heading-angle:3.03
+Date:2023-2-22, Time:23:4:26, Lat:389034118, Long:-771169506, Alt:203914, Satellites:9
+heading-angle:2.88
+Date:2023-2-22, Time:23:4:27, Lat:389033987, Long:-771169496, Alt:203813, Satellites:10
+heading-angle:-3.07
+angle:0.88
+Date:2023-2-22, Time:23:4:28, Lat:389033697, Long:-771169493, Alt:203429, Satellites:10
+heading-angle:-3.13
+Gravity -- x:-1.85, y:-2.05, z:9.40
+Magnetic -- x:13.19, y:46.00, z:2.75
+z vector -- G:0.96, Np:0.25, P:-0.13
+Date:2023-2-22, Time:23:4:29, Lat:389033478, Long:-771169512, Alt:203546, Satellites:10
+heading-angle:3.06
+Date:2023-2-22, Time:23:4:30, Lat:389033296, Long:-771169543, Alt:202638, Satellites:10
+heading-angle:2.97
+Date:2023-2-22, Time:23:4:31, Lat:389033143, Long:-771169601, Alt:202236, Satellites:10
+heading-angle:2.78
+Date:2023-2-22, Time:23:4:32, Lat:389032960, Long:-771169660, Alt:202585, Satellites:10
+heading-angle:2.83
+angle:1.15
+Date:2023-2-22, Time:23:4:33, Lat:389032762, Long:-771169831, Alt:202699, Satellites:9
+heading-angle:2.43
+Gravity -- x:-2.47, y:-0.72, z:9.46
+Magnetic -- x:9.50, y:47.19, z:-10.19
+z vector -- G:0.96, Np:0.11, P:-0.24
+Date:2023-2-22, Time:23:4:34, Lat:389032690, Long:-771169996, Alt:202521, Satellites:9
+heading-angle:1.98
+Date:2023-2-22, Time:23:4:35, Lat:389032574, Long:-771170123, Alt:203242, Satellites:9
+heading-angle:2.31
+Date:2023-2-22, Time:23:4:36, Lat:389032516, Long:-771170272, Alt:203273, Satellites:9
+heading-angle:1.94
+Date:2023-2-22, Time:23:4:37, Lat:389032429, Long:-771170398, Alt:203363, Satellites:9
+heading-angle:2.18
+angle:1.07
+Date:2023-2-22, Time:23:4:38, Lat:389032315, Long:-771170536, Alt:203522, Satellites:10
+heading-angle:2.26
+Gravity -- x:-5.14, y:-0.98, z:8.28
+Magnetic -- x:9.19, y:40.00, z:-4.00
+z vector -- G:0.85, Np:0.16, P:-0.51
+Date:2023-2-22, Time:23:4:39, Lat:389032227, Long:-771170594, Alt:203327, Satellites:10
+heading-angle:2.56
+Date:2023-2-22, Time:23:4:40, Lat:389031997, Long:-771170695, Alt:202424, Satellites:9
+heading-angle:2.73
+Date:2023-2-22, Time:23:4:41, Lat:389031804, Long:-771170770, Alt:202193, Satellites:9
+heading-angle:2.77
+Date:2023-2-22, Time:23:4:42, Lat:389031631, Long:-771170807, Alt:201200, Satellites:11
+heading-angle:2.93
+angle:1.05
+Date:2023-2-22, Time:23:4:43, Lat:389031312, Long:-771170874, Alt:201393, Satellites:10
+heading-angle:2.93
+Gravity -- x:-3.72, y:-1.53, z:8.93
+Magnetic -- x:9.19, y:44.69, z:-8.56
+z vector -- G:0.91, Np:0.19, P:-0.36
+Date:2023-2-22, Time:23:4:44, Lat:389031107, Long:-771170935, Alt:201752, Satellites:11
+heading-angle:2.85
+Date:2023-2-22, Time:23:4:45, Lat:389030874, Long:-771171050, Alt:201880, Satellites:8
+heading-angle:2.68
+Date:2023-2-22, Time:23:4:46, Lat:389030756, Long:-771171166, Alt:201994, Satellites:8
+heading-angle:2.36
+Date:2023-2-22, Time:23:4:47, Lat:389030649, Long:-771171228, Alt:201528, Satellites:11
+heading-angle:2.62
+angle:1.03
+Date:2023-2-22, Time:23:4:48, Lat:389030403, Long:-771171310, Alt:200485, Satellites:11
+heading-angle:2.82
+Gravity -- x:-3.35, y:-0.77, z:9.18
+Magnetic -- x:8.69, y:45.56, z:-14.00
+z vector -- G:0.94, Np:0.10, P:-0.34
+Date:2023-2-22, Time:23:4:49, Lat:389030151, Long:-771171374, Alt:200136, Satellites:11
+heading-angle:2.89
+Date:2023-2-22, Time:23:4:50, Lat:389029968, Long:-771171402, Alt:200057, Satellites:11
+heading-angle:2.99
+Date:2023-2-22, Time:23:4:51, Lat:389029770, Long:-771171443, Alt:199258, Satellites:10
+heading-angle:2.94
+Date:2023-2-22, Time:23:4:52, Lat:389029560, Long:-771171501, Alt:198612, Satellites:9
+heading-angle:2.87
+angle:1.66
+Date:2023-2-22, Time:23:4:53, Lat:389029373, Long:-771171607, Alt:198048, Satellites:10
+heading-angle:2.63
+Gravity -- x:-2.92, y:-1.59, z:9.22
+Magnetic -- x:4.69, y:51.19, z:-16.88
+z vector -- G:0.94, Np:0.15, P:-0.30
+Date:2023-2-22, Time:23:4:54, Lat:389029219, Long:-771171681, Alt:197427, Satellites:10
+heading-angle:2.69
+Date:2023-2-22, Time:23:4:55, Lat:389029050, Long:-771171715, Alt:196829, Satellites:10
+heading-angle:2.94
+Date:2023-2-22, Time:23:4:56, Lat:389028899, Long:-771171796, Alt:196212, Satellites:11
+heading-angle:2.65
+Date:2023-2-22, Time:23:4:57, Lat:389028696, Long:-771171894, Alt:195631, Satellites:11
+heading-angle:2.69
+angle:1.34
+Date:2023-2-22, Time:23:4:58, Lat:389028539, Long:-771171983, Alt:195008, Satellites:11
+heading-angle:2.63
+Gravity -- x:-4.93, y:-2.24, z:8.17
+Magnetic -- x:2.88, y:38.50, z:-2.06
+z vector -- G:0.83, Np:0.22, P:-0.51
+Date:2023-2-22, Time:23:4:59, Lat:389028370, Long:-771172045, Alt:194682, Satellites:11
+heading-angle:2.79
+Date:2023-2-22, Time:23:5:0, Lat:389028214, Long:-771172166, Alt:193769, Satellites:10
+heading-angle:2.48
+Date:2023-2-22, Time:23:5:1, Lat:389028071, Long:-771172236, Alt:192917, Satellites:9
+heading-angle:2.69
+Date:2023-2-22, Time:23:5:2, Lat:389027944, Long:-771172389, Alt:191314, Satellites:11
+heading-angle:2.26
+angle:1.52
+Date:2023-2-22, Time:23:5:3, Lat:389027821, Long:-771172525, Alt:190929, Satellites:11
+heading-angle:2.31
+Gravity -- x:-5.65, y:-2.27, z:7.68
+Magnetic -- x:0.50, y:41.25, z:-12.50
+z vector -- G:0.78, Np:0.08, P:-0.62
+Date:2023-2-22, Time:23:5:4, Lat:389027761, Long:-771172693, Alt:189425, Satellites:10
+heading-angle:1.91
+Date:2023-2-22, Time:23:5:5, Lat:389027650, Long:-771172828, Alt:188902, Satellites:9
+heading-angle:2.26
+Date:2023-2-22, Time:23:5:6, Lat:389027528, Long:-771172957, Alt:188173, Satellites:9
+heading-angle:2.33
+Date:2023-2-22, Time:23:5:7, Lat:389027361, Long:-771173123, Alt:187521, Satellites:10
+heading-angle:2.36
+angle:1.14
+Date:2023-2-22, Time:23:5:8, Lat:389027215, Long:-771173270, Alt:187385, Satellites:11
+heading-angle:2.35
+Gravity -- x:-4.44, y:-4.20, z:7.66
+Magnetic -- x:0.00, y:36.56, z:-6.69
+z vector -- G:0.78, Np:0.31, P:-0.54
+Date:2023-2-22, Time:23:5:9, Lat:389027099, Long:-771173373, Alt:186577, Satellites:11
+heading-angle:2.42
+Date:2023-2-22, Time:23:5:10, Lat:389026958, Long:-771173555, Alt:185996, Satellites:11
+heading-angle:2.23
+Date:2023-2-22, Time:23:5:11, Lat:389026820, Long:-771173697, Alt:185679, Satellites:11
+heading-angle:2.34
+Date:2023-2-22, Time:23:5:12, Lat:389026667, Long:-771173825, Alt:185381, Satellites:11
+heading-angle:2.44
+angle:0.69
+Date:2023-2-22, Time:23:5:13, Lat:389026501, Long:-771174008, Alt:184525, Satellites:11
+heading-angle:2.31
+Gravity -- x:-3.76, y:-5.87, z:6.89
+Magnetic -- x:-3.69, y:33.00, z:-8.56
+z vector -- G:0.70, Np:0.36, P:-0.62
+Date:2023-2-22, Time:23:5:14, Lat:389026343, Long:-771174128, Alt:184014, Satellites:11
+heading-angle:2.49
+Date:2023-2-22, Time:23:5:15, Lat:389026213, Long:-771174292, Alt:183174, Satellites:11
+heading-angle:2.24
+Date:2023-2-22, Time:23:5:16, Lat:389026021, Long:-771174431, Alt:182491, Satellites:11
+heading-angle:2.51
+Date:2023-2-22, Time:23:5:17, Lat:389025860, Long:-771174606, Alt:181743, Satellites:11
+heading-angle:2.31
+angle:1.00
+Date:2023-2-22, Time:23:5:18, Lat:389025657, Long:-771174814, Alt:181641, Satellites:11
+heading-angle:2.34
+Gravity -- x:-2.80, y:-6.03, z:7.19
+Magnetic -- x:-5.56, y:39.38, z:-9.00
+z vector -- G:0.73, Np:0.44, P:-0.52
+Date:2023-2-22, Time:23:5:19, Lat:389025478, Long:-771175010, Alt:180437, Satellites:11
+heading-angle:2.31
+Date:2023-2-22, Time:23:5:20, Lat:389025301, Long:-771175146, Alt:179348, Satellites:11
+heading-angle:2.49
+Date:2023-2-22, Time:23:5:21, Lat:389025113, Long:-771175395, Alt:177419, Satellites:11
+heading-angle:2.22
+Date:2023-2-22, Time:23:5:22, Lat:389024879, Long:-771175612, Alt:176344, Satellites:11
+heading-angle:2.39
+angle:1.08
+Date:2023-2-22, Time:23:5:23, Lat:389024660, Long:-771175829, Alt:174933, Satellites:11
+heading-angle:2.36
+Gravity -- x:-3.19, y:-6.69, z:6.41
+Magnetic -- x:-3.06, y:37.50, z:-11.25
+z vector -- G:0.65, Np:0.42, P:-0.63
+Date:2023-2-22, Time:23:5:24, Lat:389024416, Long:-771176006, Alt:173728, Satellites:11
+heading-angle:2.51
+Date:2023-2-22, Time:23:5:25, Lat:389024220, Long:-771176193, Alt:172998, Satellites:11
+heading-angle:2.38
+Date:2023-2-22, Time:23:5:26, Lat:389024110, Long:-771176405, Alt:171836, Satellites:11
+heading-angle:2.05
+Date:2023-2-22, Time:23:5:27, Lat:389023960, Long:-771176661, Alt:171043, Satellites:11
+heading-angle:2.10
+angle:0.95
+Date:2023-2-22, Time:23:5:28, Lat:389023833, Long:-771176850, Alt:170788, Satellites:11
+heading-angle:2.16
+Gravity -- x:-2.84, y:-6.62, z:6.64
+Magnetic -- x:-6.69, y:33.69, z:-9.38
+z vector -- G:0.68, Np:0.39, P:-0.62
+Date:2023-2-22, Time:23:5:29, Lat:389023665, Long:-771177120, Alt:169660, Satellites:9
+heading-angle:2.13
+Date:2023-2-22, Time:23:5:30, Lat:389023483, Long:-771177361, Alt:168991, Satellites:11
+heading-angle:2.22
+Date:2023-2-22, Time:23:5:31, Lat:389023263, Long:-771177589, Alt:169513, Satellites:10
+heading-angle:2.34
+Date:2023-2-22, Time:23:5:32, Lat:389023196, Long:-771177860, Alt:169724, Satellites:11
+heading-angle:1.81
+angle:0.67
+Date:2023-2-22, Time:23:5:33, Lat:389023014, Long:-771178175, Alt:169330, Satellites:10
+heading-angle:2.09
+Gravity -- x:-2.24, y:-6.64, z:6.85
+Magnetic -- x:0.75, y:39.38, z:-10.25
+z vector -- G:0.70, Np:0.61, P:-0.38
+Date:2023-2-22, Time:23:5:34, Lat:389022766, Long:-771178460, Alt:169001, Satellites:10
+heading-angle:2.29
+Date:2023-2-22, Time:23:5:35, Lat:389022440, Long:-771178759, Alt:168525, Satellites:10
+heading-angle:2.40
+Date:2023-2-22, Time:23:5:36, Lat:389022103, Long:-771179090, Alt:168486, Satellites:9
+heading-angle:2.37
+Date:2023-2-22, Time:23:5:37, Lat:389021829, Long:-771179455, Alt:168600, Satellites:9
+heading-angle:2.21
+angle:0.46
+Date:2023-2-22, Time:23:5:38, Lat:389021557, Long:-771179846, Alt:168547, Satellites:9
+heading-angle:2.18
+Gravity -- x:-2.43, y:-5.54, z:7.71
+Magnetic -- x:2.88, y:35.38, z:-10.69
+z vector -- G:0.79, Np:0.53, P:-0.31
+Date:2023-2-22, Time:23:5:39, Lat:389021308, Long:-771180214, Alt:168054, Satellites:11
+heading-angle:2.17
+Date:2023-2-22, Time:23:5:40, Lat:389020942, Long:-771180539, Alt:167962, Satellites:10
+heading-angle:2.42
+Date:2023-2-22, Time:23:5:41, Lat:389020629, Long:-771180793, Alt:167803, Satellites:11
+heading-angle:2.46
+Date:2023-2-22, Time:23:5:42, Lat:389020329, Long:-771181028, Alt:167436, Satellites:11
+heading-angle:2.48
+angle:0.35
+Date:2023-2-22, Time:23:5:43, Lat:389020151, Long:-771181263, Alt:167049, Satellites:11
+heading-angle:2.22
+Gravity -- x:-1.85, y:-5.82, z:7.67
+Magnetic -- x:-2.69, y:37.56, z:-11.50
+z vector -- G:0.78, Np:0.51, P:-0.35
+Date:2023-2-22, Time:23:5:44, Lat:389019881, Long:-771181534, Alt:166143, Satellites:8
+heading-angle:2.35
+Date:2023-2-22, Time:23:5:45, Lat:389019615, Long:-771182040, Alt:164603, Satellites:8
+heading-angle:2.05
+Date:2023-2-22, Time:23:5:46, Lat:389019575, Long:-771182441, Alt:164038, Satellites:10
+heading-angle:1.67
+Date:2023-2-22, Time:23:5:47, Lat:389019618, Long:-771182582, Alt:163682, Satellites:11
+heading-angle:1.27
+angle:-2.89
+Date:2023-2-22, Time:23:5:48, Lat:389019726, Long:-771182737, Alt:162194, Satellites:11
+heading-angle:0.96
+Gravity -- x:-2.53, y:-7.58, z:5.67
+Magnetic -- x:15.56, y:3.25, z:-33.50
+z vector -- G:0.58, Np:-0.70, P:0.42
+Date:2023-2-22, Time:23:5:49, Lat:389019754, Long:-771182905, Alt:161573, Satellites:10
+heading-angle:1.41
+Date:2023-2-22, Time:23:5:50, Lat:389019822, Long:-771183079, Alt:160528, Satellites:10
+heading-angle:1.20
+Date:2023-2-22, Time:23:5:51, Lat:389019867, Long:-771183350, Alt:160883, Satellites:10
+heading-angle:1.41
+Date:2023-2-22, Time:23:5:52, Lat:389020069, Long:-771183741, Alt:160780, Satellites:10
+heading-angle:1.09
+angle:-2.85
+Date:2023-2-22, Time:23:5:53, Lat:389020275, Long:-771184124, Alt:159995, Satellites:10
+heading-angle:1.08
+Gravity -- x:-4.37, y:-6.90, z:5.41
+Magnetic -- x:9.38, y:16.88, z:-38.69
+z vector -- G:0.55, Np:-0.83, P:-0.04
+Date:2023-2-22, Time:23:5:54, Lat:389020594, Long:-771184545, Alt:159918, Satellites:11
+heading-angle:0.92
+Date:2023-2-22, Time:23:5:55, Lat:389020775, Long:-771185023, Alt:160031, Satellites:10
+heading-angle:1.21
+Date:2023-2-22, Time:23:5:56, Lat:389020934, Long:-771185330, Alt:160126, Satellites:10
+heading-angle:1.09
+Date:2023-2-22, Time:23:5:57, Lat:389021092, Long:-771185603, Alt:159644, Satellites:10
+heading-angle:1.05
+angle:2.12
+Date:2023-2-22, Time:23:5:58, Lat:389021201, Long:-771185766, Alt:159687, Satellites:10
+heading-angle:0.98
+Gravity -- x:-1.55, y:-6.01, z:7.58
+Magnetic -- x:-12.19, y:14.50, z:-35.88
+z vector -- G:0.77, Np:-0.43, P:-0.47
+Date:2023-2-22, Time:23:5:59, Lat:389021273, Long:-771186048, Alt:159504, Satellites:10
+heading-angle:1.32
+Date:2023-2-22, Time:23:6:0, Lat:389021338, Long:-771186210, Alt:158920, Satellites:9
+heading-angle:1.19
+Date:2023-2-22, Time:23:6:1, Lat:389021408, Long:-771186227, Alt:158786, Satellites:11
+heading-angle:0.24
+Date:2023-2-22, Time:23:6:2, Lat:389021375, Long:-771186336, Alt:158660, Satellites:11
+heading-angle:1.86
+angle:1.43
+Date:2023-2-22, Time:23:6:3, Lat:389021341, Long:-771186481, Alt:159561, Satellites:10
+heading-angle:1.80
+Gravity -- x:-1.46, y:-6.00, z:7.61
+Magnetic -- x:-16.50, y:33.38, z:-24.50
+z vector -- G:0.78, Np:0.17, P:-0.61
+Date:2023-2-22, Time:23:6:4, Lat:389021278, Long:-771186640, Alt:160059, Satellites:9
+heading-angle:1.95
+Date:2023-2-22, Time:23:6:5, Lat:389021331, Long:-771186804, Alt:159312, Satellites:11
+heading-angle:1.26
+Date:2023-2-22, Time:23:6:6, Lat:389021350, Long:-771186934, Alt:158772, Satellites:12
+heading-angle:1.43
+Date:2023-2-22, Time:23:6:7, Lat:389021343, Long:-771187139, Alt:159187, Satellites:11
+heading-angle:1.60
+angle:1.17
+Date:2023-2-22, Time:23:6:8, Lat:389021349, Long:-771187287, Alt:160027, Satellites:12
+heading-angle:1.53
+Gravity -- x:-3.27, y:-6.18, z:6.87
+Magnetic -- x:-5.19, y:33.19, z:-15.38
+z vector -- G:0.70, Np:0.26, P:-0.66
+Date:2023-2-22, Time:23:6:9, Lat:389021379, Long:-771187483, Alt:159747, Satellites:12
+heading-angle:1.42
+Date:2023-2-22, Time:23:6:10, Lat:389021325, Long:-771187680, Alt:160920, Satellites:12
+heading-angle:1.84
+Date:2023-2-22, Time:23:6:11, Lat:389021314, Long:-771187907, Alt:161765, Satellites:11
+heading-angle:1.62
+Date:2023-2-22, Time:23:6:12, Lat:389021277, Long:-771188179, Alt:160427, Satellites:12
+heading-angle:1.71
+angle:0.63
+Date:2023-2-22, Time:23:6:13, Lat:389021154, Long:-771188420, Alt:160057, Satellites:12
+heading-angle:2.04
+Gravity -- x:-1.76, y:-6.58, z:7.05
+Magnetic -- x:-11.25, y:25.00, z:-1.50
+z vector -- G:0.72, Np:0.44, P:-0.54
+Date:2023-2-22, Time:23:6:14, Lat:389021121, Long:-771188559, Alt:159579, Satellites:12
+heading-angle:1.80
+Date:2023-2-22, Time:23:6:15, Lat:389021106, Long:-771188722, Alt:160289, Satellites:12
+heading-angle:1.66
+Date:2023-2-22, Time:23:6:16, Lat:389021132, Long:-771188825, Alt:160926, Satellites:11
+heading-angle:1.32
+Date:2023-2-22, Time:23:6:17, Lat:389021173, Long:-771188962, Alt:161355, Satellites:11
+heading-angle:1.28
+angle:2.22
+Date:2023-2-22, Time:23:6:18, Lat:389021198, Long:-771189096, Alt:161099, Satellites:12
+heading-angle:1.39
+Gravity -- x:-4.05, y:-8.45, z:2.87
+Magnetic -- x:3.50, y:33.50, z:-36.06
+z vector -- G:0.29, Np:-0.87, P:-0.39
+Date:2023-2-22, Time:23:6:19, Lat:389021211, Long:-771189272, Alt:160779, Satellites:12
+heading-angle:1.50
+Date:2023-2-22, Time:23:6:20, Lat:389021204, Long:-771189274, Alt:160644, Satellites:12
+heading-angle:2.86
+Date:2023-2-22, Time:23:6:21, Lat:389021131, Long:-771189210, Alt:159865, Satellites:11
+heading-angle:-2.42
+Date:2023-2-22, Time:23:6:22, Lat:389021051, Long:-771189221, Alt:158800, Satellites:11
+heading-angle:3.00
+angle:2.73
+Date:2023-2-22, Time:23:6:23, Lat:389020860, Long:-771189282, Alt:158266, Satellites:10
+heading-angle:2.83
+Gravity -- x:-0.09, y:-8.91, z:4.09
+Magnetic -- x:-22.75, y:55.69, z:-49.88
+z vector -- G:0.42, Np:-0.63, P:-0.66
+Date:2023-2-22, Time:23:6:24, Lat:389020789, Long:-771189375, Alt:157602, Satellites:11
+heading-angle:2.22
+Date:2023-2-22, Time:23:6:25, Lat:389020777, Long:-771189462, Alt:154796, Satellites:10
+heading-angle:1.71
+Date:2023-2-22, Time:23:6:26, Lat:389020530, Long:-771189529, Alt:153885, Satellites:11
+heading-angle:2.88
+Date:2023-2-22, Time:23:6:27, Lat:389020472, Long:-771189600, Alt:153670, Satellites:11
+heading-angle:2.26
+angle:-2.79
+Date:2023-2-22, Time:23:6:28, Lat:389020427, Long:-771189660, Alt:153165, Satellites:12
+heading-angle:2.21
+Gravity -- x:1.83, y:-9.19, z:2.88
+Magnetic -- x:-2.50, y:77.19, z:-43.50
+z vector -- G:0.29, Np:-0.80, P:0.53
+Date:2023-2-22, Time:23:6:29, Lat:389020383, Long:-771189699, Alt:152753, Satellites:10
+heading-angle:2.42
+Date:2023-2-22, Time:23:6:30, Lat:389020359, Long:-771189795, Alt:150886, Satellites:10
+heading-angle:1.82
+Date:2023-2-22, Time:23:6:31, Lat:389020205, Long:-771189914, Alt:149415, Satellites:10
+heading-angle:2.48
+Date:2023-2-22, Time:23:6:32, Lat:389020073, Long:-771189978, Alt:148182, Satellites:10
+heading-angle:2.69
+angle:2.87
+Date:2023-2-22, Time:23:6:33, Lat:389019980, Long:-771190041, Alt:147171, Satellites:9
+heading-angle:2.55
+Gravity -- x:-0.45, y:-9.78, z:0.55
+Magnetic -- x:12.38, y:52.00, z:-12.69
+z vector -- G:0.06, Np:-0.70, P:0.71
+Date:2023-2-22, Time:23:6:34, Lat:389019876, Long:-771190099, Alt:146591, Satellites:9
+heading-angle:2.63
+Date:2023-2-22, Time:23:6:35, Lat:389019802, Long:-771190140, Alt:146043, Satellites:10
+heading-angle:2.64
+Date:2023-2-22, Time:23:6:36, Lat:389019728, Long:-771190179, Alt:145117, Satellites:10
+heading-angle:2.66
+Date:2023-2-22, Time:23:6:37, Lat:389019648, Long:-771190227, Alt:144233, Satellites:9
+heading-angle:2.60
+angle:-2.29
+Date:2023-2-22, Time:23:6:38, Lat:389019589, Long:-771190221, Alt:144501, Satellites:9
+heading-angle:-3.04
+Gravity -- x:-2.90, y:-9.28, z:1.20
+Magnetic -- x:19.19, y:24.75, z:13.56
+z vector -- G:0.12, Np:0.84, P:0.54
+Date:2023-2-22, Time:23:6:39, Lat:389019588, Long:-771190258, Alt:144581, Satellites:9
+heading-angle:1.60
+Date:2023-2-22, Time:23:6:40, Lat:389019616, Long:-771190396, Alt:144871, Satellites:9
+heading-angle:1.37
+Date:2023-2-22, Time:23:6:41, Lat:389019627, Long:-771190414, Alt:144962, Satellites:9
+heading-angle:1.02
+Date:2023-2-22, Time:23:6:42, Lat:389019577, Long:-771190468, Alt:144990, Satellites:9
+heading-angle:2.32
+angle:-0.63
+Date:2023-2-22, Time:23:6:43, Lat:389019585, Long:-771190445, Alt:144998, Satellites:8
+heading-angle:-1.24
+Gravity -- x:-2.40, y:-9.49, z:0.41
+Magnetic -- x:18.75, y:26.56, z:22.25
+z vector -- G:0.04, Np:0.89, P:0.44
+Date:2023-2-22, Time:23:6:44, Lat:389019586, Long:-771190568, Alt:145031, Satellites:9
+heading-angle:1.56
+Date:2023-2-22, Time:23:6:45, Lat:389019583, Long:-771190528, Alt:145211, Satellites:9
+heading-angle:-1.65
+Date:2023-2-22, Time:23:6:46, Lat:389019532, Long:-771190578, Alt:145150, Satellites:9
+heading-angle:2.37
+Date:2023-2-22, Time:23:6:47, Lat:389019545, Long:-771190670, Alt:145321, Satellites:9
+heading-angle:1.43
+angle:-0.45
+Date:2023-2-22, Time:23:6:48, Lat:389019442, Long:-771190792, Alt:145622, Satellites:10
+heading-angle:2.27
+Gravity -- x:-2.06, y:-9.56, z:-0.58
+Magnetic -- x:2.56, y:41.69, z:-8.38
+z vector -- G:-0.06, Np:-0.86, P:-0.50
+Date:2023-2-22, Time:23:6:49, Lat:389019519, Long:-771190866, Alt:145773, Satellites:9
+heading-angle:0.77
+Date:2023-2-22, Time:23:6:50, Lat:389019502, Long:-771190926, Alt:146056, Satellites:10
+heading-angle:1.85
+Date:2023-2-22, Time:23:6:51, Lat:389019503, Long:-771190915, Alt:146162, Satellites:10
+heading-angle:-1.48
+Date:2023-2-22, Time:23:6:52, Lat:389019532, Long:-771190880, Alt:146420, Satellites:10
+heading-angle:-0.88
+angle:0.08
+Date:2023-2-22, Time:23:6:53, Lat:389019475, Long:-771190953, Alt:146031, Satellites:10
+heading-angle:2.23
+Gravity -- x:-1.85, y:-9.55, z:1.23
+Magnetic -- x:0.69, y:8.50, z:41.50
+z vector -- G:0.13, Np:0.99, P:-0.02
+Date:2023-2-22, Time:23:6:54, Lat:389019522, Long:-771191026, Alt:145773, Satellites:10
+heading-angle:1.00
+Date:2023-2-22, Time:23:6:55, Lat:389019568, Long:-771191078, Alt:145357, Satellites:10
+heading-angle:0.85
+Date:2023-2-22, Time:23:6:56, Lat:389019615, Long:-771191142, Alt:145306, Satellites:11
+heading-angle:0.94
+Date:2023-2-22, Time:23:6:57, Lat:389019621, Long:-771191204, Alt:145370, Satellites:11
+heading-angle:1.47
+angle:0.07
+Date:2023-2-22, Time:23:6:58, Lat:389019594, Long:-771191208, Alt:145570, Satellites:11
+heading-angle:2.99
+Gravity -- x:-2.57, y:-9.42, z:0.88
+Magnetic -- x:11.00, y:11.25, z:51.88
+z vector -- G:0.09, Np:0.99, P:0.14
+Date:2023-2-22, Time:23:6:59, Lat:389019609, Long:-771191341, Alt:145411, Satellites:11
+heading-angle:1.46
+Date:2023-2-22, Time:23:7:0, Lat:389019582, Long:-771191544, Alt:145466, Satellites:11
+heading-angle:1.70
+Date:2023-2-22, Time:23:7:1, Lat:389019615, Long:-771191724, Alt:146416, Satellites:11
+heading-angle:1.39
+Date:2023-2-22, Time:23:7:2, Lat:389019642, Long:-771192145, Alt:148313, Satellites:11
+heading-angle:1.51
+angle:-0.42
+Date:2023-2-22, Time:23:7:3, Lat:389019697, Long:-771192388, Alt:147703, Satellites:12
+heading-angle:1.35
+Gravity -- x:-1.81, y:-9.58, z:1.01
+Magnetic -- x:26.56, y:26.38, z:28.56
+z vector -- G:0.10, Np:0.83, P:0.55
+Date:2023-2-22, Time:23:7:4, Lat:389019696, Long:-771192815, Alt:146573, Satellites:12
+heading-angle:1.57
+Date:2023-2-22, Time:23:7:5, Lat:389019757, Long:-771193052, Alt:144909, Satellites:12
+heading-angle:1.32
+Date:2023-2-22, Time:23:7:6, Lat:389019759, Long:-771193252, Alt:144533, Satellites:12
+heading-angle:1.56
+Date:2023-2-22, Time:23:7:7, Lat:389019777, Long:-771193252, Alt:144692, Satellites:11
+heading-angle:-0.00
+angle:-0.13
+Date:2023-2-22, Time:23:7:8, Lat:389019762, Long:-771193217, Alt:144891, Satellites:11
+heading-angle:-1.98
+Gravity -- x:0.43, y:-9.79, z:0.33
+Magnetic -- x:-6.00, y:42.88, z:12.00
+z vector -- G:0.03, Np:0.96, P:-0.29
+Date:2023-2-22, Time:23:7:9, Lat:389019773, Long:-771193143, Alt:144906, Satellites:10
+heading-angle:-1.42
+Date:2023-2-22, Time:23:7:10, Lat:389019824, Long:-771193129, Alt:144968, Satellites:9
+heading-angle:-0.27
+Date:2023-2-22, Time:23:7:11, Lat:389019887, Long:-771193144, Alt:145052, Satellites:8
+heading-angle:0.23
+Date:2023-2-22, Time:23:7:12, Lat:389019904, Long:-771193220, Alt:144965, Satellites:9
+heading-angle:1.35
+angle:0.10
+Date:2023-2-22, Time:23:7:13, Lat:389019940, Long:-771193316, Alt:144802, Satellites:8
+heading-angle:1.21
+Gravity -- x:-1.06, y:-9.74, z:0.11
+Magnetic -- x:1.56, y:13.69, z:76.88
+z vector -- G:0.01, Np:1.00, P:0.00
+Date:2023-2-22, Time:23:7:14, Lat:389019977, Long:-771193335, Alt:144603, Satellites:8
+heading-angle:0.47
+Date:2023-2-22, Time:23:7:15, Lat:389019941, Long:-771193416, Alt:144525, Satellites:7
+heading-angle:1.99
+Date:2023-2-22, Time:23:7:16, Lat:389019925, Long:-771193461, Alt:144451, Satellites:8
+heading-angle:1.91
+Date:2023-2-22, Time:23:7:17, Lat:389019973, Long:-771193443, Alt:143771, Satellites:8
+heading-angle:-0.36
+angle:-1.05
+Date:2023-2-22, Time:23:7:18, Lat:389020056, Long:-771193804, Alt:143690, Satellites:10
+heading-angle:1.34
+Gravity -- x:-2.28, y:-9.53, z:-0.15
+Magnetic -- x:-0.75, y:35.50, z:20.19
+z vector -- G:-0.02, Np:0.91, P:-0.42
+Date:2023-2-22, Time:23:7:19, Lat:389020150, Long:-771194161, Alt:143761, Satellites:10
+heading-angle:1.31
+Date:2023-2-22, Time:23:7:20, Lat:389020258, Long:-771194453, Alt:144177, Satellites:9
+heading-angle:1.22
+Date:2023-2-22, Time:23:7:21, Lat:389020343, Long:-771194434, Alt:144201, Satellites:9
+heading-angle:-0.22
+Date:2023-2-22, Time:23:7:22, Lat:389020396, Long:-771194348, Alt:144442, Satellites:10
+heading-angle:-1.02
+angle:1.16
+Date:2023-2-22, Time:23:7:23, Lat:389020468, Long:-771194469, Alt:144396, Satellites:10
+heading-angle:1.03
+Gravity -- x:-1.58, y:-9.65, z:-0.64
+Magnetic -- x:-15.00, y:33.88, z:27.56
+z vector -- G:-0.07, Np:0.78, P:-0.62
+Date:2023-2-22, Time:23:7:24, Lat:389020651, Long:-771194506, Alt:144489, Satellites:10
+heading-angle:0.20
+Date:2023-2-22, Time:23:7:25, Lat:389020700, Long:-771194525, Alt:144658, Satellites:10
+heading-angle:0.37
+Date:2023-2-22, Time:23:7:26, Lat:389020815, Long:-771194483, Alt:144599, Satellites:8
+heading-angle:-0.35
+Date:2023-2-22, Time:23:7:27, Lat:389020792, Long:-771194525, Alt:144905, Satellites:8
+heading-angle:2.07
+angle:0.50
+Date:2023-2-22, Time:23:7:28, Lat:389020874, Long:-771194542, Alt:144921, Satellites:10
+heading-angle:0.20
+Gravity -- x:-0.83, y:-9.65, z:-1.49
+Magnetic -- x:-16.38, y:35.50, z:25.06
+z vector -- G:-0.15, Np:0.70, P:-0.69
+Date:2023-2-22, Time:23:7:29, Lat:389021010, Long:-771194394, Alt:144731, Satellites:9
+heading-angle:-0.83
+Date:2023-2-22, Time:23:7:30, Lat:389020923, Long:-771194320, Alt:144767, Satellites:10
+heading-angle:-2.44
+Date:2023-2-22, Time:23:7:31, Lat:389020977, Long:-771194385, Alt:144604, Satellites:10
+heading-angle:0.88
+Date:2023-2-22, Time:23:7:32, Lat:389020987, Long:-771194324, Alt:144450, Satellites:9
+heading-angle:-1.41
+angle:0.14
+Date:2023-2-22, Time:23:7:33, Lat:389020964, Long:-771194160, Alt:144699, Satellites:10
+heading-angle:-1.71
+Gravity -- x:-2.12, y:-9.54, z:0.68
+Magnetic -- x:8.25, y:35.38, z:13.88
+z vector -- G:0.07, Np:1.00, P:0.02
+Date:2023-2-22, Time:23:7:34, Lat:389020941, Long:-771193883, Alt:144835, Satellites:10
+heading-angle:-1.65
+Date:2023-2-22, Time:23:7:35, Lat:389020870, Long:-771193903, Alt:145561, Satellites:9
+heading-angle:2.87
+Date:2023-2-22, Time:23:7:36, Lat:389020879, Long:-771194007, Alt:145560, Satellites:9
+heading-angle:1.48
+Date:2023-2-22, Time:23:7:37, Lat:389020893, Long:-771193938, Alt:145636, Satellites:10
+heading-angle:-1.37
+angle:2.49
+Date:2023-2-22, Time:23:7:38, Lat:389020861, Long:-771194033, Alt:145324, Satellites:8
+heading-angle:1.90
+Gravity -- x:-0.51, y:-9.75, z:0.84
+Magnetic -- x:-34.38, y:49.88, z:75.50
+z vector -- G:0.09, Np:0.90, P:-0.42
+Date:2023-2-22, Time:23:7:39, Lat:389020835, Long:-771194100, Alt:145032, Satellites:10
+heading-angle:1.94
+Date:2023-2-22, Time:23:7:40, Lat:389020739, Long:-771194140, Alt:144907, Satellites:10
+heading-angle:2.75
+Date:2023-2-22, Time:23:7:41, Lat:389020669, Long:-771194320, Alt:144497, Satellites:9
+heading-angle:1.94
+Date:2023-2-22, Time:23:7:42, Lat:389020587, Long:-771194215, Alt:144569, Satellites:10
+heading-angle:-2.23
+angle:2.48
+Date:2023-2-22, Time:23:7:43, Lat:389020504, Long:-771194367, Alt:144614, Satellites:9
+heading-angle:2.07
+Gravity -- x:-1.11, y:-9.71, z:0.68
+Magnetic -- x:-86.50, y:312.75, z:-172.38
+z vector -- G:0.07, Np:-0.78, P:-0.63
+Date:2023-2-22, Time:23:7:44, Lat:389020512, Long:-771194551, Alt:144984, Satellites:8
+heading-angle:1.53
+Date:2023-2-22, Time:23:7:45, Lat:389020467, Long:-771194598, Alt:145372, Satellites:9
+heading-angle:2.33

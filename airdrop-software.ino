@@ -28,7 +28,7 @@ const int GPS_LOG_ITERATIONS = 1;
 
 
 // Configuration Constants:
-String logFilePrefix = "flight/log";  // TODO: change to flight file for flight
+String logFilePrefix = "bike/log";  // TODO: change to flight file for flight
 const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
 const int STATUS_LED_PIN = 4;
