@@ -92,6 +92,8 @@ void setup() {
 
   logStr("--------------- INITIALIZATION FINISHED ------------------");
   digitalWrite(STATUS_LED_PIN, HIGH);
+  delay(5000);
+  digitalWrite(STATUS_LED_PIN, LOW);
 }//setup()
 
 
@@ -233,6 +235,13 @@ void getCoordinates(long* toPopulate){
   toPopulate[1] = myGNSS.getLongitude();
   toPopulate[2] = myGNSS.getAltitude();
   toPopulate[3] = myGNSS.getSIV();
+
+  if(toPopulate[3] >= MIN_SATELLITES){
+    digitalWrite(STATUS_LED_PIN, HIGH);
+  }//if
+  else{
+    digitalWrite(STATUS_LED_PIN, LOW);
+  }//else
   
   if(gps_log_counter % GPS_LOG_ITERATIONS == 0){  // to only log with enough: toPopulate[3] >= MIN_SATELLITES && 
     gps_log_counter = 0;
