@@ -280,7 +280,7 @@ void getMagVector(double* toPopulate){
 }//getGravVector
 
 
-// Returns a normalized supposed heading vector (it will actually be 90 degrees off of true heading, but this still allows us to compute delta angle while preserving efficiency)
+// Returns a normalized supposed heading vector from IMU
 // LENGTH 2
 void getHeadingVector(double* toPopulate){
     double gravity[3];
@@ -369,7 +369,7 @@ void buildHeadingVector(double* toPopulate, double* gravitational, double* magne
     if(imu_log_counter % IMU_LOG_ITERATIONS == 0){
       logStr("z vector -- G:"+String(gz/ sqrt(sq(gx)+ sq(gy) + sq(gz)))+", Np:"+String(npz/np)+", P:"+String(pz/p)+"\n");
     }//if
-    toPopulate[0] = -pz/p;
+    toPopulate[0] = pz/p;
     toPopulate[1] = npz/np;
 }//buildHeadingVector
 
