@@ -443,31 +443,19 @@ double linearPID(double alpha, double currentT){
 
 
 void linearIteration(){
-
+  double time1 = millis();
+  if(time1 - last_gps_query_time > GPS_QUERY_DELAY){  // if enough time has passed to query the GPS again
+    last_gps_query_time = time1;  // set the last query time to now 
+    desiredAngleDelta = desiredHeadingDelta(&targetCoordinates[0]);  //  the angle change we need based on the GPS heading vector // TODO: uncomment
+    double rawPIDVal = linearPID(desiredAngleDelta, time1);  // the PID val this angle returns (within [-1,1])
+    logStr("desired_heading_delta_angle:"+String(desiredAngleDelta)+", raw_PID:"+String(rawPIDVal)+"\n");  // log stuff
+    servoActuate(rawPIDVal);  // actuate the servo based on the pid value, this function also maps it to the servo's pwm range
+  }//if
 }//linearIteration()
 
 
 // loop
 
 void loop() {
-  double time1 = millis();
-  if(time1 - last_gps_query_time > GPS_QUERY_DELAY){
-    last_gps_query_time = time1;
-    desiredAngleDelta = desiredHeadingDelta(&targetCoordinates[0]);  // TODO: uncomment
-  }//if
-  double time2 = millis();  // refresh our time just in case that took long
-  if(time2 - last_imu_query_time > IMU_QUERY_DELAY){
-    last_imu_query_time = time2;
-    double heading[HEADING_LENGTH];
-    getHeadingVector(&heading[0]);
-    double alpha = vectorAngle(heading[0], heading[1], initialHeading[0], initialHeading[1]);  
-    // this is the change in compass heading between the last time it used GPS and now
-    double offset = desiredAngleDelta - alpha;  // angle offset from where we want to be
-    double rawPIDVal = linearPID(offset, time2);
-    if(imu_log_counter % IMU_LOG_ITERATIONS == 0){
-      logStr("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal)+"\n");
-    }//if
-    servoActuate(rawPIDVal);
-    delay(IMU_QUERY_DELAY);
-  }//if
+  linearIteration();
 }//loop
