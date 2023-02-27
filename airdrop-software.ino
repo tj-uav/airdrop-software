@@ -28,7 +28,7 @@ const int GPS_LOG_ITERATIONS = 1;
 
 
 // Configuration Constants:
-String logFilePrefix = "flight/log";  // TODO: change to flight file for flight
+String logFilePrefix = "bike/log";  // TODO: change to flight file for flight
 const int CHIP_SELECT = 10;
 const int SERVO_SIGNAL_PIN = 3;
 const int STATUS_LED_PIN = 4;
@@ -92,6 +92,8 @@ void setup() {
 
   logStr("--------------- INITIALIZATION FINISHED ------------------");
   digitalWrite(STATUS_LED_PIN, HIGH);
+  delay(5000);
+  digitalWrite(STATUS_LED_PIN, LOW);
 }//setup()
 
 
@@ -233,6 +235,13 @@ void getCoordinates(long* toPopulate){
   toPopulate[1] = myGNSS.getLongitude();
   toPopulate[2] = myGNSS.getAltitude();
   toPopulate[3] = myGNSS.getSIV();
+
+  if(toPopulate[3] >= MIN_SATELLITES){
+    digitalWrite(STATUS_LED_PIN, HIGH);
+  }//if
+  else{
+    digitalWrite(STATUS_LED_PIN, LOW);
+  }//else
   
   if(gps_log_counter % GPS_LOG_ITERATIONS == 0){  // to only log with enough: toPopulate[3] >= MIN_SATELLITES && 
     gps_log_counter = 0;
@@ -271,7 +280,7 @@ void getMagVector(double* toPopulate){
 }//getGravVector
 
 
-// Returns a normalized supposed heading vector (it will actually be 90 degrees off of true heading, but this still allows us to compute delta angle while preserving efficiency)
+// Returns a normalized supposed heading vector from IMU
 // LENGTH 2
 void getHeadingVector(double* toPopulate){
     double gravity[3];
@@ -301,6 +310,20 @@ double desiredHeadingDelta(long* targetCoords){
   copyTo(&heading[0], &initialHeading[0], HEADING_LENGTH);
   return value;
 }//desiredHeadingDelta
+
+
+// gets the new GPS coordinates, updates global vars, and returns the desired heading change
+double gpsHeadingAngle(){
+  long northHeading[2] = {0, 1};
+  long currentCoordinates[COORDINATES_LENGTH];
+  getCoordinates(&currentCoordinates[0]);
+  long vx = currentCoordinates[1] - previousCoordinates[1];  // velocity x (east,west) component
+  // vx is actually this times r/dt, but whatever, magnitudes cancel later anyway
+  long vy = currentCoordinates[0] - previousCoordinates[0];  // velocity y (north,south) component
+  double alpha = vectorAngle(northHeading[0], northHeading[1], vx, vy);
+  copyTo(&currentCoordinates[0], &previousCoordinates[0], COORDINATES_LENGTH);
+  return alpha;
+}//gpsHeadingAngle
 
 /////////////////////////////// Functional helpers //////////////////////////////////////////
 // Should all be purely functional!! no device interfacing or global vars
@@ -346,7 +369,7 @@ void buildHeadingVector(double* toPopulate, double* gravitational, double* magne
     if(imu_log_counter % IMU_LOG_ITERATIONS == 0){
       logStr("z vector -- G:"+String(gz/ sqrt(sq(gx)+ sq(gy) + sq(gz)))+", Np:"+String(npz/np)+", P:"+String(pz/p)+"\n");
     }//if
-    toPopulate[0] = -pz/p;
+    toPopulate[0] = pz/p;
     toPopulate[1] = npz/np;
 }//buildHeadingVector
 
@@ -430,21 +453,16 @@ void loop() {
   double time1 = millis();
   if(time1 - last_gps_query_time > GPS_QUERY_DELAY){
     last_gps_query_time = time1;
-    desiredAngleDelta = desiredHeadingDelta(&targetCoordinates[0]);  // TODO: uncomment
+    logStr("heading-angle:"+String(gpsHeadingAngle())+"\n");
   }//if
   double time2 = millis();  // refresh our time just in case that took long
   if(time2 - last_imu_query_time > IMU_QUERY_DELAY){
     last_imu_query_time = time2;
     double heading[HEADING_LENGTH];
     getHeadingVector(&heading[0]);
-    double alpha = vectorAngle(heading[0], heading[1], initialHeading[0], initialHeading[1]);  
-    // this is the change in compass heading between the last time it used GPS and now
-    double offset = desiredAngleDelta - alpha;  // angle offset from where we want to be
-    double rawPIDVal = linearPID(offset, time2);
+    double alpha = vectorAngle(heading[0], heading[1], 0, 1);
     if(imu_log_counter % IMU_LOG_ITERATIONS == 0){
-      logStr("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal)+"\n");
+      logStr("angle:"+String(alpha)+"\n");
     }//if
-    servoActuate(rawPIDVal);
-    delay(IMU_QUERY_DELAY);
   }//if
 }//loop
