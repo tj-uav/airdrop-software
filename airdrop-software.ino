@@ -453,16 +453,21 @@ void loop() {
   double time1 = millis();
   if(time1 - last_gps_query_time > GPS_QUERY_DELAY){
     last_gps_query_time = time1;
-    logStr("heading-angle:"+String(gpsHeadingAngle())+"\n");
+    desiredAngleDelta = desiredHeadingDelta(&targetCoordinates[0]);  // TODO: uncomment
   }//if
   double time2 = millis();  // refresh our time just in case that took long
   if(time2 - last_imu_query_time > IMU_QUERY_DELAY){
     last_imu_query_time = time2;
     double heading[HEADING_LENGTH];
     getHeadingVector(&heading[0]);
-    double alpha = vectorAngle(heading[0], heading[1], 0, 1);
+    double alpha = vectorAngle(heading[0], heading[1], initialHeading[0], initialHeading[1]);  
+    // this is the change in compass heading between the last time it used GPS and now
+    double offset = desiredAngleDelta - alpha;  // angle offset from where we want to be
+    double rawPIDVal = linearPID(offset, time2);
     if(imu_log_counter % IMU_LOG_ITERATIONS == 0){
-      logStr("angle:"+String(alpha)+"\n");
+      logStr("angle:"+String(alpha)+", rawPID:"+String(rawPIDVal)+"\n");
     }//if
+    servoActuate(rawPIDVal);
+    delay(IMU_QUERY_DELAY);
   }//if
 }//loop
